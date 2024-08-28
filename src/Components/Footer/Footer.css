@@ -1,0 +1,29 @@
+/* Footer styling */
+#footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  #footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #footer .text-center {
+    text-align: center;
+  }
+  
+  #footer .credits {
+    margin-top: 10px;
+  }
+  
+  #footer .credits a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  #footer .credits a:hover {
+    text-decoration: underline;
+  }
+  

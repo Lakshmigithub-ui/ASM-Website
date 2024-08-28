@@ -1,0 +1,61 @@
+/* We Love What We Do section styling
+.we-love-section {
+  background: linear-gradient(135deg, #f9f9f9, #e1e1e1);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-size: 1.125rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+} */
+
+
+.client-logos {
+  text-align: center;
+  padding: 2rem;
+}
+
+.client-logos h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem; /* Adjust spacing between logos */
+}
+
+.logo-grid a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo-grid a:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.logo {
+  max-width: 150px; /* Adjust size as needed */
+  max-height: 100px;
+  object-fit: contain;
+}

@@ -1,0 +1,146 @@
+/* .hero{
+    height: 100vh;
+    background: linear-gradient(180deg, #aadefc, white 60%);
+    display: flex;
+}
+.hero-left{
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height:1.1;
+}
+.hero-left h2{
+    color: #090909;
+    font-size: 26px;
+    font-weight: 400;
+}
+.hero-left p{
+    color: #409bd0;;
+    font-size: 50px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img{
+    width:105px;
+}
+.hero-latest-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img{
+    width: 105px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height:70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background:#409bd0;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-img{
+    width: 500px;
+}
+ */
+ .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: linear-gradient(180deg, #aadefc, white 60%);
+    padding: 20px; 
+
+}
+
+.hero-left {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    
+}
+
+.slide {
+    position: relative;
+
+}
+
+.slider-img {
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-8%, -60%);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    background: rgb(246, 252, 252);
+    border-radius: 10px;
+}
+.slide-text h2 {
+    font-size: 1.9rem; /* Larger font size for the main heading */
+    color: #4b9be6; /* Darker text color for contrast */
+    margin: 0; /* Remove default margins */
+    line-height: 1.4; /* Improve line spacing */
+}
+
+.slide-text h3 {
+    font-size: 1.2rem; /* Slightly smaller font size for sub-headings */
+    color: #555; /* Lighter text color for sub-headings */
+    margin: 10px 0; /* Add margin for spacing between lines */
+    line-height: 1.3; /* Improve line spacing */
+}
+
+.slide-text p {
+    font-size: 1rem; /* Font size for paragraph text */
+    color: #666; /* Medium color for paragraphs */
+    margin: 0 0 10px; /* Add space below paragraphs */
+    line-height: 1.5; /* Improve readability with line height */
+}
+
+.hero-latest-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: #208bd3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-latest-btn img {
+    margin-left: 10px;
+}
