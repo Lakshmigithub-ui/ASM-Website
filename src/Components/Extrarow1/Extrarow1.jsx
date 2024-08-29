@@ -11,7 +11,6 @@ const Extrarow1 = () => {
                 <p>We Design Delightful Customer Experience</p>
                 <h2>We partner with brands, agencies and start-ups to create engaging
                 content and meaningful experiences in the digital space.</h2>
-                <h3>Learn more about our services and portfolio of work</h3>
             </div>
             <div className="extra-right">
                 <img className="slider-img"src={Extrarow_image1} alt=""/>

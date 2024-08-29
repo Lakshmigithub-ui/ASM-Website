@@ -77,15 +77,15 @@
 .contact-us-heading {
   font-size: 2rem; /* Adjust size as needed */
   font-weight: bold;
-  color: #333; /* Dark text color for better readability */
+  color: #636161; /* Dark text color for better readability */
   margin-bottom: 10px; /* Space below the heading */
   text-align: center; /* Center the text */
 }
 
 /* Description styling */
 .contact-us-description {
-  font-size: 1rem; /* Adjust size as needed */
-  color: #666; /* Lighter text color for description */
+  font-size: 1.1rem; /* Adjust size as needed */
+  color: #636161; /* Lighter text color for description */
   margin-bottom: 20px; /* Space below the description */
   text-align: center; /* Center the text */
   max-width: 600px; /* Maximum width for better readability */

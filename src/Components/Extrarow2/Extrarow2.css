@@ -1,0 +1,92 @@
+/* Wrapper for the entire component */
+.image-boxes-wrapper {
+    padding: 40px;
+    background: #f5f5f5; /* Light gray background for contrast */
+    text-align: center; /* Center align text */
+  }
+  
+  /* Main heading styling */
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #636161;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    letter-spacing: 1px; /* Add some spacing between letters */
+  }
+  
+  /* Main description styling */
+  .main-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6; /* Improve readability */
+    max-width: 800px; /* Constrain width for better text alignment */
+    margin-left: auto;
+    margin-right: auto; /* Center align the paragraph */
+  }
+  
+  /* Container for all image boxes */
+  .image-box-container {
+    display: flex;
+    justify-content: space-between; /* Space between boxes */
+    gap: 20px; /* Space between boxes */
+    flex-wrap: wrap; /* Wrap boxes to the next line on small screens */
+    margin: 0 auto; /* Center align the container */
+    max-width: 1200px; /* Limit the width of the container */
+  }
+  
+  /* Style for each image box */
+  .image-box {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust the width as needed */
+    overflow: hidden; /* Ensure content does not overflow */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  }
+  
+  /* Hover effect for image boxes */
+  .image-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Container for image and overlay */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  /* Style for images */
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Overlay text styling */
+  .text-overlay {
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 15px; /* Padding inside the overlay */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay visibility */
+  }
+  
+  /* Text inside the overlay */
+  .overlay-text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4; /* Improve readability */
+  }
+  
