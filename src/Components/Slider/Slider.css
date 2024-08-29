@@ -66,13 +66,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 97%;
     height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
-    background: linear-gradient(180deg, #aadefc, white 60%);
+    background: linear-gradient(180deg, #fafbfc, rgb(248, 248, 248) 60%);
     padding: 20px; 
 
 }
@@ -103,12 +103,14 @@
     color: black;
     text-align: center;
     padding: 20px;
-    background: rgb(246, 252, 252);
+    background: rgb(246, 250, 252);
+    border-bottom: 0.5px solid #ddd; ;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 .slide-text h2 {
     font-size: 1.9rem; /* Larger font size for the main heading */
-    color: #4b9be6; /* Darker text color for contrast */
+    color: #409bd0; /* Darker text color for contrast */
     margin: 0; /* Remove default margins */
     line-height: 1.4; /* Improve line spacing */
 }
@@ -134,7 +136,7 @@
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    background-color: #208bd3;
+    background-color: #409bd0;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;

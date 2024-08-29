@@ -104,6 +104,7 @@
 // export default Hero;
 
 import React from 'react';
+import { Link } from "react-router-dom";
 import Slider from 'react-slick';
 import './Slider.css';
 import arrow_icon from '../Assets/arrow.png';
@@ -168,7 +169,7 @@ const Hero = () => {
                     ))}
                 </Slider>
                 <div className="hero-latest-btn">
-                    <div>Register</div>
+                    <Link to='/login'><button>Register</button></Link>
                     <img src={arrow_icon} alt="arrow" />
                 </div>
             </div>

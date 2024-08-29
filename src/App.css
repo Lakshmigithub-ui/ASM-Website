@@ -1,7 +1,7 @@
 *{
   font-family: 'Manrope';
 }
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -39,7 +39,7 @@
     transform: rotate(360deg);
   }
 }
-
+ */
 
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";

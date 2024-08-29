@@ -116,7 +116,7 @@ h1 {
 }
 
 button {
-    background-color: #45b0ee;
+    background-color: #409bd0;
     color: white;
     border: none;
     padding: 8px;
@@ -127,7 +127,7 @@ button {
 }
 
 button:hover {
-    background-color: #2dadf7;
+    background-color: #409bd0;
 }
 
 .loginsignup-toggle {
