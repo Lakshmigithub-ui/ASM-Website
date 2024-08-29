@@ -13,11 +13,13 @@
   
   .testimonials-slider {
     position: relative;
+    padding-left: 20px;
+
   }
   
   .testimonial {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #f9f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -32,11 +34,14 @@
   
   .testimonial-author {
     font-weight: bold;
-    color: #333;
+    color: #ff1b1b;
     margin-bottom: 5px;
+    display: inline-block;
+
   }
   
   .testimonial-company {
-    color: #777;
+    color: #ff1b1b;
+    display: inline-block;
   }
   
