@@ -2,7 +2,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import LoginSignup from './Pages/LoginSignup';
+import GetQuote from './Components/Get Quote/GetQuote';
+// import LoginSignup from './Pages/LoginSignup';
 // import Anime from './Components/Anime/Anime';
 import Home from './Pages/Home';
 import { Work } from './Components/Work/Work';
@@ -25,7 +26,7 @@ function App() {
           <Route path='/services' element={<Services/>} ></Route>
           <Route path='/aboutus' element={<AboutUs/>} ></Route>
           <Route path='/contact' element={<Contact/>} ></Route>
-          <Route path='/login' element={<LoginSignup/>}/>
+          <Route path='/GetQuote' element={<GetQuote/>}/>
         </Routes>
       </BrowserRouter>
       <Footer/>

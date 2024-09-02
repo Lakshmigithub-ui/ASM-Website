@@ -1,4 +1,4 @@
-.extra{
+/* .extra{
     height: 70vh;
     background: linear-gradient(180deg, #f7f9fa, white 60%);
     display: flex;
@@ -40,5 +40,142 @@
 }
 .slider-img{
     width: 500px;
+}
+ */
+
+ /* Base styles for the .extra section */
+.extra {
+    height: 70vh;
+    background: linear-gradient(180deg, #f7f9fa, white 60%);
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.extra-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.extra-left h2 {
+    color: #636161;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.extra-left p {
+    color: #409bd0;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.extra-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.extra-latest-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.extra-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-img {
+    width: 500px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .extra {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .extra-left {
+        padding-left: 100px; /* Reduce padding on smaller screens */
+    }
+
+    .extra-left h2 {
+        font-size: 22px; /* Reduce font size for medium screens */
+    }
+
+    .extra-left p {
+        font-size: 40px; /* Reduce font size for medium screens */
+    }
+
+    .slider-img {
+        width: 400px; /* Reduce image width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .extra {
+        flex-direction: column; /* Stack left and right sections vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .extra-left {
+        padding-left: 20px; /* Reduce padding on smaller screens */
+        padding-right: 20px; /* Add right padding for alignment */
+        text-align: center; /* Center-align text for small screens */
+    }
+
+    .extra-left h2 {
+        font-size: 20px; /* Reduce font size for small screens */
+    }
+
+    .extra-left p {
+        font-size: 30px; /* Reduce font size for small screens */
+    }
+
+    .extra-hand-icon {
+        flex-direction: column; /* Stack icons vertically on small screens */
+        gap: 10px;
+    }
+
+    .extra-latest-btn {
+        flex-direction: column; /* Stack button and icon vertically */
+        gap: 10px;
+    }
+
+    .extra-right {
+        margin-top: 20px; /* Add margin-top to space from text */
+    }
+
+    .slider-img {
+        width: 300px; /* Reduce image width for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .extra-left {
+        padding-left: 10px; /* Minimal padding on very small screens */
+        padding-right: 10px; /* Minimal right padding */
+    }
+
+    .extra-left h2 {
+        font-size: 18px; /* Further reduce font size for very small screens */
+    }
+
+    .extra-left p {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+
+    .slider-img {
+        width: 250px; /* Further reduce image width */
+    }
 }
 

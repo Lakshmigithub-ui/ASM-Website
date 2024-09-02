@@ -1,61 +1,140 @@
+/* Base styles for the services section */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
 
-   .services-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    background: white;
-  }
-  
+.services-title {
+  font-size: 2.5rem; /* Title font size */
+  margin-bottom: -0.3rem; /* Adjust margin for better alignment */
+  color: rgb(85, 82, 82);
+  font-weight: 1000; /* Bold font weight */
+}
+
+.services-container p {
+  font-size: 1.2rem; /* Paragraph font size */
+  margin: 1.5rem 0; /* Vertical spacing */
+  color: rgb(85, 82, 82);
+}
+
+.services-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 150px; /* Large gap for wider screens */
+  flex-wrap: wrap;
+}
+
+.service-box {
+  background-color: #fafcfd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  width: 230px; /* Fixed width for service boxes */
+  border-radius: 8px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-logo {
+  width: 80px; /* Logo size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-box h2 {
+  font-size: 2rem; /* Heading font size */
+  margin-bottom: 10px;
+  color: #5c5a5a;
+  font-weight: 700; /* Bold font weight */
+}
+
+.service-box p {
+  font-size: 1rem; /* Paragraph font size */
+  color: #5c5a5a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .services-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: rgb(85, 82, 82);
-    font-size: 2.5rem;
-    margin-bottom: -0.3rem;
-    font-weight: 1000;
+      font-size: 2rem; /* Slightly smaller title font size */
   }
+
   .services-container p {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: rgb(85, 82, 82);
-    }
+      font-size: 1.1rem; /* Slightly smaller paragraph font size */
+  }
 
   .services-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    flex-wrap: wrap;
+      gap: 50px; /* Reduced gap for medium screens */
   }
-  
+
   .service-box {
-    background-color: #fafcfd;
-    /* border: 1px solid #ddd; */
-    border-bottom: 1px solid #ddd; ;
-    padding: 20px;
-    width: 230px; 
-    border-radius: 8px;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
-    text-align: center;
+      width: 200px; /* Reduced width for service boxes */
   }
-  
-  .service-logo {
-    width: 80px; 
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
+
   .service-box h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #5c5a5a;
-    font-weight: 700;
+      font-size: 1.75rem; /* Slightly smaller heading font size */
   }
-  
+
   .service-box p {
-    font-size: 1rem;
-    color: #5c5a5a;
+      font-size: 0.9rem; /* Slightly smaller paragraph font size */
   }
-  
+}
+
+@media (max-width: 768px) {
+  .services-title {
+      font-size: 1.75rem; /* Further reduce title font size */
+  }
+
+  .services-container p {
+      font-size: 1rem; /* Further reduce paragraph font size */
+  }
+
+  .services-boxes {
+      gap: 30px; /* Further reduced gap for small screens */
+  }
+
+  .service-box {
+      width: 180px; /* Further reduced width for service boxes */
+  }
+
+  .service-box h2 {
+      font-size: 1.5rem; /* Further reduced heading font size */
+  }
+
+  .service-box p {
+      font-size: 0.85rem; /* Further reduced paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+      font-size: 1.5rem; /* Title font size for very small screens */
+      margin-bottom: 10px; /* Adjust margin */
+  }
+
+  .services-container p {
+      font-size: 0.9rem; /* Paragraph font size for very small screens */
+      margin: 1rem 0; /* Adjust margin */
+  }
+
+  .services-boxes {
+      gap: 20px; /* Minimal gap for very small screens */
+  }
+
+  .service-box {
+      width: 100%; /* Full width for service boxes */
+      max-width: 300px; /* Maximum width to prevent stretching */
+      padding: 15px; /* Adjust padding */
+  }
+
+  .service-box h2 {
+      font-size: 1.25rem; /* Reduced heading font size */
+  }
+
+  .service-box p {
+      font-size: 0.75rem; /* Reduced paragraph font size */
+  }
+}
