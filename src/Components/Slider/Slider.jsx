@@ -8,7 +8,6 @@ import slider_image1 from '../Assets/slider_image1.avif';
 import slider_image2 from '../Assets/slider_image2.avif';
 import slider_image3 from '../Assets/slider_image3.avif';
 
-// Define your slider content here
 const slides = [
     {
         image: slider_image1,
