@@ -1,151 +1,61 @@
-/* QuoteForm.css
-.quote-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  .quote-form label {
-    margin-bottom: 10px;
-  }
-  
-  .quote-form input,
-  .quote-form select,
-  .quote-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .quote-form button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .quote-form button:hover {
-    background-color: #0056b3;
-  }
-   */
+/* GetQuote.css */
 
-   /* GetQuote.css */
+.form-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
 .quote-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%; /* Ensure it can grow with the container */
-    width: 100%; /* Full width for smaller screens */
-    margin: 0 auto;
-    padding: 15px;
-    border: 1px solid #d0d5dd;
-    border-radius: 6px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-  }
-  
-  .quote-form label {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .quote-form input,
-  .quote-form select,
-  .quote-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 4px;
-    border: 1px solid #c0c6d0;
-    border-radius: 4px;
-    background-color: #f9faff;
-    color: #333;
-    font-size: 14px;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-  }
-  
-  .quote-form input:focus,
-  .quote-form select:focus,
-  .quote-form textarea:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
-  }
-  
-  .quote-form button {
-    margin-top: 12px;
-    padding: 10px 12px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .quote-form button:hover {
-    background-color: #0056b3;
-    transform: scale(1.02);
-  }
-  
-  .quote-form button:active {
-    background-color: #004494;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .quote-form {
-      padding: 10px; /* Less padding on smaller screens */
-    }
-  
-    .quote-form label {
-      font-size: 12px; /* Smaller font size for labels on mobile */
-    }
-  
-    .quote-form input,
-    .quote-form select,
-    .quote-form textarea {
-      font-size: 12px; /* Adjust input text size for smaller screens */
-      padding: 8px; /* Slightly smaller padding */
-    }
-  
-    .quote-form button {
-      padding: 8px 10px; /* Smaller button size */
-      font-size: 12px; /* Smaller font size for button text */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .quote-form {
-      padding: 8px; /* Minimal padding on very small screens */
-    }
-  
-    .quote-form label {
-      font-size: 11px; /* Even smaller font size for labels */
-    }
-  
-    .quote-form input,
-    .quote-form select,
-    .quote-form textarea {
-      font-size: 11px; /* Further reduce input text size */
-      padding: 6px; /* Minimal padding for inputs */
-    }
-  
-    .quote-form button {
-      padding: 6px 8px; /* Minimal button size */
-      font-size: 11px; /* Minimal font size for button text */
-    }
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-form label {
+  margin-bottom: 10px;
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  font-size: 0.875rem; /* Smaller font size */
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.quote-form button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.quote-form button:hover {
+  background-color: #0056b3;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
