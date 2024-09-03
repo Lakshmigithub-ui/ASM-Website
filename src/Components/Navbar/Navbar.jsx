@@ -214,10 +214,10 @@ const Navbar = () => {
                     <span className="block w-6 h-0.5 bg-white"></span>
                 </button>
                 <ul 
-                    className={`lg:flex lg:items-center lg:space-x-6 fixed lg:static top-16 left-0 w-full lg:w-auto lg:bg-transparent bg-gray-800 lg:opacity-100 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'}`}
+                    className={`lg:flex lg:items-center lg:space-x-0 fixed lg:static top-16 left-0 w-full lg:w-auto lg:bg-transparent bg-gray-800 lg:opacity-100 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'}`}
                 >
                     <li 
-                        className={`hover:bg-gray-700 px-4 py-2 rounded ${menu === "home" ? "bg-gray-700" : ""}`} 
+                        className={`hover:bg-gray-700 px-2 py-2 rounded ${menu === "home" ? "bg-gray-700" : ""}`} 
                         onClick={() => handleMenuClick("home")}
                     >
                         <Link to="/" className="block">Home</Link>
