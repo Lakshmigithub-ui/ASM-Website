@@ -2,7 +2,7 @@ import React from 'react';
 import billing from "./Assets/billing.avif";
 
 
-export const Design = () => {
+export const Billing = () => {
   return (
     <div className="bg-gray-900 text-white p-8">
       <div className="container mx-auto flex flex-col md:flex-row items-center">

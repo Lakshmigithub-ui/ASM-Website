@@ -8,7 +8,7 @@ import GetQuote from './Components/Get Quote/GetQuote';
 import Home from './Pages/Home';
 import { Work } from './Components/Work/Work';
 import { Services } from './Components/Services/Services';
-import { Design } from './Components/Design';
+import { Billing } from './Components/Billing';
 import { Development } from './Components/Development';
 import { Marketing } from './Components/Marketing';
 import Contact from './Pages/Contact';
@@ -30,7 +30,7 @@ function App() {
           <Route path='/aboutus' element={<AboutUs/>} ></Route>
           <Route path='/contact' element={<Contact/>} ></Route>
           <Route path='/GetQuote' element={<GetQuote/>}/>
-          <Route path='/design' element={<Design/>}/>
+          <Route path='/billing' element={<Billing/>}/>
           <Route path='/development' element={<Development/>}/>
           <Route path='/marketing' element={<Marketing/>}/>
         </Routes>

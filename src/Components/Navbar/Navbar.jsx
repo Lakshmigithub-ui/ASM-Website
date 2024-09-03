@@ -305,10 +305,10 @@ const Navbar = () => {
                             {isDropdownOpen && (
                                 <div className="absolute z-10 mt-2 w-48 rounded-lg shadow-lg bg-gray-800 animate-fade-in">
                                     <Link
-                                        to="/design"
+                                        to="/billing"
                                         className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
                                     >
-                                        Design
+                                        Billing
                                     </Link>
                                     <Link
                                         to="/development"
