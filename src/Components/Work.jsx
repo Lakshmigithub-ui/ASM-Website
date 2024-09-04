@@ -1,5 +1,5 @@
 import React from 'react';
-import proj from "../Assets/proj.avif";
+import proj from "./Assets/proj.avif";
 
 export const Work = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Development = () => {
+export const Web_Development = () => {
   return (
     <>
     <div>Development</div>

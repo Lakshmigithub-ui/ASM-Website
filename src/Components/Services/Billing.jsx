@@ -1,6 +1,5 @@
 import React from 'react';
-import billing from "./Assets/billing.avif";
-
+import billing from "../Assets/billing.avif";
 
 export const Billing = () => {
   return (
