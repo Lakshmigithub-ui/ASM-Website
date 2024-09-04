@@ -8,6 +8,7 @@ import GetQuote from './Components/Get Quote/GetQuote';
 import Home from './Pages/Home';
 import { Work } from './Components/Work/Work';
 import { Services } from './Components/Services/Services';
+import Services_offer from "./Components/Services_offer";
 import { Billing } from './Components/Billing';
 import { Development } from './Components/Development';
 import { Marketing } from './Components/Marketing';
@@ -33,6 +34,7 @@ function App() {
           <Route path='/billing' element={<Billing/>}/>
           <Route path='/development' element={<Development/>}/>
           <Route path='/marketing' element={<Marketing/>}/>
+          <Route path='/services_offer' element={<Services_offer/>}/>
         </Routes>
       </BrowserRouter>
       <Footer/>

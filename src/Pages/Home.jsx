@@ -15,7 +15,6 @@ const Home = () => {
             <Slider/>
             <ClientLogos/>
             <Community />
-            <Services_offer />
             <Extrarow1 />
             <Extrarow2 />
             <Extrarow3 />
