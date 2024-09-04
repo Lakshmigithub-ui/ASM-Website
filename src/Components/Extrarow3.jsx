@@ -165,7 +165,7 @@ const Extrarow3 = () => {
   }, []);
 
   return (
-    <section className="smart_solutions bg-black text-white py-12">
+    <section className="smart_solutions bg-slate-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full">

@@ -98,7 +98,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white py-12 px-6 lg:px-16">
+    <div className="bg-slate-800 text-white py-12 px-6 lg:px-16">
       <h2 className="text-3xl font-bold mb-6 text-center">Some Words from our Happy Clients</h2>
       <Slider {...settings} className="text-center">
         <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
