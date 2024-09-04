@@ -8,8 +8,8 @@ const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-900 text-white shadow-md">
-            <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <nav className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
+            <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
@@ -48,25 +48,81 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
+                                        to="/matrimony_app"
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                    >
+                                        Matrimony App
+                                    </Link>
+
+
+                                    <Link
                                         to="/billing"
                                         className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
                                     >
                                         Billing
                                     </Link>
+                                    
                                     <Link
-                                        to="/billing"
+                                        to="/crm"
                                         className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
                                     >
-                                        Billing
+                                        CRM
+                                    </Link>
+
+                                    <Link
+                                        to="/e_commerce"
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                    >
+                                        E-Commerce
+                                    </Link>
+
+                                    <Link
+                                        to="/inventory_app"
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                    >
+                                        Inventory App
+                                    </Link>
+
+                                    <Link
+                                        to="/time_sheet"
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                    >
+                                        Time Sheet
                                     </Link>
 
 
                                     <Link
-                                        to="/marketing"
+                                        to="/moi_soft"
                                         className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-b-lg"
                                     >
-                                        Marketing
+                                        MOI Soft
                                     </Link>
+
+                                    <Link
+                                        to="/customer_management"
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                    >
+                                        Customer Management App
+                                    </Link>
+
+
+                                    <Link
+                                        to="/event_app"
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-b-lg"
+                                    >
+                                        Event App
+                                    </Link>
+
+
+                                    <Link
+                                        to="/digital_marketing"
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-b-lg"
+                                    >
+                                        Digital Marketing
+                                    </Link>
+
+
+
                                 </div>
                             )}
                         </div>
