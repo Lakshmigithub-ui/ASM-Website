@@ -280,12 +280,12 @@ const Navbar = () => {
 
     return (
         <nav className="bg-gray-900 text-white shadow-md">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <Link to="/">
-                            <img className="h-8 w-auto" src={logo} alt="Logo" />
+                            <img className="h-12 w-auto" src={logo} alt="Logo" />
                         </Link>
                     </div>
 

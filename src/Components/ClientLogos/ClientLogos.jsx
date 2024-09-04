@@ -65,7 +65,7 @@ const ClientLogos = () => {
   ];
 
   return (
-    <section className="bg-gray-900 text-white py-16 px-4 md:px-8">
+    <section className="bg-slate-800 text-white py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Clients</h2>
         <p className="text-lg mb-12">We have been working with some Fortune 500+ clients</p>

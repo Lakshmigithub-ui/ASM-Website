@@ -130,7 +130,7 @@ const Gettouch = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white py-12 px-6 lg:px-16 flex flex-col items-center">
+    <div className="bg-slate-800 text-white py-12 px-6 lg:px-16 flex flex-col items-center">
       <h2 className="text-3xl font-bold mb-4">Have a project in mind?</h2>
       <p className="text-lg mb-6">
         We&apos;d love to help you. Drop us a note using the form below. We will get back to you within 24 hours.
