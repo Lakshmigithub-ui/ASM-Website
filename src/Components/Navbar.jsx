@@ -7,9 +7,14 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+    const closeDropdown = () => {
+        setIsDropdownOpen(false);
+        setIsMenuOpen(false); // Close the mobile menu after selecting a service
+    };
+
     return (
         <nav className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 py-3n sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
@@ -35,94 +40,99 @@ const Navbar = () => {
                                 <div className="absolute z-10 mt-2 w-48 rounded-lg shadow-lg bg-gray-800 animate-fade-in">
                                     <Link
                                         to="/web_development"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Web Development
                                     </Link>
 
                                     <Link
                                         to="/mobile_app"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
-                                        Mobile App 
+                                        Mobile App
                                     </Link>
 
                                     <Link
                                         to="/matrimony_app"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Matrimony App
                                     </Link>
 
-
                                     <Link
                                         to="/billing"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Billing
                                     </Link>
-                                    
+
                                     <Link
                                         to="/crm"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         CRM
                                     </Link>
 
                                     <Link
                                         to="/e_commerce"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         E-Commerce
                                     </Link>
 
                                     <Link
                                         to="/inventory_app"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Inventory App
                                     </Link>
 
                                     <Link
                                         to="/time_sheet"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Time Sheet
                                     </Link>
 
-
                                     <Link
                                         to="/moi_soft"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-b-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         MOI Soft
                                     </Link>
 
                                     <Link
                                         to="/customer_management"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Customer Management App
                                     </Link>
 
-
                                     <Link
                                         to="/event_app"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-b-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Event App
                                     </Link>
 
-
                                     <Link
                                         to="/digital_marketing"
-                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700 transition-colors duration-200 rounded-b-lg"
+                                        onClick={closeDropdown}
+                                        className="block px-4 py-2 text-sm text-white hover:bg-gray-700"
                                     >
                                         Digital Marketing
                                     </Link>
-
-
-
                                 </div>
                             )}
                         </div>
@@ -153,16 +163,25 @@ const Navbar = () => {
                     <div className="space-y-1">
                         <button
                             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                            className="w-full text-left flex items-center justify-between px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 focus:outline-none"
+                            className="w-full text-left flex items-center justify-between px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
                         >
                             Services
                             <FaChevronDown className={`ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
                         </button>
                         {isDropdownOpen && (
                             <div className="pl-3 space-y-1">
-                                <Link to="/services/design" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Design</Link>
-                                <Link to="/services/development" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Development</Link>
-                                <Link to="/services/marketing" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Marketing</Link>
+                                <Link to="/web_development" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Web Development</Link>
+                                <Link to="/mobile_app" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Mobile App</Link>
+                                <Link to="/matrimony_app" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Matrimony App</Link>
+                                <Link to="/billing" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Billing</Link>
+                                <Link to="/crm" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">CRM</Link>
+                                <Link to="/e_commerce" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">E-Commerce</Link>
+                                <Link to="/inventory_app" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Inventory App</Link>
+                                <Link to="/time_sheet" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Time Sheet</Link>
+                                <Link to="/moi_soft" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">MOI Soft</Link>
+                                <Link to="/customer_management" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Customer Management</Link>
+                                <Link to="/event_app" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Event App</Link>
+                                <Link to="/digital_marketing" onClick={closeDropdown} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Digital Marketing</Link>
                             </div>
                         )}
                     </div>
@@ -176,3 +195,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

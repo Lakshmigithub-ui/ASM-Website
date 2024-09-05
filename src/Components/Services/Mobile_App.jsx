@@ -1,192 +1,134 @@
 // import React from 'react';
-// import { FaApple, FaAndroid, FaReact, FaGooglePlay } from 'react-icons/fa';
-// import 'aos/dist/aos.css'; // Animate On Scroll library for smooth animations
-// import AOS from 'aos'; // Initialize AOS
+// import { FaApple, FaAndroid, FaReact, FaMobileAlt } from 'react-icons/fa';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import 'tailwindcss/tailwind.css';
 
-// AOS.init();
+// const services = [
+//   {
+//     id: 1,
+//     title: 'iOS App Development',
+//     icon: <FaApple className="text-4xl text-white" />,
+//     content: `We specialize in creating customized iOS applications using Swift and Objective-C with a focus on user-centric design and seamless performance.`,
+//   },
+//   {
+//     id: 2,
+//     title: 'Android App Development',
+//     icon: <FaAndroid className="text-4xl text-white" />,
+//     content: `Our Android development services leverage Kotlin and Java to create high-performance apps with intuitive designs for the Play Store.`,
+//   },
+//   {
+//     id: 3,
+//     title: 'Hybrid App Development',
+//     icon: <FaReact className="text-4xl text-white" />,
+//     content: `Hybrid apps combine the best of both iOS and Android platforms. We use frameworks like React Native and Flutter to create powerful cross-platform apps.`,
+//   },
+//   {
+//     id: 4,
+//     title: 'Flutter Development',
+//     icon: <FaMobileAlt className="text-4xl text-white" />,
+//     content: `Flutter allows us to create high-performance apps with a rich UI for both iOS and Android from a single codebase, saving time and costs.`,
+//   },
+// ];
 
-// const MobileAppDevelopment = () => {
+// const ServiceSlide = () => {
+//   React.useEffect(() => {
+//     AOS.init({ duration: 1000 });
+//   }, []);
+
 //   return (
-//     <div className="bg-black text-white min-h-screen py-12">
-//       <div className="container mx-auto px-6 md:px-12">
-//         <h1 className="text-4xl font-bold mb-8 text-center">Mobile App Development</h1>
-
-//         {/* iOS App Development */}
-//         <div className="mb-12" data-aos="fade-up">
-//           <div className="flex flex-col bg-gray-800 p-6 rounded-lg transition transform hover:-translate-y-2 hover:shadow-lg duration-500 ease-in-out">
-//             <div className="flex items-center justify-between">
-//               <h2 className="text-2xl font-semibold mb-4">iOS App Development</h2>
-//               <FaApple size={40} className="text-gray-400 transition-transform transform hover:scale-110 duration-300 ease-in-out" />
+//     <div className="bg-black text-white min-h-screen p-10">
+//       <h1 className="text-4xl font-bold text-center mb-10">Develop your digital presence with our mobile app development services.</h1>
+//       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+//         {services.map((service) => (
+//           <div
+//             key={service.id}
+//             data-aos="fade-up"
+//             className="p-6 bg-gray-800 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300"
+//           >
+//             <div className="flex justify-center mb-6">
+//               {service.icon}
 //             </div>
-//             <ul className="list-disc pl-5">
-//               <li className="mb-2">
-//                 <span className="font-semibold">Customized Solutions:</span> We understand that every business is unique. Our iOS app development services cater to your specific requirements, ensuring that your app stands out.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Experienced Team:</span> Proficient in Swift, Objective-C, and the latest iOS frameworks, our developers bring deep technical knowledge and best practices.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Cutting-Edge Technology:</span> We utilize Xcode and Apple's guidelines to create innovative and engaging apps.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">User-Centric Design:</span> Our design philosophy ensures seamless user experience with intuitive interfaces.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">End-to-End Development:</span> From concept to deployment, we handle all aspects of app development.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Quality Assurance:</span> Our rigorous testing ensures flawless performance across all iOS devices.
-//               </li>
-//               <li>
-//                 <span className="font-semibold">Support and Maintenance:</span> Continuous support post-launch to keep your app updated and functioning optimally.
-//               </li>
-//             </ul>
+//             <h2 className="text-2xl font-bold text-center mb-4">{service.title}</h2>
+//             <p className="text-center">{service.content}</p>
 //           </div>
-//         </div>
-
-//         {/* Android App Development */}
-//         <div className="mb-12" data-aos="fade-up" data-aos-delay="100">
-//           <div className="flex flex-col bg-gray-800 p-6 rounded-lg transition transform hover:-translate-y-2 hover:shadow-lg duration-500 ease-in-out">
-//             <div className="flex items-center justify-between">
-//               <h2 className="text-2xl font-semibold mb-4">Android App Development</h2>
-//               <FaAndroid size={40} className="text-green-400 transition-transform transform hover:scale-110 duration-300 ease-in-out" />
-//             </div>
-//             <ul className="list-disc pl-5">
-//               <li className="mb-2">
-//                 <span className="font-semibold">Tailored Solutions:</span> Our Android app development services deliver customized solutions for your business needs.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Expert Team:</span> Adept in Kotlin, Java, and Android SDKs, we offer innovative solutions for every project.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Modern Technology:</span> We leverage Android Studio, Jetpack, and other cutting-edge tools to build advanced, reliable apps.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">User-Focused Design:</span> Our design team ensures visually appealing, easy-to-navigate interfaces.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Comprehensive Services:</span> We provide end-to-end services, including development, testing, and maintenance.
-//               </li>
-//               <li>
-//                 <span className="font-semibold">Continuous Support:</span> Post-launch support ensures your app stays updated with the latest features.
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-
-//         {/* Hybrid App Development */}
-//         <div className="mb-12" data-aos="fade-up" data-aos-delay="200">
-//           <div className="flex flex-col bg-gray-800 p-6 rounded-lg transition transform hover:-translate-y-2 hover:shadow-lg duration-500 ease-in-out">
-//             <div className="flex items-center justify-between">
-//               <h2 className="text-2xl font-semibold mb-4">Hybrid App Development</h2>
-//               <FaReact size={40} className="text-blue-400 transition-transform transform hover:scale-110 duration-300 ease-in-out" />
-//             </div>
-//             <ul className="list-disc pl-5">
-//               <li className="mb-2">
-//                 <span className="font-semibold">Cross-Platform Efficiency:</span> Hybrid apps enable you to reach both iOS and Android users with a single codebase.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Skilled Team:</span> Proficient in React Native, Flutter, and Ionic, we deliver high-quality apps across platforms.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Native-Like Performance:</span> Our hybrid apps provide native-like performance with responsive interfaces.
-//               </li>
-//               <li>
-//                 <span className="font-semibold">Cost-Effective Solutions:</span> Save on development and maintenance costs by using a single codebase for both iOS and Android.
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-
-//         {/* Flutter App Development */}
-//         <div className="mb-12" data-aos="fade-up" data-aos-delay="300">
-//           <div className="flex flex-col bg-gray-800 p-6 rounded-lg transition transform hover:-translate-y-2 hover:shadow-lg duration-500 ease-in-out">
-//             <div className="flex items-center justify-between">
-//               <h2 className="text-2xl font-semibold mb-4">Flutter App Development</h2>
-//               <FaGooglePlay size={40} className="text-yellow-400 transition-transform transform hover:scale-110 duration-300 ease-in-out" />
-//             </div>
-//             <ul className="list-disc pl-5">
-//               <li className="mb-2">
-//                 <span className="font-semibold">Cross-Platform Efficiency:</span> Write once and deploy across iOS and Android with Flutter.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">Rich, Responsive UIs:</span> Leverage Flutter's extensive widget library to create highly interactive, responsive apps.
-//               </li>
-//               <li className="mb-2">
-//                 <span className="font-semibold">High Performance:</span> Flutter apps are optimized for smooth performance and seamless animations.
-//               </li>
-//               <li>
-//                 <span className="font-semibold">Cost-Effective Development:</span> Save on development costs by using Flutter’s cross-platform capabilities.
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
+//         ))}
 //       </div>
 //     </div>
 //   );
 // };
 
-// export default MobileAppDevelopment;
+// export default ServiceSlide;
 
 
-import React from 'react';
-import { FaApple, FaAndroid, FaReact, FaMobileAlt } from 'react-icons/fa';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
-import 'tailwindcss/tailwind.css';
+import 'aos/dist/aos.css'; // Import AOS styles
+import mobile_application from "../Assets/mobile_application.jpg"
+import icon1 from "../Assets/icon1.avif";
+import icon2 from "../Assets/icon2.avif";
+import icon3 from "../Assets/icon3.avif";
 
-const services = [
-  {
-    id: 1,
-    title: 'iOS App Development',
-    icon: <FaApple className="text-4xl text-white" />,
-    content: `We specialize in creating customized iOS applications using Swift and Objective-C with a focus on user-centric design and seamless performance.`,
-  },
-  {
-    id: 2,
-    title: 'Android App Development',
-    icon: <FaAndroid className="text-4xl text-white" />,
-    content: `Our Android development services leverage Kotlin and Java to create high-performance apps with intuitive designs for the Play Store.`,
-  },
-  {
-    id: 3,
-    title: 'Hybrid App Development',
-    icon: <FaReact className="text-4xl text-white" />,
-    content: `Hybrid apps combine the best of both iOS and Android platforms. We use frameworks like React Native and Flutter to create powerful cross-platform apps.`,
-  },
-  {
-    id: 4,
-    title: 'Flutter Development',
-    icon: <FaMobileAlt className="text-4xl text-white" />,
-    content: `Flutter allows us to create high-performance apps with a rich UI for both iOS and Android from a single codebase, saving time and costs.`,
-  },
-];
-
-const ServiceSlide = () => {
-  React.useEffect(() => {
-    AOS.init({ duration: 1000 });
+const MobileAppDevelopment = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS
   }, []);
 
   return (
-    <div className="bg-black text-white min-h-screen p-10">
-      <h1 className="text-4xl font-bold text-center mb-10">Our App Development Services</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {services.map((service) => (
-          <div
-            key={service.id}
-            data-aos="fade-up"
-            className="p-6 bg-gray-800 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300"
-          >
-            <div className="flex justify-center mb-6">
-              {service.icon}
-            </div>
-            <h2 className="text-2xl font-bold text-center mb-4">{service.title}</h2>
-            <p className="text-center">{service.content}</p>
+    <div className="bg-gray-900 text-white min-h-screen p-8">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-bold mb-4" data-aos="fade-down">Innovative Mobile App Development Services</h1>
+        <p className="text-lg" data-aos="fade-up">Transform your vision into reality with our cutting-edge mobile app solutions.</p>
+      </header>
+
+      <section className="mb-12">
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
+          <img src={mobile_application} alt="Mobile App" className="w-full h-auto rounded-lg shadow-lg" />
           </div>
-        ))}
-      </div>
+          <div className="lg:w-1/2 lg:pl-8" data-aos="fade-left">
+            <h2 className="text-3xl font-semibold mb-4">Our Expertise</h2>
+            <p className="text-lg mb-4">We specialize in developing innovative mobile applications that provide exceptional user experiences and drive business growth.</p>
+            <ul className="list-disc list-inside mb-4">
+              <li>Custom Mobile App Development</li>
+              <li>UI/UX Design for Mobile</li>
+              <li>Cross-Platform Solutions</li>
+              <li>App Maintenance and Support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-800 p-8 rounded-lg shadow-lg mb-12" data-aos="fade-up">
+        <h2 className="text-3xl font-semibold mb-4 text-center">Why Choose Us?</h2>
+        <p className="text-lg mb-4 text-center">Our team is dedicated to delivering high-quality mobile applications that meet your business needs and exceed user expectations.</p>
+        <div className="flex flex-col lg:flex-row justify-around">
+          <div className="lg:w-1/3 mb-8 lg:mb-0 text-center">
+            <img src={icon1} alt="Icon 1" className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Innovative Solutions</h3>
+            <p>We bring creativity and cutting-edge technology to every project.</p>
+          </div>
+          <div className="lg:w-1/3 mb-8 lg:mb-0 text-center">
+            <img src={icon2} alt="Icon 2" className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">User-Centric Design</h3>
+            <p>Our designs are crafted to provide an intuitive and engaging user experience.</p>
+          </div>
+          <div className="lg:w-1/3 text-center">
+            <img src={icon3} alt="Icon 3" className="w-16 h-16 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold">Dedicated Support</h3>
+            <p>We offer ongoing support and maintenance to ensure your app runs smoothly.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="text-center">
+        <h2 className="text-2xl font-semibold mb-4" data-aos="fade-up">Ready to Start Your Project?</h2>
+        <p className="text-lg mb-4">Contact us today to discuss your mobile app development needs and get a customized plan.</p>
+        <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-aos="fade-up">Get in Touch</button>
+      </footer>
     </div>
   );
-};
+}
 
-export default ServiceSlide;
+export default MobileAppDevelopment;
+

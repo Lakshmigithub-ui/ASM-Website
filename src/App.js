@@ -11,10 +11,10 @@ import { Services } from './Components/Services';
 import Services_offer from "./Components/Services_offer";
 import  Web_Development  from './Components/Services/Web_Development';
 import  Mobile_App  from './Components/Services/Mobile_App';
-import { Matrimony_App } from './Components/Services/Matrimony_App';
+import  Matrimony_App  from './Components/Services/Matrimony_App';
 import  Billing  from './Components/Services/Billing';
-import {CRM} from './Components/Services/CRM'
-import {E_Commerce} from './Components/Services/E_Commerce'
+import CRM from './Components/Services/CRM'
+import E_Commerce from './Components/Services/E_Commerce'
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import 'slick-carousel/slick/slick.css';
