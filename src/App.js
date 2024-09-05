@@ -9,10 +9,10 @@ import Home from './Components/Home';
 import { Work } from './Components/Work';
 import { Services } from './Components/Services';
 import Services_offer from "./Components/Services_offer";
-import { Web_Development } from './Components/Services/Web_Development';
-import { Mobile_App } from './Components/Services/Mobile_App';
+import  Web_Development  from './Components/Services/Web_Development';
+import  Mobile_App  from './Components/Services/Mobile_App';
 import { Matrimony_App } from './Components/Services/Matrimony_App';
-import { Billing } from './Components/Services/Billing';
+import  Billing  from './Components/Services/Billing';
 import {CRM} from './Components/Services/CRM'
 import {E_Commerce} from './Components/Services/E_Commerce'
 import Contact from './Components/Contact';
@@ -20,6 +20,12 @@ import Footer from './Components/Footer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { AboutUs } from './Components/AboutUs';
+import { Inventory_app } from './Components/Services/Inventory_app';
+import { Timesheet } from './Components/Services/Timesheet';
+import  {MOI_Soft } from './Components/Services/MOI_Soft';
+import { Customer_Management } from './Components/Services/Customer_Management';
+import { Event_App } from './Components/Services/Event_App';
+import { Digital_Marketing } from './Components/Services/Digital_Marketing';
 
 function App() {
   return (
@@ -42,6 +48,14 @@ function App() {
           <Route path='/billing' element={<Billing/>}/>
           <Route path='/crm' element={<CRM/>}/>
           <Route path='/e_commerce' element={<E_Commerce/>}/>
+          <Route path='/inventory_app' element={<Inventory_app/>}/>
+          <Route path='/time_sheet' element={<Timesheet/>}/>
+          <Route path='/moi_soft' element={<MOI_Soft/>}/>
+          <Route path='/customer_management' element={<Customer_Management/>}/>
+          <Route path='/event_app' element={<Event_App/>}/>
+          <Route path='/digital_marketing' element={<Digital_Marketing/>}/>
+
+
 
         </Routes>
       </BrowserRouter>

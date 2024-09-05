@@ -1,48 +1,83 @@
 import React from 'react';
+import { CSSTransition } from 'react-transition-group';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCashRegister, faUsers, faHeadset, faFileInvoice, faChartLine, faUserCog, faIndustry } from '@fortawesome/free-solid-svg-icons';
+import './Billing.css'; // Custom CSS for animations
 import billing from "../Assets/billing.avif";
 
-export const Billing = () => {
+const sections = [
+  { title: 'POS', icon: faCashRegister, content: ['Point-of-Sale: Efficient, dependable, and precise billing', 'POS System: Quick, accurate, and reliable transactions'] },
+  { title: 'Customer Retail', icon: faUsers, content: ['Retail Management: Precise and highly responsive software solutions', 'Customer-Focused Retail: Accurate, responsive, and intuitive software'] },
+  { title: 'Support', icon: faHeadset, content: ['Customer Assistance: Rapid resolution with dedicated and hassle-free support', 'Technical Support: Swift problem-solving with personalized assistance'] },
+  { title: 'GST', icon: faFileInvoice, content: ['Tax Compliance: Accurate GST management for regulatory adherence', 'GST Solutions: Ensure compliance with precise tax calculations'] },
+  { title: 'MIS', icon: faChartLine, content: ['Management Information System: Access real-time, accurate data in a single dashboard', 'Data Insights: Centralized, reliable information for informed decision-making'] },
+  { title: 'Account', icon: faUserCog, content: ['Financial Management: Secure and up-to-date account details in one place', 'Account Overview: Comprehensive and secure account information management'] },
+];
+
+const industries = [
+  "Supermarkets",
+  "Garments & Textiles",
+  "Pharmacies",
+  "Grocery Stores",
+  "Department Stores",
+  "Textile Mills",
+  "Footwear Stores",
+  "Furniture Stores",
+  "Electronics Stores",
+  "Automobile Dealerships",
+  "Stationery Shops",
+  "Home Decor and Furnishing Stores",
+];
+
+const App = () => {
   return (
-    <div className="bg-gray-900 text-white p-8">
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
-        
-        {/* Text Section */}
-        <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-          <h2 className="text-3xl font-bold mb-4">Billing Software</h2>
-          <p className="mb-4">
-            At ASM Infotech, we understand that efficient billing is crucial for any business. Our innovative billing software is designed to simplify invoicing, automate payments, and provide real-time insights, helping you manage your finances with ease and precision.
-          </p>
-          <h3 className="text-2xl font-semibold mb-4">Our Services</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li><strong>Automated Invoicing:</strong> Generate and send professional invoices with just a few clicks. Our software automates recurring invoices, reducing manual work and ensuring timely billing for your clients.</li>
-            <li><strong>Customizable Templates:</strong> Choose from a variety of customizable templates to create invoices that match your brand’s identity. Personalize your invoices with your logo, colors, and preferred layout.</li>
-            <li><strong>Multi-Currency and Multi-Language Support:</strong> Operate globally with ease. Our software supports multiple currencies and languages, allowing you to bill clients from different regions effortlessly.</li>
-            <li><strong>Secure Online Payments:</strong> Accept payments online through integrated payment gateways. Offer your clients various payment options including credit/debit cards, bank transfers, and digital wallets for a seamless transaction experience.</li>
-            <li><strong>Real-Time Tracking and Reporting:</strong> Monitor your financial health with real-time tracking of payments, outstanding invoices, and revenue reports. Our comprehensive dashboards provide insights into your billing performance and cash flow.</li>
-            <li><strong>Expense Management:</strong> Keep track of your expenses alongside your income. Our software allows you to record and categorize expenses, helping you manage your budget more effectively.</li>
-            <li><strong>Integration Capabilities:</strong> Seamlessly integrate with your existing accounting, CRM, and ERP systems. Our software supports various third-party integrations, ensuring a smooth workflow and data consistency.</li>
-            <li><strong>Automated Reminders and Notifications:</strong> Reduce overdue payments with automated reminders and notifications. Our system sends reminders to clients about upcoming or overdue invoices, helping you maintain a steady cash flow.</li>
-            <li><strong>User-Friendly Interface:</strong> Enjoy an intuitive and easy-to-navigate interface designed for users of all technical levels. Our software simplifies complex billing tasks, making it accessible to everyone in your organization.</li>
-            <li><strong>Dedicated Support:</strong> Our knowledgeable support team is here to assist you. Whether you need help with setup, troubleshooting, or optimizing features, we provide prompt and effective support to ensure your satisfaction.</li>
-          </ul>
-        </div>
-        
-        {/* Image Section */}
-        <div className="md:w-1/2">
-          <img src={billing} alt="Billing Software" className="w-full h-auto rounded-lg shadow-lg" />
+    <div className="bg-gray-900 text-white min-h-screen p-8">
+      <h1 className="text-3xl font-bold mb-6 text-center">Enhance Your Business Operations with Advanced Retail Billing Software</h1>
+      <p className="text-xl mb-6 text-center">Let’s discuss your business. Get a personalized plan to go online.</p>
+      <div className="flex justify-center mb-6">
+        <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Book a Demo</button>
+      </div>
+      <div className="mb-8 text-center">
+      <img src={billing} alt="Billing Software" className="mx-auto mb-4 rounded-lg shadow-lg" />
+        <h2 className="text-2xl font-semibold mb-4 text-center">Industries We Serve</h2>
+        <div className="relative overflow-hidden">
+          <div className="animate-slide flex space-x-4">
+            {industries.map((industry, index) => (
+              <div key={index} className="bg-gray-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-transform hover:scale-105">
+                <FontAwesomeIcon icon={faIndustry} className="text-blue-400 text-2xl" />
+                <span className="text-lg font-medium">{industry}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-
-      {/* Why Choose Us Section */}
-      <div className="mt-8">
-        <h3 className="text-2xl font-semibold mb-4">Why Choose Us?</h3>
-        <ul className="list-disc list-inside space-y-2">
-          <li><strong>Efficiency:</strong> Save time and reduce errors with automated billing and payment processes.</li>
-          <li><strong>Flexibility:</strong> Adapt to your business needs with customizable features and integrations.</li>
-          <li><strong>Reliability:</strong> Trust in a secure, robust system that ensures accurate and timely invoicing.</li>
-          <li><strong>Scalability:</strong> Grow your business with a solution that scales with your needs, from small startups to large enterprises.</li>
-        </ul>
+      <div className="grid gap-8 lg:grid-cols-2">
+        {sections.map((section, index) => (
+          <CSSTransition
+            key={index}
+            timeout={500}
+            classNames="fade"
+            in={true}
+            appear={true}
+          >
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+              <div className="flex items-center mb-4">
+                <FontAwesomeIcon icon={section.icon} className="text-blue-400 text-3xl mr-3" />
+                <h2 className="text-2xl font-semibold">{section.title}</h2>
+              </div>
+              <ul className="list-disc list-inside space-y-2 text-lg">
+                {section.content.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </CSSTransition>
+        ))}
       </div>
     </div>
   );
-};
+}
+
+export default App;
+
+
