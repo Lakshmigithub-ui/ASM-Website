@@ -31,7 +31,7 @@ const Navbar = () => {
                         <div className="relative">
                             <button
                                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                                className="px-4 py-2 flex items-center rounded-md text-lg font-medium bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="px-4 py-2 flex items-center rounded-md text-lg font-medium bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
                             >
                                 Services
                                 <FaChevronDown className={`ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />
