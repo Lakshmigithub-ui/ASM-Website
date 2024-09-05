@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import './CRM.css'; // Custom CSS for additional styling
+import crm1 from "../Assets/crm1.avif";
+import crmlogo1 from "../Assets/crmlogo1.avif";
+import crmlogo2 from "../Assets/crmlogo2.avif";
+import crmlogo3 from "../Assets/crmlogo3.avif";
 
 const CRMPage = () => {
   useEffect(() => {
@@ -27,21 +31,21 @@ const CRMPage = () => {
           <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-1/3 p-4" data-aos="fade-right">
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition-transform transform hover:scale-105">
-                <img src="path/to/your/feature1-icon.png" alt="Feature 1" className="w-20 h-20 mx-auto mb-4" />
+                <img src={crmlogo1} alt="Feature 1" className="w-20 h-20 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2 text-white">Seamless Integration</h3>
                 <p className="text-gray-300">Effortlessly integrate with your existing tools and platforms for a smooth workflow.</p>
               </div>
             </div>
             <div className="w-full md:w-1/3 p-4" data-aos="fade-up">
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition-transform transform hover:scale-105">
-                <img src="path/to/your/feature2-icon.png" alt="Feature 2" className="w-20 h-20 mx-auto mb-4" />
+                <img src={crmlogo2} alt="Feature 2" className="w-20 h-20 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2 text-white">Real-Time Analytics</h3>
                 <p className="text-gray-300">Get instant insights into your sales and customer interactions with real-time analytics.</p>
               </div>
             </div>
             <div className="w-full md:w-1/3 p-4" data-aos="fade-left">
               <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover:bg-gray-600 transition-transform transform hover:scale-105">
-                <img src="path/to/your/feature3-icon.png" alt="Feature 3" className="w-20 h-20 mx-auto mb-4" />
+                <img src={crmlogo3} alt="Feature 3" className="w-20 h-20 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2 text-white">Customizable Dashboard</h3>
                 <p className="text-gray-300">Tailor your dashboard to display the metrics and data most important to you.</p>
               </div>
@@ -57,7 +61,7 @@ const CRMPage = () => {
           <h2 className="text-4xl font-bold mb-12 text-white" data-aos="fade-up">Interactive CRM Demo</h2>
           <div className="flex flex-col lg:flex-row justify-center">
             <div className="lg:w-1/2 p-4" data-aos="fade-right">
-              <img src="path/to/your/demo-image.jpg" alt="CRM Demo" className="rounded-lg shadow-lg" />
+              <img src={crm1} alt="CRM Demo" className="rounded-lg shadow-lg" />
             </div>
             <div className="lg:w-1/2 p-4" data-aos="fade-left">
               <h3 className="text-2xl font-semibold mb-4 text-white">Experience the Power of Our CRM</h3>
@@ -68,28 +72,6 @@ const CRMPage = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-16 bg-gray-800">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12 text-white" data-aos="fade-up">What Our Clients Say</h2>
-          <div className="flex flex-wrap justify-center">
-            <div className="w-full md:w-1/3 p-4" data-aos="fade-up">
-              <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-                <blockquote className="text-lg text-gray-300 italic mb-4">“Our CRM solution has significantly improved our efficiency and customer engagement.”</blockquote>
-                <p className="font-semibold text-white">John Doe</p>
-                <p className="text-gray-400">CEO, Company X</p>
-              </div>
-            </div>
-            <div className="w-full md:w-1/3 p-4" data-aos="fade-up" data-aos-delay="200">
-              <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-                <blockquote className="text-lg text-gray-300 italic mb-4">“The real-time analytics and customizable dashboard are game-changers for our business.”</blockquote>
-                <p className="font-semibold text-white">Jane Smith</p>
-                <p className="text-gray-400">Marketing Manager, Company Y</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action Section */}
       <section className="text-center py-16">

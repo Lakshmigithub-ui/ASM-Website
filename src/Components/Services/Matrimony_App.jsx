@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import matlogo1 from "../Assets/matlogo1.jpg";
+import matlogo2 from "../Assets/matlogo2.jpg";
+import matlogo3 from "../Assets/matlogo3.avif";
 
 const MatrimonyApp = () => {
   useEffect(() => {
@@ -11,7 +14,7 @@ const MatrimonyApp = () => {
     <div className="bg-gray-900 text-white min-h-screen p-8">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-teal-500 to-blue-500 p-12 rounded-lg shadow-lg mb-12">
-        <img src="path/to/your/hero-image.jpg" alt="Hero" className="absolute inset-0 w-full h-full object-cover opacity-30 z-[-1]" />
+        <img src={matlogo1} alt="Hero" className="absolute inset-0 w-full h-full object-cover opacity-30 z-[-1]" />
         <div className="text-center relative z-10">
           <h1 className="text-5xl font-bold mb-6" data-aos="fade-up">Discover Your Soulmate with Our Matrimony App</h1>
           <p className="text-lg mb-6" data-aos="fade-up" data-aos-delay="200">Join now and access exclusive features designed to enhance your matchmaking journey.</p>
@@ -24,17 +27,17 @@ const MatrimonyApp = () => {
         <h2 className="text-4xl font-bold text-center mb-8" data-aos="fade-up">Our Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105" data-aos="fade-right">
-            <img src="path/to/your/feature1-icon.png" alt="Feature 1" className="w-16 h-16 mx-auto mb-4" />
+            <img src={matlogo1} alt="Feature 1" className="w-16 h-16 mx-auto mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Advanced Search</h3>
             <p>Find potential matches with highly customizable search filters.</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105" data-aos="fade-up">
-            <img src="path/to/your/feature2-icon.png" alt="Feature 2" className="w-16 h-16 mx-auto mb-4" />
+            <img src={matlogo2} alt="Feature 2" className="w-16 h-16 mx-auto mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Verified Profiles</h3>
             <p>Browse through genuine and verified user profiles for authenticity.</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105" data-aos="fade-left">
-            <img src="path/to/your/feature3-icon.png" alt="Feature 3" className="w-16 h-16 mx-auto mb-4" />
+            <img src={matlogo3} alt="Feature 3" className="w-16 h-16 mx-auto mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Private Messaging</h3>
             <p>Communicate securely with potential matches through our chat system.</p>
           </div>
@@ -65,21 +68,6 @@ const MatrimonyApp = () => {
                 <p>Start conversations and build connections with your potential match.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8" data-aos="fade-up">What Our Users Say</h2>
-        <div className="flex flex-wrap justify-center">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg mx-4 mb-8 w-full md:w-1/3" data-aos="fade-up">
-            <blockquote className="text-lg italic mb-4">“An amazing app! Found my soulmate in no time. Highly recommended!”</blockquote>
-            <p className="font-semibold">Jane Doe</p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg mx-4 mb-8 w-full md:w-1/3" data-aos="fade-up" data-aos-delay="200">
-            <blockquote className="text-lg italic mb-4">“The features are user-friendly and the matchmaking is spot on!”</blockquote>
-            <p className="font-semibold">John Smith</p>
           </div>
         </div>
       </section>

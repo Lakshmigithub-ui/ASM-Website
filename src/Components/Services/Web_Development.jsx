@@ -88,6 +88,10 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import web_development1 from "../Assets/web_development1.avif"
+import weblogo1 from "../Assets/weblogo1.avif";
+import weblogo2 from "../Assets/weblogo2.avif";
+import weblogo3 from "../Assets/weblogo3.avif";
 
 const WebAppDevelopment = () => {
   useEffect(() => {
@@ -124,7 +128,7 @@ const WebAppDevelopment = () => {
             </ul>
           </div>
           <div className="flex items-center justify-center" data-aos="fade-left">
-            <img src="https://example.com/web-development-image.jpg" alt="Web Development" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={web_development1} alt="Web Development" className="w-full h-auto rounded-lg shadow-lg" />
           </div>
         </section>
 
@@ -133,39 +137,23 @@ const WebAppDevelopment = () => {
           <h2 className="text-3xl font-semibold mb-6 text-center">Our Core Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center" data-aos="fade-up">
-              <img src="https://example.com/icon1.svg" alt="Feature 1" className="w-16 h-16 mx-auto mb-4" />
+              <img src={weblogo1} alt="Feature 1" className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Innovative Design</h3>
               <p>Engage users with a unique and modern design tailored to your brand.</p>
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="200">
-              <img src="https://example.com/icon2.svg" alt="Feature 2" className="w-16 h-16 mx-auto mb-4" />
+              <img src={weblogo2} alt="Feature 2" className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Advanced Technology</h3>
               <p>Utilize the latest technology to ensure high performance and scalability.</p>
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="400">
-              <img src="https://example.com/icon3.svg" alt="Feature 3" className="w-16 h-16 mx-auto mb-4" />
+              <img src={weblogo3} alt="Feature 3" className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Dedicated Support</h3>
               <p>Receive ongoing support to keep your web app up-to-date and fully functional.</p>
             </div>
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-6 text-center" data-aos="fade-up">What Our Clients Say</h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3 text-center" data-aos="fade-up">
-              <img src="https://example.com/client1.jpg" alt="Client 1" className="w-16 h-16 mx-auto mb-4 rounded-full" />
-              <h3 className="text-xl font-semibold mb-2">Alice Johnson</h3>
-              <p>"The web app we received was outstanding. It's user-friendly, responsive, and perfectly fits our needs."</p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-1/3 text-center" data-aos="fade-up" data-aos-delay="200">
-              <img src="https://example.com/client2.jpg" alt="Client 2" className="w-16 h-16 mx-auto mb-4 rounded-full" />
-              <h3 className="text-xl font-semibold mb-2">Bob Smith</h3>
-              <p>"Fantastic work! The team was very professional and delivered a top-notch web app that exceeded our expectations."</p>
-            </div>
-          </div>
-        </section>
 
         {/* Call to Action Section */}
         <footer className="text-center">
