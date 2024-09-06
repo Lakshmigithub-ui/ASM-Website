@@ -7,7 +7,6 @@ import GetQuote from './Components/GetQuote';
 // import Anime from './Components/Anime/Anime';
 import Home from './Components/Home';
 import { Work } from './Components/Work';
-import { Services } from './Components/Services';
 import  Web_Development  from './Components/Services/Web_Development';
 import  Mobile_App  from './Components/Services/Mobile_App';
 import  Matrimony_App  from './Components/Services/Matrimony_App';
@@ -34,7 +33,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/work' element={<Work/>}></Route>
-          <Route path='/services' element={<Services/>} ></Route>
           <Route path='/aboutus' element={<AboutUs/>} ></Route>
           <Route path='/contact' element={<Contact/>} ></Route>
           <Route path='/GetQuote' element={<GetQuote/>}/>
