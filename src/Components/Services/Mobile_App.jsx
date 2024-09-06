@@ -158,7 +158,7 @@ const MobileAppDevelopment = () => {
       <section className="mb-12">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
-            <img src={ios_app} alt="iOS App" className="w-full h-auto rounded-lg shadow-lg" />
+            <img src={ios_app} alt="iOS App" className="w-full h-auto rounded-lg shadow-lg " />
           </div>
           <div className="lg:w-1/2 lg:pl-8" data-aos="fade-left">
             <h2 className="text-3xl font-semibold mb-4">iOS App Development</h2>
@@ -170,14 +170,15 @@ const MobileAppDevelopment = () => {
 
       <section className="mb-12">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
-            <img src={android_app} alt="Android App" className="w-full h-auto rounded-lg shadow-lg" />
-          </div>
           <div className="lg:w-1/2 lg:pl-8" data-aos="fade-left">
             <h2 className="text-3xl font-semibold mb-4">Android App Development</h2>
             <p className="text-lg mb-4">Our Android app development services are designed to create apps that perform optimally across a wide range of Android devices and versions.</p>
             <p className="text-lg mb-4">We emphasize user-centric design and functionality to ensure your app stands out in the crowded Android market.</p>
           </div>
+          <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
+            <img src={android_app} alt="Android App" className="w-full h-auto rounded-lg shadow-lg" />
+          </div>
+
         </div>
       </section>
 
