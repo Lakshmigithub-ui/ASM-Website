@@ -59,7 +59,7 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
+    <div className="bg-gray-900 text-slate-300 py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">Our Services</h1>
         <p className="text-lg mb-12 text-center">Explore the diverse range of services we offer to help your business thrive.</p>
@@ -67,25 +67,19 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-0 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl mx-2" // Added mx-2 for horizontal spacing
+              className="p-4" 
             >
+              {/* className="bg-gray-800 p-4 px-7 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl mx-0" // Added mx-2 for horizontal spacing */}
+
               <div className="text-center">
                 <service.icon className="text-4xl mx-auto text-gray-400" /> {/* Render the icon */}
               </div>
-
-              <h2 className="text-lg text-center font-semibold mb-2">{service.title}</h2>
-              <p className="text-center text-sm mb-4">{service.description}</p>
+<br></br>
+              <h2 className="text-lg text-center font-medium mb-2">{service.title}</h2>
+              <p className="text-center text-sm font-light mb-4">{service.description}</p>
             </div>
           ))}
         </Slider>
-        <div className="text-center mt-12">
-          <Link to='/services_offer'><button
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-colors duration-300"
-            // onClick={() => window.location.href = '/services-offer'} // Adjust the URL as needed
-          >
-            View All Services
-          </button></Link>
-        </div>
       </div>
     </div>
   );
