@@ -92,7 +92,6 @@ import slider_image1 from './Assets/slider_image1.avif';
 import slider_image2 from './Assets/slider_image2.avif';
 import slider_image3 from './Assets/slider_image3.avif';
 import background_video3 from './Assets/background_video3.mp4';
-import Navbar from './Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -146,8 +145,7 @@ const Hero = () => {
 
     return (
         <div className="relative bg-gray-900 text-white py-16 px-4 md:px-8">
-            {/* Navbar at the Top */}
-            <Navbar />
+            {/* <Navbar /> */}
 
             {/* Background Video */}
             <video
