@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="transparant text-white shadow-md sticky top-0 z-50">
+        <nav className=" text-white  sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
@@ -31,7 +31,7 @@ const Navbar = () => {
                         <div className="relative">
                             <button
                                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                                className="px-4 py-2 flex items-center rounded-md text-lg font-medium bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
+                                className="px-4 py-2 flex items-center rounded-md text-lg font-medium hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
                             >
                                 Services
                                 <FaChevronDown className={`ml-2 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} />

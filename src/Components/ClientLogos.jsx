@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+
 import client_logo1 from "./Assets/client_logo1.avif";
 import client_logo2 from "./Assets/client_logo2.avif";
 import client_logo3 from "./Assets/client_logo3.avif";
@@ -8,7 +11,10 @@ import client_logo6 from "./Assets/client_logo6.avif";
 import client_logo7 from "./Assets/client_logo7.avif";
 
 const ClientLogos = () => {
-  // Array of client logos with alt text and link
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+  }, []);
+
   const clients = [
     { src: client_logo1, alt: 'Client 1', link: 'https://client1.com' },
     { src: client_logo2, alt: 'Client 2', link: 'https://client2.com' },
@@ -23,13 +29,25 @@ const ClientLogos = () => {
   return (
     <section className="bg-slate-800 text-white py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Clients</h2>
-        <p className="text-lg mb-12">We have been working with some Fortune 500+ clients</p>
+        <h2 data-aos="fade-up" className="text-2xl md:text-3xl font-bold mb-4">Our Clients</h2>
+        <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-12">We have been working with some Fortune 500+ clients</p>
         <div className="flex flex-col items-center">
           <div className="flex flex-wrap justify-center gap-8">
             {clients.map((client, index) => (
-              <a key={index} href={client.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-                <img src={client.src} alt={client.alt} className="w-24 h-24 object-contain hover:grayscale-0 transition-transform transform hover:scale-105" />
+              <a
+                key={index}
+                href={client.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+                data-aos="zoom-in"
+                data-aos-delay={index * 100} // Staggered animation
+              >
+                <img
+                  src={client.src}
+                  alt={client.alt}
+                  className="w-24 h-24 object-contain hover:grayscale-0 transition-transform transform hover:scale-105"
+                />
               </a>
             ))}
           </div>
