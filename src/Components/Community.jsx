@@ -35,7 +35,7 @@ const Services = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -67,14 +67,14 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-4 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl mx-2" // Added mx-2 for horizontal spacing
+              className="bg-gray-800 p-0 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl mx-2" // Added mx-2 for horizontal spacing
             >
-              <img src={service.img} alt={service.title} className="w-full h-40  mb-4 border-2 border-gray-700" />
-              <h2 className="text-lg text-center font-semibold mb-2">{service.title}</h2>
-              <p className="text-center text-sm mb-4">{service.description}</p>
               <div className="text-center">
                 <service.icon className="text-4xl mx-auto text-gray-400" /> {/* Render the icon */}
               </div>
+
+              <h2 className="text-lg text-center font-semibold mb-2">{service.title}</h2>
+              <p className="text-center text-sm mb-4">{service.description}</p>
             </div>
           ))}
         </Slider>

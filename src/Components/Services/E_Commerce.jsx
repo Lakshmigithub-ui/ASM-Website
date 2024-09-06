@@ -105,6 +105,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import e_commerce1 from "../Assets/e_commerce1.avif"
 
 const EcommerceAppPage = () => {
   useEffect(() => {
@@ -118,8 +119,8 @@ const EcommerceAppPage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
         <div className="absolute inset-0 bg-[url('https://example.com/glitter-bg.png')] bg-cover bg-center opacity-30"></div> {/* Glitter effect */}
         <div className="relative z-10 flex flex-col items-center">
-          <img src="https://example.com/ecommerce-image.png" alt="E-commerce" className="w-40 h-40 object-contain mb-6" data-aos="zoom-in" />
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4" data-aos="fade-up">Revolutionize Your Online Store</h1>
+          <img src={e_commerce1} alt="E-commerce" className="w-full h-80 object-contain mb-6" data-aos="zoom-in" />
+          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4" data-aos="fade-up">Revolutionize Your Online Store</h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-6" data-aos="fade-up" data-aos-delay="200">
             Empower your business with our next-gen e-commerce solutions, designed to bring modern shopping experiences to life.
           </p>
