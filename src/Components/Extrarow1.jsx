@@ -13,7 +13,7 @@ const Extrarow1 = () => {
     <div className="bg-slate-800 text-white py-12 px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
       <div
         className="lg:w-1/2 mb-8 lg:mb-0"
-        data-aos="fade-right" // Animate the text when it scrolls into view
+        data-aos="fade-up" // Animate the text when it scrolls into view
       >
         <p className="text-xl font-light mb-4">We Design Delightful Customer Experience</p>
         <h2 className="text-2xl font-semibold leading-tight">
@@ -22,7 +22,7 @@ const Extrarow1 = () => {
       </div>
       <div
         className="lg:w-1/2 flex justify-center items-center"
-        data-aos="fade-left" // Animate the image when it scrolls into view
+        data-aos="fade-down" // Animate the image when it scrolls into view
       >
         <img
           className="w-full h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105"
