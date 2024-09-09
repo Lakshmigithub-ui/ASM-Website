@@ -18,12 +18,12 @@ import Footer from './Components/Footer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { AboutUs } from './Components/AboutUs';
-import { Inventory_app } from './Components/Services/Inventory_app';
-import { Timesheet } from './Components/Services/Timesheet';
-import  {MOI_Soft } from './Components/Services/MOI_Soft';
-import { Customer_Management } from './Components/Services/Customer_Management';
-import { Event_App } from './Components/Services/Event_App';
-import { Digital_Marketing } from './Components/Services/Digital_Marketing';
+import  Inventory_app  from './Components/Services/Inventory_app';
+import  Timesheet  from './Components/Services/Timesheet';
+import  MOI_Soft  from './Components/Services/MOI_Soft';
+import  Customer_Management  from './Components/Services/Customer_Management';
+import  Event_App  from './Components/Services/Event_App';
+import  Digital_Marketing  from './Components/Services/Digital_Marketing';
 
 function App() {
   return (
