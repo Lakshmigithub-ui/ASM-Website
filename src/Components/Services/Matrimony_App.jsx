@@ -46,7 +46,7 @@ const MatrimonyApp = () => {
 
       {/* How It Works Section */}
       <section className="relative bg-gray-800 p-12 rounded-lg shadow-lg mb-12">
-        <div className="absolute inset-0 w-full h-full object-cover opacity-30 z-[-1]" style={{ backgroundImage: "url('path/to/your/how-it-works-background.jpg')" }} />
+        <div className="absolute inset-0 w-full h-full object-cover opacity-30 z-[-1]" style={{ backgroundImage: "url('/Assets/matrimony_app.avif')" }} > </div>
         <div className="relative z-10 text-center">
           <h2 className="text-4xl font-bold mb-6" data-aos="fade-up">How It Works</h2>
           <div className="flex flex-col lg:flex-row justify-center">
