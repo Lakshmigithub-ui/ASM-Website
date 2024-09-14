@@ -13,25 +13,22 @@ const slides = [
     {
         image: slider_image1,
         text: {
-            p: "We Design Delightful Customer Experience",
-            h2: "Partnering with brands, agencies, and start-ups to create engaging content and meaningful experiences.",
-            h3: "Learn more about our services and portfolio"
+            h2: "Empowering Businesses with Cutting-Edge Web Development",
+            p: "Our web development services are designed to help businesses thrive in the digital age. We create fast, secure, and responsive websites that deliver an exceptional user experience. Whether it's a simple website or a complex web application, we bring your vision to life with innovative technologies and solutions tailored to your needs."
         }
     },
     {
         image: slider_image2,
         text: {
-            p: "Crafting Innovative Digital Solutions",
-            h2: "Creating cutting-edge digital experiences that drive engagement and success.",
-            h3: "Discover our approach and success stories"
+            h2: "Innovative Mobile Development for a Connected World",
+            p: "Crafting Innovative Digital Solutions.  We specialize in creating high-performance mobile apps that engage users and drive business growth. From iOS to Android, our mobile development solutions are tailored to deliver seamless user experiences on any device. With cutting-edge technologies and a focus on quality, we bring your ideas to life in the mobile-first era."
         }
     },
     {
         image: slider_image3,
         text: {
-            p: "Transforming Ideas into Reality",
-            h2: "Turning visions into reality with tailored digital strategies and designs.",
-            h3: "Explore our case studies and services"
+            h2: "Boost Your Online Presence with Expert Digital Marketing",
+            p: "Our digital marketing strategies are designed to increase your brand visibility and drive meaningful engagement. From SEO to social media campaigns, we create data-driven solutions tailored to your business goals. Let us help you reach your audience effectively and grow your business in the competitive online landscape."
         }
     }
 ];
@@ -58,8 +55,6 @@ const Hero = () => {
 
     return (
         <div className="relative bg-gray-900 text-white py-16 px-4 md:px-8">
-            {/* <Navbar /> */}
-
             {/* Background Video */}
             <video
                 autoPlay
@@ -67,7 +62,6 @@ const Hero = () => {
                 muted
                 className="absolute inset-0 w-full h-full object-cover z-0"
             >
-                {/* <source src={background_video} type="video/mp4" /> */}
                 <source src={background_video3} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -80,19 +74,46 @@ const Hero = () => {
                     {slides.map((slide, index) => (
                         <div
                             key={index}
-                            className="relative flex flex-col lg:flex-row items-center justify-center lg:justify-between text-center lg:text-left p-4 md:p-8"
+                            className="relative flex flex-col lg:flex-row items-center justify-between p-4 md:p-8"
                         >
-                            <div className="lg:w-1/2 max-w-xl lg:max-w-md lg:pr-8" data-aos="fade-up" data-aos-delay={index * 100}>
-                                <p className="text-lg mb-4" data-aos="fade-up" data-aos-delay={index * 200}>{slide.text.p}</p>
-                                <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay={index * 300}>{slide.text.h2}</h2>
-                                <h3 className="text-xl mb-6" data-aos="fade-up" data-aos-delay={index * 400}>{slide.text.h3}</h3>
-                                <Link to='/GetQuote'>
-                                    <button className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300">
-                                        Get Quote
-                                    </button>
-                                </Link>
-                            </div>
+                            <div className="flex lg:flex-row flex-col">
+                                {/* Text on the left */}
+                                <div className='m-9'>
+                                    <h2 
+                                        className="text-3xl md:text-4xl font-bold mb-4"
+                                        data-aos="fade-up"
+                                        data-aos-delay={index * 300}
+                                    >
+                                        {slide.text.h2}
+                                    </h2>
+                                    <p 
+                                        className="text-lg mb-4"
+                                        data-aos="fade-up"
+                                        data-aos-delay={index * 400}
+                                    >
+                                        {slide.text.p}
+                                    </p>
+                                    <br />
+                                    <Link to='/GetQuote'>
+                                        <button
+                                            className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+                                            data-aos="fade-up"
+                                            data-aos-delay={index * 500}
+                                        >
+                                            Get Quote
+                                        </button>
+                                    </Link>
+                                </div>
 
+                                {/* Image on the right */}
+                                <img
+                                    src={slide.image}
+                                    alt="Slide image"
+                                    className="w-full h-auto max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
+                                    data-aos="fade-left"
+                                    data-aos-delay={index * 600}
+                                />
+                            </div>
                         </div>
                     ))}
                 </Slider>
