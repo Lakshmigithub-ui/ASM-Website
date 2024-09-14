@@ -12,7 +12,7 @@ const services = [
   { title: 'Matrimony App', description: 'Custom matrimonial platforms designed to connect people and help them find meaningful relationships.', icon: FaHeart, link: '/matrimony_app' },
   { title: 'Billing Software',description: 'Innovative billing solutions that streamline invoicing, payments, and financial reporting for your business.', icon: FaFileInvoiceDollar, link: '/billing' },
   { title: 'CRM', description: 'Robust CRM systems to enhance customer relationships and manage interactions efficiently.', icon: FaUsers, link: '/crm' },
-  { title: 'E-Commerce', description: 'Powerful e-commerce solutions to elevate your online store and drive sales.', icon: FaShoppingCart, link: '/e_commerce' },
+  { title: 'E-Commerce', description: ' Powerful e-commerce solutions to elevate your online store and drive sales.', icon: FaShoppingCart, link: '/e_commerce' },
   { title: 'Inventory App',  description: 'Simplify inventory management with our smart and user-friendly inventory control applications.', icon: FaBoxes, link: '/inventory_app' },
   { title: 'Timesheet', description: 'Track employee time and productivity efficiently with our timesheet software.', icon: FaClock, link: '/time_sheet' },
   { title: 'MOI Soft',  description: 'Specialized software solutions designed to meet specific industry needs and challenges.', icon: FaIndustry,link: '/moi_soft' },
@@ -66,15 +66,16 @@ const Services = () => {
               data-aos="zoom-in"
               data-aos-delay={index * 100} // Staggered animation
             >
-              <div className="bg-gray-800 p-4 px-7 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+              <div className="bg-gray-800 flex flex-col items-center justify-between min-h-[300px] min-w-[250px] p-6 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 <div className="text-center">
-                  <service.icon className="text-4xl mx-auto text-pink-600" />
+                  <service.icon className="text-4xl mx-auto text-customBlue" />
                 </div>
+               
                 <h2 className="text-lg text-center font-medium mb-2">{service.title}</h2>
                 <p className="text-center text-sm font-light mb-4">{service.description}</p>
-                <div className="text-center">
-                  <Link to={service.link} className="text-indigo-500 font-semibold hover:underline">
-                   Read More
+                <div className="text-center ">
+                  <Link to={service.link} className="text-customBlue font-semibold hover:underline">
+                    Read More
                   </Link>
                 </div>
               </div>
