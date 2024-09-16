@@ -102,7 +102,7 @@ const WebAppDevelopment = () => {
     <div className="bg-gray-900 text-white min-h-screen relative">
       {/* Background Animation */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 opacity-40" data-aos="fade" data-aos-duration="1500"></div>
+        <div className="absolute inset-0 bg-gradient-to-r bg-gray-900 opacity-40" data-aos="fade" data-aos-duration="1500"></div>
         <div className="absolute inset-0 bg-[url('https://example.com/background-image.jpg')] bg-cover bg-center opacity-60"></div>
       </div>
 
@@ -110,17 +110,17 @@ const WebAppDevelopment = () => {
       <div className="relative z-10 p-8 lg:p-16">
         {/* Hero Section */}
         <section className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-4" data-aos="fade-up">Elevate Your Business with Cutting-Edge Web Development</h1>
-          <p className="text-lg mb-8" data-aos="fade-up" data-aos-delay="200">Our web development services deliver innovative solutions that drive success and growth for your business.</p>
-          <button className="bg-teal-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button>
+          <h1 className="text-lg font-bold mb-4" data-aos="fade-up">Elevate Your Business with Cutting-Edge Web Development</h1>
+          <p className="text-sm mb-8" data-aos="fade-up" data-aos-delay="200">Our web development services deliver innovative solutions that drive success and growth for your business.</p>
+          <button className=" text-sm bg-teal-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button>
         </section>
 
         {/* Key Features Section */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg" data-aos="fade-right">
-            <h2 className="text-3xl font-semibold mb-4">Why Choose Us?</h2>
-            <p className="text-lg mb-4">We blend creativity and technology to build web applications that are not only functional but also visually stunning.</p>
-            <ul className="list-disc list-inside space-y-2">
+            <h2 className="text-lg font-semibold mb-4">Why Choose Us?</h2>
+            <p className="text-sm mb-4">We blend creativity and technology to build web applications that are not only functional but also visually stunning.</p>
+            <ul className=" text-sm list-disc list-inside space-y-2">
               <li>Custom Solutions Tailored to Your Needs</li>
               <li>Responsive and Mobile-Friendly Designs</li>
               <li>Seamless Integration with Third-Party Services</li>
@@ -134,22 +134,22 @@ const WebAppDevelopment = () => {
 
         {/* Features Section */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-lg mb-16" data-aos="fade-up">
-          <h2 className="text-3xl font-semibold mb-6 text-center">Our Core Features</h2>
+          <h2 className="text-lg font-semibold mb-6 text-center">Our Core Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center" data-aos="fade-up">
               <img src={weblogo1} alt="Feature 1" className="w-16 h-16 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Innovative Design</h3>
-              <p>Engage users with a unique and modern design tailored to your brand.</p>
+              <h3 className="text-lg font-semibold mb-2">Innovative Design</h3>
+              <p className='text-sm'>Engage users with a unique and modern design tailored to your brand.</p>
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="200">
               <img src={weblogo2} alt="Feature 2" className="w-16 h-16 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Advanced Technology</h3>
-              <p>Utilize the latest technology to ensure high performance and scalability.</p>
+              <h3 className="text-sm font-semibold mb-2">Advanced Technology</h3>
+              <p className='text-sm'>Utilize the latest technology to ensure high performance and scalability.</p>
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="400">
               <img src={weblogo3} alt="Feature 3" className="w-16 h-16 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Dedicated Support</h3>
-              <p>Receive ongoing support to keep your web app up-to-date and fully functional.</p>
+              <h3 className="text-sm font-semibold mb-2">Dedicated Support</h3>
+              <p className='text-sm'>Receive ongoing support to keep your web app up-to-date and fully functional.</p>
             </div>
           </div>
         </section>
@@ -157,9 +157,9 @@ const WebAppDevelopment = () => {
 
         {/* Call to Action Section */}
         <footer className="text-center">
-          <h2 className="text-3xl font-semibold mb-4" data-aos="fade-up">Ready to Take Your Web Presence to the Next Level?</h2>
-          <p className="text-lg mb-6">Contact us today to discuss your web app development needs and get a customized plan.</p>
-          <button className="bg-teal-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
+          <h2 className="text-lg font-semibold mb-4" data-aos="fade-up">Ready to Take Your Web Presence to the Next Level?</h2>
+          <p className="text-sm mb-6">Contact us today to discuss your web app development needs and get a customized plan.</p>
+          <button className=" text-sm bg-teal-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
         </footer>
       </div>
     </div>

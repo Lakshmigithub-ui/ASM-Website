@@ -1,8 +1,8 @@
-import React from 'react';
-import { CSSTransition } from 'react-transition-group';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCashRegister, faUsers, faHeadset, faFileInvoice, faChartLine, faUserCog, faIndustry } from '@fortawesome/free-solid-svg-icons';
-import './Billing.css'; // Custom CSS for animations
 import billing from "../Assets/billing.avif";
 
 const sections = [
@@ -18,60 +18,74 @@ const industries = [
   "Supermarkets",
   "Garments & Textiles",
   "Pharmacies",
-  "Grocery Stores",
-  "Department Stores",
   "Textile Mills",
   "Footwear Stores",
   "Furniture Stores",
   "Electronics Stores",
   "Automobile Dealerships",
-  "Stationery Shops",
-  "Home Decor and Furnishing Stores",
 ];
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="bg-gray-900 text-white min-h-screen p-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">Enhance Your Business Operations with Advanced Retail Billing Software</h1>
-      <p className="text-xl mb-6 text-center">Let’s discuss your business. Get a personalized plan to go online.</p>
+      <h1 className="text-lg font-medium mb-6 text-center" data-aos="fade-down">Enhance Your Business Operations with Advanced Retail Billing Software</h1>
+      <p className="text-sm mb-6 text-center" data-aos="fade-up">Let’s discuss your business. Get a personalized plan to go online.</p>
       <div className="flex justify-center mb-6">
-        <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Book a Demo</button>
+        <button className=" text-sm bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-aos="fade-up">Book a Demo</button>
       </div>
+      
+      {/* Section with Image on the left and paragraph on the right */}
+      <div className="flex flex-col lg:flex-row items-center lg:space-x-6 mb-12" data-aos="fade-up">
+        <div className="lg:w-1/2">
+          <img src={billing} alt="Billing Software" className="rounded-lg shadow-lg mb-4 lg:mb-0" />
+        </div>
+        <div className="lg:w-1/2 text-lg space-y-4">
+          <h2 className="text-lg font-medium">Why Choose Our Billing Software?</h2>
+          <p className='text-sm'>Our advanced billing software is designed to streamline your business operations, making transactions quick, accurate, and efficient. With features such as POS systems, GST compliance, and real-time MIS, we ensure your business remains productive and compliant, no matter the industry.</p>
+          <p className='text-sm'>Whether you operate a supermarket, textile mill, or electronics store, our tailored solutions offer reliable financial management, customer support, and detailed reporting to enhance every aspect of your business.</p>
+        </div>
+      </div>
+
       <div className="mb-8 text-center">
-      <img src={billing} alt="Billing Software" className="mx-auto mb-4 rounded-lg shadow-lg" />
-        <h2 className="text-2xl font-semibold mb-4 text-center">Industries We Serve</h2>
+        <h2 className="text-lg font-medium mb-4 text-center" data-aos="fade-up">Industries We Serve</h2>
         <div className="relative overflow-hidden">
           <div className="animate-slide flex space-x-4">
             {industries.map((industry, index) => (
-              <div key={index} className="bg-gray-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-transform hover:scale-105">
+              <div key={index} className="bg-gray-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-transform hover:scale-105" data-aos="fade-left" data-aos-delay={index * 100}>
                 <FontAwesomeIcon icon={faIndustry} className="text-blue-400 text-2xl" />
-                <span className="text-lg font-medium">{industry}</span>
+                <span className="text-sm font-medium">{industry}</span>
               </div>
             ))}
           </div>
         </div>
       </div>
+
       <div className="grid gap-8 lg:grid-cols-2">
         {sections.map((section, index) => (
-          <CSSTransition
+          <div
             key={index}
-            timeout={500}
-            classNames="fade"
-            in={true}
-            appear={true}
+            className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105"
+            data-aos="fade-right"
+            data-aos-delay={index * 200}
           >
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
-              <div className="flex items-center mb-4">
-                <FontAwesomeIcon icon={section.icon} className="text-blue-400 text-3xl mr-3" />
-                <h2 className="text-2xl font-semibold">{section.title}</h2>
-              </div>
-              <ul className="list-disc list-inside space-y-2 text-lg">
-                {section.content.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
+            <div className="flex items-center mb-4">
+              <FontAwesomeIcon icon={section.icon} className="text-blue-400 text-3xl mr-3" />
+              <h2 className="text-lg font-medium">{section.title}</h2>
             </div>
-          </CSSTransition>
+            <ul className="list-disc list-inside space-y-2 text-sm">
+              {section.content.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
     </div>
@@ -79,5 +93,3 @@ const App = () => {
 }
 
 export default App;
-
-
