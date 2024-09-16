@@ -42,7 +42,7 @@ const AboutUs = () => {
         {/* Third Column: Location Map */}
         <div data-aos="fade-up" data-aos-delay="400" className="space-y-4">
           <h2 className="text-2xl font-bold">Location Map</h2>
-          <iframe
+          {/* <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.504947354083!2d80.21139551533138!3d13.061208990802695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52662789e0c0f9%3A0x65fd469c4a9b8ae1!2sASM%20Infotech!5e0!3m2!1sen!2sin!4v1638806556216!5m2!1sen!2sin"
             width="100%"
             height="250"
@@ -50,7 +50,17 @@ const AboutUs = () => {
             loading="lazy"
             title="ASM Infotech Location"
             className="rounded-lg shadow-lg"
-          ></iframe>
+          ></iframe> */}
+          <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.008616566269!2d80.1371654!3d13.0492177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266e5dd033e69%3A0x99d83eb38c1a12b5!2s23%2C%20FIRST%20FLOOR%2C%208th%20Street%2C%20Kamaraj%20Colony%2C%20Kodambakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600019!5e0!3m2!1sen!2sin!4v1694864262758!5m2!1sen!2sin"
+  width="100%"
+  height="250"
+  allowFullScreen=""
+  loading="lazy"
+  title="ASM Infotech Location"
+  className="rounded-lg shadow-lg"
+></iframe>
+
         </div>
       </div>
 
