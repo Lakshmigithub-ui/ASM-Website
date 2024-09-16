@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-gray-900 text-white sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
@@ -20,13 +20,13 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex items-center space-x-4">
-                        <Link to="/" className="px-3 py-2 rounded-md text-lg font-medium hover:bg-gray-700">Home</Link>
-                        <Link to="/work" className="px-3 py-2 rounded-md text-lg font-medium hover:bg-gray-700">Work</Link>
+                    <div className=" hidden md:flex items-center space-x-4">
+                        <Link to="/" className=" px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Home</Link>
+                        <Link to="/work" className="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Work</Link>
 
                         {/* Services Dropdown */}
                         <div className="relative dropdown-container">
-                            <button className="px-4 py-2 flex items-center rounded-md text-lg font-medium hover:bg-gray-700 dropdown-toggle">
+                            <button className="px-4 py-2 flex items-center rounded-md text-base font-medium hover:bg-gray-700 dropdown-toggle">
                                 Services
                                 <FaChevronDown className="ml-2 transition-transform duration-200" />
                             </button>
@@ -48,8 +48,8 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <Link to="/aboutus" className="px-3 py-2 rounded-md text-lg font-medium hover:bg-gray-700">About</Link>
-                        <Link to="/contact" className="px-3 py-2 rounded-md text-lg font-medium hover:bg-gray-700">Contact</Link>
+                        <Link to="/aboutus" className="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</Link>
+                        <Link to="/contact" className="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Contact</Link>
                     </div>
 
                     {/* Mobile Menu Button */}

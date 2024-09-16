@@ -112,7 +112,7 @@ const CRMPage = () => {
             set of tools to help your business thrive. Join countless businesses that have revolutionized their operations 
             with our cutting-edge technology, and experience firsthand how we can help you grow.
           </p>
-          <button className="bg-teal-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105">
+          <button className="bg-customBlue text-white px-8 py-4 rounded-full shadow-lg hover:bg-customBlue transition-transform transform hover:scale-105">
             Get Started
           </button>
         </div>
@@ -129,30 +129,30 @@ const CRMPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Feature 1 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
-              <FontAwesomeIcon icon={faSyncAlt} className="text-teal-400 text-4xl mb-4" />
+              <FontAwesomeIcon icon={faSyncAlt} className="text-customBlue text-4xl mb-4" />
               <h3 className="text-sm font-semibold text-white mb-2">Seamless Integration</h3>
-              <p className="text-gray-300">Easily integrate with existing tools like ERP, email, and customer support systems.</p>
+              <p className="text-gray-300 text-sm">Easily integrate with existing tools like ERP, email, and customer support systems.</p>
             </div>
 
             {/* Feature 2 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
-              <FontAwesomeIcon icon={faChartBar} className="text-teal-400 text-4xl mb-4" />
+              <FontAwesomeIcon icon={faChartBar} className="text-customBlue text-4xl mb-4" />
               <h3 className="text-sm font-semibold text-white mb-2">Real-Time Analytics</h3>
-              <p className="text-gray-300">Track performance and monitor key metrics with real-time data visualization.</p>
+              <p className="text-gray-300 text-sm ">Track performance and monitor key metrics with real-time data visualization.</p>
             </div>
 
             {/* Feature 3 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition" data-aos="fade-up" data-aos-delay="300">
-              <FontAwesomeIcon icon={faUsers} className="text-teal-400 text-4xl mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Customer Management</h3>
-              <p className="text-gray-300">Manage customer data and interactions effectively with an intuitive interface.</p>
+              <FontAwesomeIcon icon={faUsers} className="text-customBlue text-4xl mb-4" />
+              <h3 className="text-sm font-semibold text-white mb-2">Customer Management</h3>
+              <p className="text-gray-300 text-sm">Manage customer data and interactions effectively with an intuitive interface.</p>
             </div>
 
             {/* Feature 4 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition" data-aos="fade-up" data-aos-delay="400">
-              <FontAwesomeIcon icon={faCog} className="text-teal-400 text-4xl mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Customizable Workflows</h3>
-              <p className="text-gray-300">Customize CRM workflows to match your business processes and goals.</p>
+              <FontAwesomeIcon icon={faCog} className="text-customBlue text-4xl mb-4" />
+              <h3 className="text-sm font-semibold text-white mb-2">Customizable Workflows</h3>
+              <p className="text-gray-300 text-sm">Customize CRM workflows to match your business processes and goals.</p>
             </div>
           </div>
         </div>
