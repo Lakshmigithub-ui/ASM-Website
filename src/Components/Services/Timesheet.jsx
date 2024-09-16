@@ -20,12 +20,12 @@ const TimeSheet = () => {
       {/* Hero Section */}
       <section className="py-16 px-4 md:px-8 bg-gray-800">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Time Tracking Simplified</h1>
-          <p className="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">
+          <h1 className="text-lg md:text-lg font-bold mb-4" data-aos="fade-up">Time Tracking Simplified</h1>
+          <p className="text-sm md:text-sm mb-8" data-aos="fade-up" data-aos-delay="200">
             Our TimeSheet application streamlines the process of tracking work hours, managing timesheets, and generating reports effortlessly.
           </p>
           <Link to="/get-started">
-            <button className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+            <button className="bg-blue-500 text-white text-sm py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300" data-aos="fade-up" data-aos-delay="400">
               Get Started
             </button>
           </Link>
@@ -39,24 +39,24 @@ const TimeSheet = () => {
             {/* Feature 1 */}
             <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
               <img src={timesheetImage1} alt="Real-Time Tracking" className="w-full h-48 object-cover rounded-t-lg mb-4" />
-              <h2 className="text-xl font-semibold mb-2">Real-Time Tracking</h2>
-              <p className="text-gray-400">
+              <h2 className="text-lg font-semibold mb-2">Real-Time Tracking</h2>
+              <p className="text-gray-400 text-sm">
                 Keep track of work hours as they happen. Our app provides real-time updates and notifications.
               </p>
             </div>
             {/* Feature 2 */}
             <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
               <img src={timesheetImage2} alt="Automated Reports" className="w-full h-48 object-cover rounded-t-lg mb-4" />
-              <h2 className="text-xl font-semibold mb-2">Automated Reports</h2>
-              <p className="text-gray-400">
+              <h2 className="text-lg font-semibold mb-2">Automated Reports</h2>
+              <p className="text-gray-400 text-sm">
                 Generate detailed reports automatically. Customizable templates make reporting straightforward and efficient.
               </p>
             </div>
             {/* Feature 3 */}
             <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
               <img src={timesheetImage3} alt="Team Management" className="w-full h-48 object-cover rounded-t-lg mb-4" />
-              <h2 className="text-xl font-semibold mb-2">Team Management</h2>
-              <p className="text-gray-400">
+              <h2 className="text-lg font-semibold mb-2">Team Management</h2>
+              <p className="text-gray-400 text-sm">
                 Manage team members and track their hours. Approve timesheets and handle payroll seamlessly.
               </p>
             </div>
@@ -67,8 +67,8 @@ const TimeSheet = () => {
       {/* How It Works Section */}
       <section className="py-16 px-4 md:px-8 bg-gray-800">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">How It Works</h2>
-          <p className="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">
+          <h2 className="text-lg md:text-lg font-bold mb-4" data-aos="fade-up">How It Works</h2>
+          <p className="text-sm md:text-lg mb-8" data-aos="fade-up" data-aos-delay="200">
             Our TimeSheet app simplifies time tracking with a user-friendly interface and intuitive features.
           </p>
           <div className="flex flex-col lg:flex-row justify-center gap-8">
@@ -78,7 +78,7 @@ const TimeSheet = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-10v10a2 2 0 01-2 2h-3.736a2 2 0 01-1.832-1.048L12 15l-1.464-2.928A2 2 0 017.736 11H4a2 2 0 01-2-2V2a2 2 0 012-2h3.736a2 2 0 011.832 1.048L12 9l1.464-2.928A2 2 0 0116.264 4H20a2 2 0 012 2z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Track Time</h3>
+              <h3 className="text-lg font-semibold mb-2">Track Time</h3>
               <p className="text-gray-400">
                 Start tracking time with just a few clicks. Our interface is designed for ease of use and minimal setup.
               </p>
@@ -89,7 +89,7 @@ const TimeSheet = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 14h12v4H6zm-2 0a2 2 0 01-2-2V6a2 2 0 012-2h12a2 2 0 012 2v6h-2V6H6v8H4v-2z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Generate Reports</h3>
+              <h3 className="text-lg font-semibold mb-2">Generate Reports</h3>
               <p className="text-gray-400">
                 Automatically generate reports based on the tracked time. Customize and export as needed.
               </p>
@@ -100,7 +100,7 @@ const TimeSheet = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 6h8v4H8zm0 4h8v4H8z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Manage Payroll</h3>
+              <h3 className="text-lg font-semibold mb-2">Manage Payroll</h3>
               <p className="text-gray-400">
                 Efficiently manage payroll by integrating with timesheet data. Ensure accurate and timely payments.
               </p>
