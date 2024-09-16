@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import GetQuote from './Components/GetQuote';
 // import LoginSignup from './Pages/LoginSignup';
 // import Anime from './Components/Anime/Anime';
+import ScrollToTop from './Components/ScrollToTop';
 import Home from './Components/Home';
 import { Work } from './Components/Work';
 import  Web_Development  from './Components/Services/Web_Development';
@@ -30,6 +31,7 @@ function App() {
     <div >
       <BrowserRouter>
       <Navbar/>
+      <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/work' element={<Work/>}></Route>
