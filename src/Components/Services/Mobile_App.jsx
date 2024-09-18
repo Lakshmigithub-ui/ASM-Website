@@ -200,7 +200,7 @@ const MobileAppDevelopment = () => {
       <section className="mb-12">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
-            <img src={mobile_application} alt="Mobile App" className="w-full h-auto max-w-xs rounded-lg shadow-lg" /> {/* Added max-w-xs */}
+            <img src={mobile_application} alt="Mobile App" className="w-full h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
           </div>
           <div className="lg:w-1/2 lg:pl-8" data-aos="fade-left">
             <h2 className="text-lg font-semibold mb-4">Our Expertise</h2>
