@@ -111,27 +111,32 @@ const WebAppDevelopment = () => {
         {/* Hero Section */}
         <section className="text-center mb-16">
           <h1 className="text-lg font-bold mb-4" data-aos="fade-up">Elevate Your Business with Cutting-Edge Web Development</h1>
-          <p className="text-sm mb-8" data-aos="fade-up" data-aos-delay="200">Our web development services deliver innovative solutions that drive success and growth for your business.</p>
-          <button className=" text-sm bg-teal-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button>
+          <p className="text-sm mb-8" data-aos="fade-up" data-aos-delay="200">Our web development services specialize in creating dynamic, user-friendly websites tailored to your business needs. From sleek designs to seamless functionality, we ensure your website not only looks great but also delivers an exceptional user experience, helping you connect with your audience and drive business growth.</p>
+          <button className=" text-sm bg-customBlue text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button>
         </section>
 
-        {/* Key Features Section */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg" data-aos="fade-right">
-            <h2 className="text-lg font-semibold mb-4">Why Choose Us?</h2>
-            <p className="text-sm mb-4">We blend creativity and technology to build web applications that are not only functional but also visually stunning.</p>
-            <ul className=" text-sm list-disc list-inside space-y-2">
-              <li>Custom Solutions Tailored to Your Needs</li>
-              <li>Responsive and Mobile-Friendly Designs</li>
-              <li>Seamless Integration with Third-Party Services</li>
-              <li>Ongoing Support and Maintenance</li>
-            </ul>
-          </div>
-          <div className="flex items-center justify-center" data-aos="fade-left">
-            <img src={web_development1} alt="Web Development" className="w-full h-auto rounded-lg shadow-lg" />
-          </div>
-        </section>
-
+{/* Key Features Section */}
+<section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+  <div className="bg-gray-800 p-8 rounded-lg shadow-lg" data-aos="fade-right">
+    <h2 className="text-lg font-semibold mb-4">Why Choose Us?</h2>
+    <p className="text-sm mb-4">
+      We blend creativity and technology to build web applications that are not only functional but also visually stunning.
+    </p>
+    <ul className="text-sm list-disc list-inside space-y-2">
+      <li>Custom Solutions Tailored to Your Needs</li>
+      <li>Responsive and Mobile-Friendly Designs</li>
+      <li>Seamless Integration with Third-Party Services</li>
+      <li>Ongoing Support and Maintenance</li>
+      <li>Fast and Optimized Performance</li>
+      <li>Scalable Architecture for Future Growth</li>
+      <li>Enhanced Security and Data Protection</li>
+      <li>User-Centric Design for Better Engagement</li>
+    </ul>
+  </div>
+  <div className="flex items-center justify-center" data-aos="fade-left">
+    <img src={web_development1} alt="Web Development" className="w-full h-auto rounded-lg shadow-lg" />
+  </div>
+</section>
         {/* Features Section */}
         <section className="bg-gray-800 p-8 rounded-lg shadow-lg mb-16" data-aos="fade-up">
           <h2 className="text-lg font-semibold mb-6 text-center">Our Core Features</h2>
@@ -159,7 +164,7 @@ const WebAppDevelopment = () => {
         <footer className="text-center">
           <h2 className="text-lg font-semibold mb-4" data-aos="fade-up">Ready to Take Your Web Presence to the Next Level?</h2>
           <p className="text-sm mb-6">Contact us today to discuss your web app development needs and get a customized plan.</p>
-          <button className=" text-sm bg-teal-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
+          <button className=" text-sm bg-customBlue text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
         </footer>
       </div>
     </div>
