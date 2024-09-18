@@ -38,9 +38,9 @@ const Gettouch = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white py-12 px-6 lg:px-16 flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-4" data-aos="fade-up">Have a project in mind?</h2>
-      <p className="text-lg mb-6" data-aos="fade-up" data-aos-delay="200">
+    <div className="bg-gray-800 text-slate-200 py-12 px-6 lg:px-16 flex flex-col items-center">
+      <h2 className="text-2xl font-semibold mb-4" data-aos="fade-up">Have a project in mind?</h2>
+      <p className="text-lg font-medium mb-6" data-aos="fade-up" data-aos-delay="200">
         We&apos;d love to help you. Drop us a note using the form below. We will get back to you within 24 hours.
       </p>
       <button 
