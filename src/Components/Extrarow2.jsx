@@ -18,10 +18,10 @@ const ImageBoxes = () => {
   ];
 
   return (
-    <div className="py-16 px-4 md:px-8 bg-gray-900 text-white">
+    <div className="py-16 px-4 md:px-8 bg-gray-900 text-slate-200">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Caring is the New Marketing</h1>
-        <p className="text-lg md:text-xl mb-12" data-aos="fade-up" data-aos-delay="200">
+        <h1 className="text-xl md:text-2xl font-bold mb-4" data-aos="fade-up">Caring is the New Marketing</h1>
+        <p className="text-sm md:text-xl mb-12" data-aos="fade-up" data-aos-delay="200">
           By fulfilling the responsibilities, a software company can deliver high-quality products, maintain strong client relationships, and achieve long-term business success.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
