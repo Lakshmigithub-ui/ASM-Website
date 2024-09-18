@@ -80,14 +80,14 @@ const Hero = () => {
                                 {/* Text on the left */}
                                 <div className='m-9'>
                                     <h2 
-                                        className="text-3xl md:text-4xl font-bold mb-4"
+                                        className="text-3xl md:text-3xl font-semibold mb-4"
                                         data-aos="fade-up"
                                         data-aos-delay={index * 300}
                                     >
                                         {slide.text.h2}
                                     </h2>
                                     <p 
-                                        className="text-lg mb-4"
+                                        className="text-lg mb-4 font-medium"
                                         data-aos="fade-up"
                                         data-aos-delay={index * 400}
                                     >
