@@ -11,7 +11,7 @@ const Extrarow3 = () => {
   }, []);
 
   return (
-    <section className="smart_solutions bg-slate-800 text-white py-12">
+    <section className="smart_solutions bg-slate-800 text-slate-200 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full">
@@ -20,7 +20,7 @@ const Extrarow3 = () => {
                 data-aos="fade-down"
                 data-aos-delay="100"
                 data-aos-easing="ease"
-                className="text-4xl font-bold aos-init aos-animate"
+                className="text-2xl font-bold aos-init aos-animate"
               >
                 "Sustainable Innovations for Global Impact"
               </h1>
@@ -28,7 +28,7 @@ const Extrarow3 = () => {
                 data-aos="fade-up"
                 data-aos-delay="110"
                 data-aos-easing="ease"
-                className="mt-4 text-lg aos-init aos-animate"
+                className="mt-4 text-lsm aos-init aos-animate"
               >
 
 "ASM Infotech empowers businesses with cutting-edge billing software, innovative digital marketing, and top-tier web and mobile app development. We streamline financial management, amplify brand visibility, and create robust, responsive solutions that drive success in a digital-first world."              </p>
@@ -70,7 +70,7 @@ const Extrarow3 = () => {
                       data-aos="fade-up"
                       data-aos-delay="130"
                       data-aos-easing="ease"
-                      className="text-3xl font-semibold aos-init aos-animate"
+                      className="text-xl font-semibold aos-init aos-animate"
                     >
                       <CountUp start={0} end={item.number} duration={3} prefix={item.prefix || ''} suffix={item.suffix || ''} />
                     </h3>
@@ -78,7 +78,7 @@ const Extrarow3 = () => {
                       data-aos="fade-up"
                       data-aos-delay="150"
                       data-aos-easing="ease"
-                      className="text-lg aos-init aos-animate"
+                      className="text-sm aos-init aos-animate"
                     >
                       {item.label}
                     </p>
