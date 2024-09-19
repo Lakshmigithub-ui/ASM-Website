@@ -19,7 +19,7 @@ const Extrarow1 = () => {
          About Us
         </h2>
         <br></br>
-        <p className="text-lg font-thin mb-4">
+        <p className="text-base font-thin mb-4">
 ASM Infotech, based in Chennai, is a creative agency specializing in responsive web development and online marketing. We offer web-based IT solutions, including website design, CMS, eCommerce, web applications, SEO, SEM, and digital marketing. Our services also include social media marketing, mobile app development, graphic design, and web hosting.
 
 We are committed to delivering customized solutions that meet our clients' unique needs and goals. From simple corporate websites to complex eCommerce platforms, we create tailor-made web solutions. As a local agency, we prioritize clear, interactive communication, ensuring we're always accessible to our clients.</p>

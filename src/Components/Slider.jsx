@@ -54,7 +54,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className="relative bg-gray-900 text-white py-16 px-4 md:px-8">
+        <div className="relative bg-gray-900 text-slate-200 py-16 px-4 md:px-8">
             {/* Background Video */}
             <video
                 autoPlay
@@ -87,7 +87,7 @@ const Hero = () => {
                                         {slide.text.h2}
                                     </h2>
                                     <p 
-                                        className="text-lg mb-4 font-medium"
+                                        className="text-base mb-4 font-medium"
                                         data-aos="fade-up"
                                         data-aos-delay={index * 400}
                                     >
