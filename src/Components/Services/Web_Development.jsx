@@ -112,7 +112,7 @@ const WebAppDevelopment = () => {
         <section className="text-center mb-16">
           <h1 className="text-lg font-bold mb-4" data-aos="fade-up">Elevate Your Business with Cutting-Edge Web Development</h1>
           <p className="text-sm mb-8" data-aos="fade-up" data-aos-delay="200">Our web development services specialize in creating dynamic, user-friendly websites tailored to your business needs. From sleek designs to seamless functionality, we ensure your website not only looks great but also delivers an exceptional user experience, helping you connect with your audience and drive business growth.</p>
-          <button className=" text-sm bg-customBlue text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button>
+          <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button>
         </section>
 
 {/* Key Features Section */}
@@ -164,7 +164,7 @@ const WebAppDevelopment = () => {
         <footer className="text-center">
           <h2 className="text-lg font-semibold mb-4" data-aos="fade-up">Ready to Take Your Web Presence to the Next Level?</h2>
           <p className="text-sm mb-6">Contact us today to discuss your web app development needs and get a customized plan.</p>
-          <button className=" text-sm bg-customBlue text-white px-8 py-4 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
+          <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
         </footer>
       </div>
     </div>

@@ -102,7 +102,7 @@ const CRMPage = () => {
       {/* Main Section with Paragraph and Image */}
       <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Left side: Big paragraph */}
-        <div className="lg:w-1/2 px-6" data-aos="fade-right">
+        <div className="lg:w-1/2 px-6" data-aos="fade-up">
           <h1 className="text-lg md:text-lg font-bold mb-6 text-gray-700">Empower Your Business with Our CRM Solutions</h1>
           <p className="text-sm md:text-sm text-gray-700 leading-relaxed mb-6">
             Our CRM solutions are designed to transform the way you manage your customer relationships. 
@@ -112,12 +112,12 @@ const CRMPage = () => {
             set of tools to help your business thrive. Join countless businesses that have revolutionized their operations 
             with our cutting-edge technology, and experience firsthand how we can help you grow.
           </p>
-          <button className="bg-customBlue text-white px-8 py-4 rounded-full shadow-lg hover:bg-customBlue transition-transform transform hover:scale-105">
+          <button className="bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-customBlue transition-transform transform hover:scale-105">
             Get Started
           </button>
         </div>
         {/* Right side: Large Image */}
-        <div className="lg:w-1/2 p-6" data-aos="fade-left">
+        <div className="lg:w-1/2 p-6" data-aos="fade-down">
           <img src={crm1} alt="CRM Software" className="rounded-lg shadow-lg w-full h-auto" />
         </div>
       </section>

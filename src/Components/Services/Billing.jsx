@@ -36,8 +36,8 @@ const App = () => {
 
   return (
     <div className="bg-slate-50 text-gray-700 min-h-screen p-8">
-      <h1 className="text-lg font-medium mb-6 text-center" data-aos="fade-down">Enhance Your Business Operations with Advanced Retail Billing Software</h1>
-      <p className="text-sm mb-6 text-center" data-aos="fade-up">Let’s discuss your business. Get a personalized plan to go online.</p>
+      <h1 className="text-lg font-semibold mb-6 text-center" data-aos="fade-down">Enhance Your Business Operations with Advanced Retail Billing Software</h1>
+      <p className="text-sm mb-6 text-center" data-aos="fade-up">Let’s discuss your business needs and goals. Whether you're just starting or looking to scale, we’re here to help you create a tailored strategy that maximizes your online presence. Our team of experts will analyze your unique requirements and craft a personalized plan to take your business online, ensuring growth and success in the digital world.</p>
       <div className="flex justify-center mb-6">
         <button className=" text-sm bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-aos="fade-up">Book a Demo</button>
       </div>
@@ -48,14 +48,14 @@ const App = () => {
           <img src={billing} alt="Billing Software" className="rounded-lg shadow-lg mb-4 lg:mb-0" />
         </div>
         <div className="lg:w-1/2 text-lg space-y-4">
-          <h2 className="text-lg font-medium">Why Choose Our Billing Software?</h2>
+          <h2 className="text-lg font-semibold">Why Choose Our Billing Software?</h2>
           <p className='text-sm'>Our advanced billing software is designed to streamline your business operations, making transactions quick, accurate, and efficient. With features such as POS systems, GST compliance, and real-time MIS, we ensure your business remains productive and compliant, no matter the industry.</p>
           <p className='text-sm'>Whether you operate a supermarket, textile mill, or electronics store, our tailored solutions offer reliable financial management, customer support, and detailed reporting to enhance every aspect of your business.</p>
         </div>
       </div>
 
       <div className="mb-8 text-center">
-        <h2 className="text-lg font-medium mb-4 text-center" data-aos="fade-up">Industries We Serve</h2>
+        <h2 className="text-lg font-semibold mb-4 text-center" data-aos="fade-up">Industries We Serve</h2>
         <div className="relative overflow-hidden">
           <div className="animate-slide flex space-x-4">
             {industries.map((industry, index) => (
