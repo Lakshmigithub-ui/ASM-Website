@@ -99,10 +99,10 @@ const WebAppDevelopment = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen relative">
+    <div className="bg-slate-50 text-gray-900 min-h-screen relative">
       {/* Background Animation */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r bg-gray-900 opacity-40" data-aos="fade" data-aos-duration="1500"></div>
+        <div className="absolute inset-0 bg-gradient-to-r bg-slate-50 opacity-40" data-aos="fade" data-aos-duration="1500"></div>
         <div className="absolute inset-0 bg-[url('https://example.com/background-image.jpg')] bg-cover bg-center opacity-60"></div>
       </div>
 
@@ -117,7 +117,7 @@ const WebAppDevelopment = () => {
 
 {/* Key Features Section */}
 <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-  <div className="bg-gray-800 p-8 rounded-lg shadow-lg" data-aos="fade-right">
+  <div className="bg-slate-50 p-8 rounded-lg shadow-lg" data-aos="fade-right">
     <h2 className="text-lg font-semibold mb-4">Why Choose Us?</h2>
     <p className="text-sm mb-4">
       We blend creativity and technology to build web applications that are not only functional but also visually stunning.

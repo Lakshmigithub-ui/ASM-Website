@@ -9,12 +9,12 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <footer className="bg-slate-100 text-gray-900 text-base py-14 px-4 md:px-8 lg:px-16">
+    <footer className="bg-slate-600 text-slate-200 text-base py-14 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* First Column: About Us */}
         <div data-aos="fade-up" className="space-y-4">
           {/* <h2 className="text-lg font-bold">About Us</h2> */}
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="bg-white p-2 border border-gray-200" />
           <br></br>
           <p className="max-w-prose text-sm">
             ASM Infotech is an internet consulting company focusing on the

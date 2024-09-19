@@ -2,9 +2,9 @@ import React from 'react';
 
 export const AboutUs = () => {
   return (
-    <div className="bg-gray-900 text-gray-200 p-8">
+    <div className="bg-slate-50 text-gray-900 p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-lg text-customBlue mb-6 border-b border-customBlue pb-2">
+        <h1 className="text-lg text-gray-900 font-semibold  mb-6 border-b border-customBlue pb-2">
           ASM Infotech Profile
         </h1>
         <p className="text-sm mb-6 leading-relaxed">

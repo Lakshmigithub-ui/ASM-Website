@@ -79,11 +79,11 @@ export const Work = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-slate-50 text-gray-900">
       <div className="py-8 px-4 max-w-screen-xl mx-auto">
         <div className="text-center mb-8" data-aos="fade-up">
           <h2 className="text-3xl font-bold mb-2">SHOWCASE OF OUR BEST</h2>
-          <span className="block h-1 w-32 bg-teal-500 mx-auto mb-4"></span>
+          <span className="block h-1 w-32 bg-customBlue mx-auto mb-4"></span>
           <p className="text-lg">
             We create websites and mobile apps. We believe those people are more engaging and that will be beneficial for your business.
           </p>
@@ -106,7 +106,7 @@ export const Work = () => {
           ].map((work, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-4 rounded-lg text-center"
+              className="bg-slate-100 p-4 rounded-lg text-center"
               data-aos="fade-up"
             >
               <img

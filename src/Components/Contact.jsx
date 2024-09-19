@@ -11,7 +11,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-900 text-white py-12 px-6">
+    <section id="contact" className="bg-slate-50 text-gray-700 py-12 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Get in Touch with Us</h2>
@@ -23,7 +23,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="lg:w-1/3 mb-8 lg:mb-0">
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
               <div className="flex items-start mb-4">
                 <FaMapMarkerAlt className="text-blue-400 text-2xl mr-4" />
                 <p className="text-lg">NO. 23, FIRST FLOOR, 8th Cross Street, Kamarajar Colony, Kodambakkam, Chennai, Tamil Nadu 600019.</p>
@@ -39,15 +39,15 @@ const Contact = () => {
             </div>
           </div>
           <div className="lg:w-2/3">
-            {messageSent && <div className="bg-green-600 text-white p-4 rounded mb-6">Your message has been sent. Thank you!</div>}
-            <form onSubmit={handleSubmit} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            {messageSent && <div className="bg-customBlue text-gray-900 p-4 rounded mb-6">Your message has been sent. Thank you!</div>}
+            <form onSubmit={handleSubmit} className="bg-slate-50 p-6 rounded-lg shadow-lg">
               <div className="mb-4">
                 <input 
                   type="text" 
                   name="name" 
                   placeholder="Your Name" 
                   required 
-                  className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full p-3 bg-slate-100 text-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
               <div className="mb-4">
@@ -56,7 +56,7 @@ const Contact = () => {
                   name="email" 
                   placeholder="Your Email" 
                   required 
-                  className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full p-3 bg-slate-100 text-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
               <div className="mb-4">
@@ -65,7 +65,7 @@ const Contact = () => {
                   name="subject" 
                   placeholder="Subject" 
                   required 
-                  className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full p-3 bg-slate-100 text-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
               <div className="mb-4">
@@ -74,7 +74,7 @@ const Contact = () => {
                   rows="5" 
                   placeholder="Message" 
                   required 
-                  className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full p-3 bg-slate-100 text-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
                 ></textarea>
               </div>
               <button 
