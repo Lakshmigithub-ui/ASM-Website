@@ -18,9 +18,9 @@ const Customer_Management = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-slate-50 text-gray-700">
       {/* Hero Section */}
-      <section className="py-20 px-4 md:px-8 bg-gray-800">
+      <section className="py-20 px-4 md:px-8 bg-slate-50">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Effortless Customer Management</h1>
           <p className="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">
@@ -35,47 +35,47 @@ const Customer_Management = () => {
       </section>
 
       {/* Key Features Section */}
-      <section className="py-20 px-4 md:px-8 bg-gray-900">
+      <section className="py-20 px-4 md:px-8 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Feature 1 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
               <img src={customerManagementImage1} alt="Customer Profiles" className="w-full h-48 object-cover rounded-t-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2">Customer Profiles</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Create and manage detailed customer profiles to keep track of interactions, preferences, and history all in one place.
               </p>
             </div>
             {/* Feature 2 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
               <img src={customerManagementImage2} alt="Automated Follow-Ups" className="w-full h-48 object-cover rounded-t-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2">Automated Follow-Ups</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Automate follow-up emails and reminders to ensure timely communication with your customers and enhance engagement.
               </p>
             </div>
             {/* Feature 3 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
               <img src={customerManagementImage3} alt="Advanced Analytics" className="w-full h-48 object-cover rounded-t-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2">Advanced Analytics</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Gain insights into customer behavior and trends with our advanced analytics tools, helping you make informed decisions.
               </p>
             </div>
             {/* Feature 4 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="800">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="800">
               <img src={customerManagementImage4} alt="Integration with Other Tools" className="w-full h-48 object-cover rounded-t-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2">Integration with Other Tools</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Seamlessly integrate with other applications such as CRM systems and email marketing tools to streamline your workflow.
               </p>
             </div>
             {/* Feature 5 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1000">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="1000">
               <img src={customerManagementImage5} alt="Mobile Accessibility" className="w-full h-48 object-cover rounded-t-lg mb-4" />
               <h3 className="text-xl font-semibold mb-2">Mobile Accessibility</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Access customer data and manage interactions from anywhere with our mobile-friendly design, ensuring you stay connected on the go.
               </p>
             </div>
@@ -84,43 +84,43 @@ const Customer_Management = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 px-4 md:px-8 bg-gray-800">
+      <section className="py-20 px-4 md:px-8 bg-slate-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">How It Works</h2>
           <div className="flex flex-col lg:flex-row justify-center gap-12">
             {/* Step 1 */}
-            <div className="flex flex-col items-center bg-gray-700 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+            <div className="flex flex-col items-center bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
               <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-12 h-12 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7h18M3 12h18m-6 5h6M5 17H3v-2h2v2zM17 17h2v-2h-2v2z"/>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2">Sign Up</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Register for the Customer Management App and create your account. The setup is quick and easy, so you can start managing your customers immediately.
               </p>
             </div>
             {/* Step 2 */}
-            <div className="flex flex-col items-center bg-gray-700 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+            <div className="flex flex-col items-center bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
               <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-12 h-12 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM5 7h14v10H5V7z"/>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2">Customize</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Tailor the app to fit your business needs. Customize customer fields, set up automated workflows, and adjust settings to suit your operations.
               </p>
             </div>
             {/* Step 3 */}
-            <div className="flex flex-col items-center bg-gray-700 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
+            <div className="flex flex-col items-center bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
               <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-12 h-12 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 7h10v10H7z"/>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2">Manage</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Start managing your customer interactions with ease. Use our intuitive dashboard to track customer details, monitor engagement, and generate reports.
               </p>
             </div>
@@ -130,7 +130,7 @@ const Customer_Management = () => {
 
 
       {/* Call to Action Section */}
-      <section className="py-20 px-4 md:px-8 bg-gray-800">
+      <section className="py-20 px-4 md:px-8 bg-slate-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Enhance Your Customer Management?</h2>
           <p className="text-lg md:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">

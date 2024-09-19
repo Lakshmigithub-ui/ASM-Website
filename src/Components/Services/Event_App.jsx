@@ -14,9 +14,9 @@ const Event_App = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-slate-50 text-gray-700">
       {/* Hero Section */}
-      <section className="relative bg-gray-800 overflow-hidden py-20 px-4 md:px-8">
+      <section className="relative bg-slate-50 overflow-hidden py-20 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           {/* Text Content */}
           <div className="md:w-1/2" data-aos="fade-right">
@@ -40,30 +40,30 @@ const Event_App = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4 md:px-8 bg-gray-900">
+      <section className="py-20 px-4 md:px-8 bg-slate-50">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">
             Key Features
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Feature 1 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
               <h3 className="text-xl font-semibold mb-2">Comprehensive Scheduling</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Efficiently manage all aspects of your event schedule, from session times to breaks, ensuring everything runs smoothly.
               </p>
             </div>
             {/* Feature 2 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
               <h3 className="text-xl font-semibold mb-2">Seamless Registration</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Simplify attendee registration with our easy-to-use online forms and keep track of all participant details effortlessly.
               </p>
             </div>
             {/* Feature 3 */}
-            <div className="bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
+            <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
               <h3 className="text-xl font-semibold mb-2">Real-Time Updates</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Keep your attendees informed with instant updates and notifications, ensuring they are always up-to-date with event changes.
               </p>
             </div>
@@ -72,45 +72,45 @@ const Event_App = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 px-4 md:px-8 bg-gray-800">
+      <section className="py-20 px-4 md:px-8 bg-slate-50">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">
             How It Works
           </h2>
           <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
             {/* Step 1 */}
-            <div className="flex flex-col items-center bg-gray-700 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+            <div className="flex flex-col items-center bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
               <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-12 h-12 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"/>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2">Set Up Your Event</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Create and customize your event by defining key details such as date, location, and agenda to fit your needs.
               </p>
             </div>
             {/* Step 2 */}
-            <div className="flex flex-col items-center bg-gray-700 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+            <div className="flex flex-col items-center bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
               <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-12 h-12 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12l5 5L20 7"/>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2">Manage Registrations</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Monitor and manage attendee registrations, view analytics, and keep track of all the important metrics.
               </p>
             </div>
             {/* Step 3 */}
-            <div className="flex flex-col items-center bg-gray-700 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
+            <div className="flex flex-col items-center bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
               <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-12 h-12 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2">Host and Execute</h3>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Execute your event with all the tools you need, including real-time updates, notifications, and a smooth user experience.
               </p>
             </div>
@@ -119,7 +119,7 @@ const Event_App = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 px-4 md:px-8 bg-gray-900">
+      <section className="py-20 px-4 md:px-8 bg-slate-50">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
             Ready to Transform Your Events?
