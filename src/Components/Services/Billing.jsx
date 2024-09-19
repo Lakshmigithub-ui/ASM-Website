@@ -35,7 +35,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen p-8">
+    <div className="bg-slate-50 text-gray-700 min-h-screen p-8">
       <h1 className="text-lg font-medium mb-6 text-center" data-aos="fade-down">Enhance Your Business Operations with Advanced Retail Billing Software</h1>
       <p className="text-sm mb-6 text-center" data-aos="fade-up">Let’s discuss your business. Get a personalized plan to go online.</p>
       <div className="flex justify-center mb-6">
@@ -59,7 +59,7 @@ const App = () => {
         <div className="relative overflow-hidden">
           <div className="animate-slide flex space-x-4">
             {industries.map((industry, index) => (
-              <div key={index} className="bg-gray-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-transform hover:scale-105" data-aos="fade-left" data-aos-delay={index * 100}>
+              <div key={index} className="bg-slate-50 text-gray-700 p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-transform hover:scale-105" data-aos="fade-left" data-aos-delay={index * 100}>
                 <FontAwesomeIcon icon={faIndustry} className="text-blue-400 text-2xl" />
                 <span className="text-sm font-medium">{industry}</span>
               </div>
@@ -72,7 +72,7 @@ const App = () => {
         {sections.map((section, index) => (
           <div
             key={index}
-            className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105"
+            className="bg-slate-50 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105"
             data-aos="fade-right"
             data-aos-delay={index * 200}
           >

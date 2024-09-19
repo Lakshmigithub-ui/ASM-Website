@@ -130,7 +130,7 @@ const MobileAppDevelopment = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen p-8">
+    <div className="bg-slate-50 text-gray-700 min-h-screen p-8">
       <header className="text-center mb-12">
         <h1 className="text-lg font-bold mb-4" data-aos="fade-down">Innovative Mobile App Development Services</h1>
         <p className="text-sm" data-aos="fade-up">"At ASM Infotech, we specialize in creating innovative mobile applications that are tailored to meet the unique needs of your business. Whether you're looking to build a high-performance iOS app, a versatile Android solution, or a cross-platform hybrid app, our expert team is equipped with the latest tools and technologies to deliver exceptional results. We focus on creating intuitive user interfaces, robust functionalities, and seamless performance to ensure your app not only meets industry standards but exceeds user expectations. From ideation to launch, we work closely with you to bring your vision to life, offering continued support and maintenance to keep your app running smoothly as your business grows."</p>
@@ -175,7 +175,7 @@ const MobileAppDevelopment = () => {
         </div>
       </section>
 
-      <section className="bg-gray-800 p-8 rounded-lg shadow-lg mb-12" data-aos="fade-up">
+      <section className="bg-slate-50 p-8 rounded-lg shadow-lg mb-12" data-aos="fade-up">
         <p className="text-sm mb-4 text-center">Our team is dedicated to delivering high-quality mobile applications that meet your business needs and exceed user expectations.</p>
         <div className="flex flex-col lg:flex-row justify-around">
           <div className="lg:w-1/3 mb-8 lg:mb-0 text-center">

@@ -99,7 +99,7 @@ const WebAppDevelopment = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-900 min-h-screen relative">
+    <div className="bg-slate-50 text-gray-700 min-h-screen relative">
       {/* Background Animation */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r bg-slate-50 opacity-40" data-aos="fade" data-aos-duration="1500"></div>
@@ -138,7 +138,7 @@ const WebAppDevelopment = () => {
   </div>
 </section>
         {/* Features Section */}
-        <section className="bg-gray-800 p-8 rounded-lg shadow-lg mb-16" data-aos="fade-up">
+        <section className="bg-slate-50 p-8 rounded-lg shadow-lg mb-16" data-aos="fade-up">
           <h2 className="text-lg font-semibold mb-6 text-center">Our Core Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center" data-aos="fade-up">
