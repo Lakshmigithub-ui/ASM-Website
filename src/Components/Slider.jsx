@@ -54,8 +54,8 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className="relative bg-gray-900 text-slate-200 py-16 px-4 md:px-8">
-            {/* Background Video */}
+        <div className="relative bg-slate-50 text-gray-700 py-16 px-4 md:px-8">
+            {/* Background Video
             <video
                 autoPlay
                 loop
@@ -65,9 +65,9 @@ const Hero = () => {
                 <source src={background_video3} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-
+ */}
             {/* Overlay to darken the background video for better text visibility */}
-            <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+            <div className="absolute inset-0 bg-slate-50 opacity-50 z-10"></div>
 
             <div className="relative z-20">
                 <Slider {...settings}>

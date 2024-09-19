@@ -10,7 +10,7 @@ const Extrarow1 = () => {
   }, []);
 
   return (
-    <div className="bg-slate-800 text-slate-200 py-12 px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
+    <div className="bg-white text-gray-700 py-12 px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
       <div
         className="lg:w-1/2 mb-8 lg:mb-0"
         data-aos="fade-up" // Animate the text when it scrolls into view

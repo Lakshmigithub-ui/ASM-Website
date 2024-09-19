@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import logo from "./Assets/logo.png"
 
 const AboutUs = () => {
   useEffect(() => {
@@ -8,11 +9,13 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <footer className="bg-gray-900 text-slate-300 py-16 px-4 md:px-8 lg:px-16">
+    <footer className="bg-slate-100 text-gray-900 text-base py-14 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* First Column: About Us */}
         <div data-aos="fade-up" className="space-y-4">
-          <h2 className="text-lg font-bold">About Us</h2>
+          {/* <h2 className="text-lg font-bold">About Us</h2> */}
+          <img src={logo} alt="logo" />
+          <br></br>
           <p className="max-w-prose text-sm">
             ASM Infotech is an internet consulting company focusing on the
             efficient use of internet and web technologies in business. We have
@@ -27,7 +30,7 @@ const AboutUs = () => {
         </div>
 
         {/* Second Column: Reach Us */}
-        <div data-aos="fade-up" data-aos-delay="200" className="space-y-4">
+        <div data-aos="fade-up" data-aos-delay="200" className="space-y-14">
           <h2 className="text-lg font-bold">Reach Us</h2>
           <p className="text-sm">
             NO. 23, <br />

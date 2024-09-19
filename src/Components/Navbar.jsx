@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isServicesOpen, setIsServicesOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-900 text-slate-200 sticky top-0 z-50">
+        <nav className="bg-slate-50 text-gray-700 sticky top-0 z-50">
             <div className="max-w-6xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
@@ -21,35 +21,35 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className=" hidden md:flex items-center space-x-4">
-                        <Link to="/" className=" px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Home</Link>
-                        <Link to="/work" className="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Work</Link>
+                        <Link to="/" className=" px-3 py-2 rounded-md text-base text- base font-semibold hover:bg-slate-200">Home</Link>
+                        <Link to="/work" className="px-3 py-2 rounded-md text-base font-semibold hover:bg-slate-200">Work</Link>
 
                         {/* Services Dropdown */}
                         <div className="relative dropdown-container">
-                            <button className="px-4 py-2 flex items-center rounded-md text-base font-medium hover:bg-gray-700 dropdown-toggle">
+                            <button className="px-4 py-2 flex items-center rounded-md text-base font-semibold hover:bg-slate-200 dropdown-toggle">
                                 Services
                                 <FaChevronDown className="ml-2 transition-transform duration-200" />
                             </button>
 
                             {/* Dropdown Menu */}
                             <div className="dropdown-menu">
-                                <Link to="/web_development" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Web Development</Link>
-                                <Link to="/mobile_app" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Mobile App</Link>
-                                <Link to="/matrimony_app" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Matrimony App</Link>
-                                <Link to="/billing" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Billing</Link>
-                                <Link to="/crm" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">CRM</Link>
-                                <Link to="/e_commerce" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">E-Commerce</Link>
-                                <Link to="/inventory_app" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Inventory App</Link>
-                                <Link to="/time_sheet" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Time Sheet</Link>
-                                <Link to="/moi_soft" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">MOI Soft</Link>
-                                <Link to="/customer_management" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Customer Management</Link>
-                                <Link to="/event_app" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Event App</Link>
-                                <Link to="/digital_marketing" className="block px-4 py-2 text-sm text-white hover:bg-gray-700">Digital Marketing</Link>
+                                <Link to="/web_development" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Web Development</Link>
+                                <Link to="/mobile_app" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Mobile App</Link>
+                                <Link to="/matrimony_app" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Matrimony App</Link>
+                                <Link to="/billing" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Billing</Link>
+                                <Link to="/crm" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">CRM</Link>
+                                <Link to="/e_commerce" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">E-Commerce</Link>
+                                <Link to="/inventory_app" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Inventory App</Link>
+                                <Link to="/time_sheet" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Time Sheet</Link>
+                                <Link to="/moi_soft" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">MOI Soft</Link>
+                                <Link to="/customer_management" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Customer Management</Link>
+                                <Link to="/event_app" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Event App</Link>
+                                <Link to="/digital_marketing" className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200">Digital Marketing</Link>
                             </div>
                         </div>
 
-                        <Link to="/aboutus" className="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</Link>
-                        <Link to="/contact" className="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Contact</Link>
+                        <Link to="/aboutus" className="px-3 py-2 rounded-md text-base font-semibold hover:bg-slate-200">About</Link>
+                        <Link to="/contact" className="px-3 py-2 rounded-md text-base font-semibold hover:bg-slate-200">Contact</Link>
                     </div>
 
                     {/* Mobile Menu Button */}

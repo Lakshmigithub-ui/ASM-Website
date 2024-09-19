@@ -54,7 +54,7 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-slate-300 py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
+    <div className="bg-white text-gray-700 py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <h1 data-aos="fade-up" className="text-2xl md:text-2xl font-bold mb-4 text-center">Our Services</h1>
         <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-12 text-center">Explore the diverse range of services we offer to help your business thrive.</p>
@@ -66,7 +66,7 @@ const Services = () => {
               data-aos="zoom-in"
               data-aos-delay={index * 100} // Staggered animation
             >
-              <div className="bg-gray-800 flex flex-col items-center justify-between min-h-[300px] min-w-[250px] p-6 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+              <div className="bg-white flex flex-col items-center justify-between min-h-[300px] min-w-[250px] p-6 rounded-lg shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 <div className="text-center">
                   <service.icon className="text-4xl mx-auto text-customBlue" />
                 </div>

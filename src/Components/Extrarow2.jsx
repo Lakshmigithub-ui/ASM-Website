@@ -18,7 +18,7 @@ const ImageBoxes = () => {
   ];
 
   return (
-    <div className="py-16 px-4 md:px-8 bg-gray-900 text-slate-200">
+    <div className="py-16 px-4 md:px-8 bg-slate-50 text-gray-700">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-xl md:text-2xl font-bold mb-4" data-aos="fade-up">Caring is the New Marketing</h1>
         <p className="text-sm md:text-xl mb-12" data-aos="fade-up" data-aos-delay="200">

@@ -11,7 +11,7 @@ const Extrarow3 = () => {
   }, []);
 
   return (
-    <section className="smart_solutions bg-slate-800 text-slate-200 py-12">
+    <section className="smart_solutions bg-white text-gray-700 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full">
