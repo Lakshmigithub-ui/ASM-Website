@@ -54,7 +54,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
-                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white hover:bg-gray-700 p-2 rounded-md">
+                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-black hover:bg-gray-400 p-2 rounded-md">
                             ☰
                         </button>
                     </div>
@@ -62,40 +62,40 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={`md:hidden bg-gray-800 overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
+            <div className={`md:hidden bg-slate-50 overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <Link to="/" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Home</Link>
-                    <Link to="/work" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Work</Link>
+                    <Link to="/" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 border-b border-slate-400 rounded-md text-base font-medium hover:bg-slate-300">Home</Link>
+                    <Link to="/work" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 border-b border-slate-400 rounded-md text-base font-medium hover:bg-slate-300">Work</Link>
 
                     {/* Services Dropdown for Mobile */}
                     <div>
                         <button
                             onClick={() => setIsServicesOpen(!isServicesOpen)}
-                            className="w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+                            className="w-full flex items-center justify-between px-3 py-2 border-b border-slate-400 rounded-md text-base font-medium hover:bg-slate-300"
                         >
                             Services
                             <FaChevronDown className={`ml-2 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : 'rotate-0'}`} />
                         </button>
                         {isServicesOpen && (
                             <div className="pl-3 space-y-1">
-                                <Link to="/web_development" onClick={() => { setIsMenuOpen(false); setIsServicesOpen(false); }} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Web Development</Link>
-                                <Link to="/mobile_app" onClick={() => { setIsMenuOpen(false); setIsServicesOpen(false); }} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Mobile App</Link>
-                                <Link to="/matrimony_app" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Matrimony App</Link>
-                                <Link to="/billing" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Billing</Link>
-                                <Link to="/crm" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">CRM</Link>
-                                <Link to="/e_commerce" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">E-Commerce</Link>
-                                <Link to="/inventory_app" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Inventory App</Link>
-                                <Link to="/time_sheet" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Time Sheet</Link>
-                                <Link to="/moi_soft" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">MOI Soft</Link>
-                                <Link to="/customer_management" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Customer Management</Link>
-                                <Link to="/event_app" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Event App</Link>
-                                <Link to="/digital_marketing" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 text-base font-medium hover:bg-gray-700">Digital Marketing</Link>
+                                <Link to="/web_development" onClick={() => { setIsMenuOpen(false); setIsServicesOpen(false); }} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Web Development</Link>
+                                <Link to="/mobile_app" onClick={() => { setIsMenuOpen(false); setIsServicesOpen(false); }} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Mobile App</Link>
+                                <Link to="/matrimony_app" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Matrimony App</Link>
+                                <Link to="/billing" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Billing</Link>
+                                <Link to="/crm" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">CRM</Link>
+                                <Link to="/e_commerce" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">E-Commerce</Link>
+                                <Link to="/inventory_app" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Inventory App</Link>
+                                <Link to="/time_sheet" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Time Sheet</Link>
+                                <Link to="/moi_soft" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">MOI Soft</Link>
+                                <Link to="/customer_management" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Customer Management</Link>
+                                <Link to="/event_app" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Event App</Link>
+                                <Link to="/digital_marketing" onClick={() => setIsMenuOpen(false)} className="block pl-5 pr-3 py-2 border-b text-base font-medium hover:bg-slate-200">Digital Marketing</Link>
                             </div>
                         )}
                     </div>
 
-                    <Link to="/aboutus" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</Link>
-                    <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Contact</Link>
+                    <Link to="/aboutus" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 border-b border-slate-400 rounded-md text-base font-medium hover:bg-slate-300">About</Link>
+                    <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 border-b border-slate-400  rounded-md text-base font-medium hover:bg-slate-300">Contact</Link>
                 </div>
             </div>
         </nav>

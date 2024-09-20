@@ -56,11 +56,11 @@ const Gettouch = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Contact Form"
-        className="bg-gray-800 text-white p-8 rounded-lg shadow-lg max-w-lg mx-auto relative"
+        className="bg-slate-50 text-white p-8 rounded-lg shadow-lg max-w-lg mx-auto relative"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
       >
         <button 
-          className="absolute top-4 right-4 text-white text-2xl font-bold hover:text-red-500" 
+          className="absolute top-4 right-4 text-gray-700 text-2xl font-bold hover:text-red-500" 
           onClick={closeModal}
         >
           &times;
@@ -75,7 +75,7 @@ const Gettouch = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-300 transform hover:scale-105"
+                className="w-full px-4 py-2 bg-slate-50 text-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-300 transform hover:scale-105"
               />
             </div>
             <div>
@@ -86,7 +86,7 @@ const Gettouch = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-300 transform hover:scale-105"
+                className="w-full px-4 py-2 bg-slate-50 text-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-300 transform hover:scale-105"
               />
             </div>
             <div>
@@ -96,7 +96,7 @@ const Gettouch = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-300 transform hover:scale-105"
+                className="w-full px-4 py-2 bg-slate-50 text-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-transform duration-300 transform hover:scale-105"
               ></textarea>
             </div>
             <button 
@@ -107,7 +107,7 @@ const Gettouch = () => {
             </button>
           </form>
         ) : (
-          <p className="text-lg text-center" data-aos="fade-up">
+          <p className="text-lg text-gray-700 text-center" data-aos="fade-up">
             Thank you for your message! We will get back to you within 24 hours.
           </p>
         )}
