@@ -101,10 +101,10 @@ const WebAppDevelopment = () => {
   return (
     <div className="bg-slate-50 text-gray-700 min-h-screen relative">
       {/* Background Animation */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r bg-slate-50 opacity-40" data-aos="fade" data-aos-duration="1500"></div>
         <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/programming-background-collage_23-2149901770.jpg?t=st=1726824958~exp=1726828558~hmac=915b83628d93ed09c5a67e1e6fa2c994b4da24f55c722cbdb7ff3a097f6d3c1c&w=740')] bg-cover bg-center opacity-60"></div>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <div className="relative z-10 p-8 lg:p-16">

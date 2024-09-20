@@ -12,7 +12,9 @@ import timesheetImage3 from '../Assets/timesheetImage3.avif';
 
 const TimeSheet = () => {
   React.useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+    AOS.init({ duration: 1000,
+      disable: 'mobile'
+     }); // Initialize AOS with a duration of 1000ms
   }, []);
 
   return (

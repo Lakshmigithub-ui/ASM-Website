@@ -131,6 +131,7 @@ const MobileAppDevelopment = () => {
 
   return (
     <div className="bg-slate-50 text-gray-700 min-h-screen p-8">
+
       <header className="text-center mb-12">
         <h1 className="text-lg font-bold mb-4" data-aos="fade-down">Innovative Mobile App Development Services</h1>
         <p className="text-sm" data-aos="fade-up">"At ASM Infotech, we specialize in creating innovative mobile applications that are tailored to meet the unique needs of your business. Whether you're looking to build a high-performance iOS app, a versatile Android solution, or a cross-platform hybrid app, our expert team is equipped with the latest tools and technologies to deliver exceptional results. We focus on creating intuitive user interfaces, robust functionalities, and seamless performance to ensure your app not only meets industry standards but exceeds user expectations. From ideation to launch, we work closely with you to bring your vision to life, offering continued support and maintenance to keep your app running smoothly as your business grows."</p>
