@@ -11,30 +11,30 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-slate-50 text-gray-700 py-12 px-6">
+    <section id="contact" className="bg-slate-50 text-gray-600 py-12 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Get in Touch with Us</h2>
-          <p className="text-lg">
+          <h2 className="text-2xl font-bold mb-4">Get in Touch with Us</h2>
+          <p className="text-base">
             Have a question or need more information about ASM Infotech? Use the form below or email us at{' '}
-            <a href="mailto:asminfoindia@gmail.com" className="text-blue-400 hover:underline">asminfoindia@gmail.com</a>. 
+            <a href="mailto:asminfoindia@gmail.com" className="text-customBlue hover:underline">asminfoindia@gmail.com</a>. 
             We'll get back to you as soon as possible.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row lg:space-x-12">
-          <div className="lg:w-1/3 mb-8 lg:mb-0">
+          <div className="lg:w-1/2 mb-8 lg:mb-0">
             <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
               <div className="flex items-start mb-4">
-                <FaMapMarkerAlt className="text-blue-400 text-2xl mr-4" />
-                <p className="text-lg">NO. 23, FIRST FLOOR, 8th Cross Street, Kamarajar Colony, Kodambakkam, Chennai, Tamil Nadu 600019.</p>
+                <FaMapMarkerAlt className="text-customBlue text-2xl mr-4" />
+                <p className="text-base">No. 23, First Floor, 8th Cross Street, Kamarajar Colony, Kodambakkam, Chennai, Tamil Nadu 600019.</p>
               </div>
               <div className="flex items-start mb-4">
-                <FaEnvelope className="text-blue-400 text-2xl mr-4" />
-                <p className="text-lg"><a href="mailto:asminfoindia@gmail.com" className="text-blue-400 hover:underline">asminfoindia@gmail.com</a></p>
+                <FaEnvelope className="text-customBlue text-2xl mr-4" />
+                <p className="text-base"><a href="mailto:asminfoindia@gmail.com" className="text-customBlue hover:underline">asminfoindia@gmail.com</a></p>
               </div>
               <div className="flex items-start">
-                <FaPhone className="text-blue-400 text-2xl mr-4" />
-                <p className="text-lg">(044) 42129400</p>
+                <FaPhone className="text-customBlue text-2xl mr-4" />
+                <p className="text-base">+91 9043957699</p>
               </div>
             </div>
           </div>

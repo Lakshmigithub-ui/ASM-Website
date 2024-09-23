@@ -54,7 +54,7 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-white text-gray-700 py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
+    <div className="bg-slate-50 text-gray-600 py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <h1 data-aos="fade-up" className="text-2xl md:text-2xl font-bold mb-4 text-center">Our Services</h1>
         <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-12 text-center">Explore the diverse range of services we offer to help your business thrive.</p>

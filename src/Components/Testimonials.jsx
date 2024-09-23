@@ -20,8 +20,8 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-slate-50 text-gray-700 py-12 px-6 lg:px-16">
-      <h2 className="text-2xl font-bold mb-6 text-center" data-aos="fade-up">Some Words from our Happy Clients</h2>
+    <div className="bg-slate-50 text-gray-600 py-12 px-6 lg:px-16">
+      <h2 className="text-2xl font-bold mb-6 text-center" data-aos="fade-up">Happy Clients</h2>
       <Slider {...settings} className="text-center">
         <div className="p-6 bg-slate-100 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
           <p className="text-xl font-semibold mb-2 transition-transform duration-500 transform hover:scale-105">

@@ -38,13 +38,13 @@ const Gettouch = () => {
   };
 
   return (
-    <div className="bg-white text-gray-700 py-12 px-6 lg:px-16 flex flex-col items-center">
+    <div className="bg-white text-gray-600 py-12 px-6 lg:px-16 flex flex-col items-center">
       <h2 className="text-2xl font-semibold mb-4" data-aos="fade-up">Have a project in mind?</h2>
       <p className="text-lg font-medium mb-6" data-aos="fade-up" data-aos-delay="200">
         We&apos;d love to help you. Drop us a note using the form below. We will get back to you within 24 hours.
       </p>
       <button 
-        className="bg-blue-600 text-white py-2 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
+        className="bg-customBlue text-white py-2 px-6 rounded-lg shadow-lg hover:bg-blue-500 transition transform hover:scale-105"
         onClick={openModal}
         data-aos="fade-up" 
         data-aos-delay="400"
@@ -56,7 +56,7 @@ const Gettouch = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Contact Form"
-        className="bg-slate-50 text-white p-8 rounded-lg shadow-lg max-w-lg mx-auto relative"
+        className="bg-slate-50 text-gray-700 p-8 rounded-lg shadow-lg max-w-lg mx-auto relative"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
       >
         <button 
@@ -68,6 +68,8 @@ const Gettouch = () => {
         {!submitted ? (
           <form className="space-y-6" onSubmit={handleSubmit} data-aos="fade-up">
             <div>
+            <h2 className="text-lg font-bold mb-4">Get in Touch with Us</h2>
+
               <input
                 type="text"
                 name="name"
@@ -101,10 +103,12 @@ const Gettouch = () => {
             </div>
             <button 
               type="submit" 
-              className="w-full py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105"
+              className="w-full py-2 bg-customBlue text-white rounded-lg shadow-lg hover:bg-blue-500 transition-transform duration-300 transform hover:scale-105"
             >
               Submit
             </button>
+            <p className="text-base">For further details Contact +91 9043957699</p>
+
           </form>
         ) : (
           <p className="text-lg text-gray-700 text-center" data-aos="fade-up">

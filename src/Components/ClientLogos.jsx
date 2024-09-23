@@ -27,7 +27,7 @@ const ClientLogos = () => {
   ];
 
   return (
-    <section className="bg-white text-gray-700 py-16 px-4 md:px-8">
+    <section className="bg-white text-gray-600 py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto text-center">
         <h2 data-aos="fade-up" className="text-xl md:text-2xl font-bold mb-4">Our Clients</h2>
         <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-12">We have been working with some Fortune 500+ clients</p>

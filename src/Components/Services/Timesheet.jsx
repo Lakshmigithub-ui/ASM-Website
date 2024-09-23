@@ -40,7 +40,7 @@ const TimeSheet = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-              <img src={timesheetImage1} alt="Real-Time Tracking" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+              <img src={timesheetImage1} alt="Real-Time Tracking" className="gray-image w-full h-48 object-cover rounded-t-lg mb-4" />
               <h2 className="text-lg font-semibold mb-2">Real-Time Tracking</h2>
               <p className="text-gray-700 text-sm">
                 Keep track of work hours as they happen. Our app provides real-time updates and notifications.
@@ -48,7 +48,7 @@ const TimeSheet = () => {
             </div>
             {/* Feature 2 */}
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
-              <img src={timesheetImage2} alt="Automated Reports" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+              <img src={timesheetImage2} alt="Automated Reports" className="gray-image w-full h-48 object-cover rounded-t-lg mb-4" />
               <h2 className="text-lg font-semibold mb-2">Automated Reports</h2>
               <p className="text-gray-700 text-sm">
                 Generate detailed reports automatically. Customizable templates make reporting straightforward and efficient.
@@ -56,7 +56,7 @@ const TimeSheet = () => {
             </div>
             {/* Feature 3 */}
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
-              <img src={timesheetImage3} alt="Team Management" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+              <img src={timesheetImage3} alt="Team Management" className="gray-image w-full h-48 object-cover rounded-t-lg mb-4" />
               <h2 className="text-lg font-semibold mb-2">Team Management</h2>
               <p className="text-gray-700 text-sm">
                 Manage team members and track their hours. Approve timesheets and handle payroll seamlessly.

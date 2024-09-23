@@ -23,20 +23,15 @@ const Digital_Marketing = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-20 justify-between">
           {/* Text Content */}
           <div className="md:w-1/2" data-aos="fade-up">
-            <h1 className="text-lg md:text-xl font-bold mb-4">
+            <h1 className="text-lg md:text-lg font-bold mb-4">
             Grow Your Business with ASM Infotech's Expert Digital Marketing Solutions
             </h1>
             <p className="text-base mb-8">
             At ASM Infotech, we offer a full suite of digital marketing services designed to help your business reach its potential. Whether you want to increase brand awareness, generate more leads, or drive sales, our team is equipped with the tools and expertise to deliver impactful results.            </p>
-            <Link to="/services">
-              <button className="bg-blue-500 text-sm text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300">
-                Learn More
-              </button>
-            </Link>
           </div>
           {/* Main Image */}
           <div className="md:w-1/2 mt-12 md:mt-0" data-aos="fade-down">
-            <img src={digitalMarketingHeroImage} alt="Digital Marketing" className="w-3/4 h-auto rounded-lg gap-8 shadow-lg"/>
+            <img src={digitalMarketingHeroImage} alt="Digital Marketing" className="gray-image w-3/4 h-auto rounded-lg gap-8 shadow-lg"/>
           </div>
         </div>
       </section>
@@ -50,7 +45,7 @@ const Digital_Marketing = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Service 1: SEO */}
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-              <img src={seoImage} alt="SEO" className="w-24 h-24 mx-auto mb-4"/>
+              <img src={seoImage} alt="SEO" className="gray-image w-24 h-24 mx-auto mb-4"/>
               <h3 className="text-base font-semibold mb-2">Search Engine Optimization (SEO)</h3>
               <p className="text-gray-700 text-sm">
                 Improve your website's visibility on search engines and attract more organic traffic with our expert SEO strategies.
@@ -58,7 +53,7 @@ const Digital_Marketing = () => {
             </div>
             {/* Service 2: Social Media Marketing */}
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
-              <img src={socialMediaImage} alt="Social Media Marketing" className="w-24 h-24 mx-auto mb-4"/>
+              <img src={socialMediaImage} alt="Social Media Marketing" className="gray-image w-24 h-24 mx-auto mb-4"/>
               <h3 className="text-base font-semibold mb-2">Social Media Marketing</h3>
               <p className="text-gray-700 text-sm">
                 Engage your audience on social media platforms with targeted campaigns and content designed to boost brand awareness and loyalty.
@@ -66,7 +61,7 @@ const Digital_Marketing = () => {
             </div>
             {/* Service 3: Content Marketing */}
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
-              <img src={contentMarketingImage} alt="Content Marketing" className="w-24 h-24 mx-auto mb-4"/>
+              <img src={contentMarketingImage} alt="Content Marketing" className="gray-image w-24 h-24 mx-auto mb-4"/>
               <h3 className="text-base font-semibold mb-2">Content Marketing</h3>
               <p className="text-gray-700 text-sm">
                 Create compelling content that resonates with your audience and drives engagement. Our content marketing strategies are tailored to your needs.

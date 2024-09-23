@@ -31,3 +31,7 @@
     visibility: visible;
     transform: translateY(0);
 }
+
+.gray-image{
+    filter:grayscale(1);
+}

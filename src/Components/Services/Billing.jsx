@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {Link} from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -39,13 +40,13 @@ const App = () => {
       <h1 className="text-lg font-semibold mb-6 text-center" data-aos="fade-down">Enhance Your Business Operations with Advanced Retail Billing Software</h1>
       <p className="text-sm mb-6 text-center" data-aos="fade-up">Let’s discuss your business needs and goals. Whether you're just starting or looking to scale, we’re here to help you create a tailored strategy that maximizes your online presence. Our team of experts will analyze your unique requirements and craft a personalized plan to take your business online, ensuring growth and success in the digital world.</p>
       <div className="flex justify-center mb-6">
-        <button className=" text-sm bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" data-aos="fade-up">Book a Demo</button>
+      <Link to="/contact"> <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Start Now</button></Link>
       </div>
       
       {/* Section with Image on the left and paragraph on the right */}
       <div className="flex flex-col lg:flex-row items-center lg:space-x-6 mb-12" data-aos="fade-up">
         <div className="lg:w-1/2">
-          <img src={billing} alt="Billing Software" className="rounded-lg shadow-lg mb-4 lg:mb-0" />
+          <img src={billing} alt="Billing Software" className="gray-image rounded-lg shadow-lg mb-4 lg:mb-0" />
         </div>
         <div className="lg:w-1/2 text-lg space-y-4">
           <h2 className="text-lg font-semibold">Why Choose Our Billing Software?</h2>

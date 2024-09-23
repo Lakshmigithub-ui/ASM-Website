@@ -2,6 +2,10 @@
   font-family: 'Manrope';
   
 }
+.gray-image{
+  filter:grayscale(1);
+}
+
 /* .App {
   text-align: center;
 }

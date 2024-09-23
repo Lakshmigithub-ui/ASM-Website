@@ -86,6 +86,7 @@
 // export default CRMPage;
 
 import React, { useEffect } from 'react';
+import {Link} from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -112,13 +113,11 @@ const CRMPage = () => {
             set of tools to help your business thrive. Join countless businesses that have revolutionized their operations 
             with our cutting-edge technology, and experience firsthand how we can help you grow.
           </p>
-          <button className="bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-customBlue transition-transform transform hover:scale-105">
-            Get Started
-          </button>
+          <Link to="/contact"> <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button></Link>
         </div>
         {/* Right side: Large Image */}
         <div className="lg:w-1/2 p-6" data-aos="fade-down">
-          <img src={crm1} alt="CRM Software" className="rounded-lg shadow-lg w-full h-auto" />
+          <img src={crm1} alt="CRM Software" className="gray-image rounded-lg shadow-lg w-full h-auto" />
         </div>
       </section>
 

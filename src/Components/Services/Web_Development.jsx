@@ -85,7 +85,8 @@
 
 // export default WebAppDevelopment;
 
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
+import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import web_development1 from "../Assets/web_development1.avif"
@@ -112,12 +113,12 @@ const WebAppDevelopment = () => {
         <section className="text-center mb-16">
           <h1 className="text-lg font-bold mb-4" data-aos="fade-up">Elevate Your Business with Cutting-Edge Web Development</h1>
           <p className="text-sm mb-8" data-aos="fade-up" data-aos-delay="200">Our web development services specialize in creating dynamic, user-friendly websites tailored to your business needs. From sleek designs to seamless functionality, we ensure your website not only looks great but also delivers an exceptional user experience, helping you connect with your audience and drive business growth.</p>
-          <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button>
+          {/* <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">Get Started</button> */}
         </section>
 
 {/* Key Features Section */}
-<section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-  <div className="bg-slate-50 p-8 rounded-lg shadow-lg" data-aos="fade-right">
+<section className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-16 rounded-lg shadow-lg ">
+  <div className="bg-slate-50 p-8 " data-aos="fade-right">
     <h2 className="text-lg font-semibold mb-4">Why Choose Us?</h2>
     <p className="text-sm mb-4">
       We blend creativity and technology to build web applications that are not only functional but also visually stunning.
@@ -134,7 +135,7 @@ const WebAppDevelopment = () => {
     </ul>
   </div>
   <div className="flex items-center justify-center" data-aos="fade-left">
-    <img src={web_development1} alt="Web Development" className="w-full h-auto rounded-lg shadow-lg" />
+    <img src={web_development1} alt="Web Development" className=" gray-image w-3/4 h-auto " />
   </div>
 </section>
         {/* Features Section */}
@@ -142,17 +143,17 @@ const WebAppDevelopment = () => {
           <h2 className="text-lg font-semibold mb-6 text-center">Our Core Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center" data-aos="fade-up">
-              <img src={weblogo1} alt="Feature 1" className="w-16 h-16 mx-auto mb-4" />
+              <img src={weblogo1} alt="Feature 1" className="gray-image w-16 h-16 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">Innovative Design</h3>
               <p className='text-sm'>Engage users with a unique and modern design tailored to your brand.</p>
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="200">
-              <img src={weblogo2} alt="Feature 2" className="w-16 h-16 mx-auto mb-4" />
+              <img src={weblogo2} alt="Feature 2" className="gray-image w-16 h-16 mx-auto mb-4" />
               <h3 className="text-sm font-semibold mb-2">Advanced Technology</h3>
               <p className='text-sm'>Utilize the latest technology to ensure high performance and scalability.</p>
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="400">
-              <img src={weblogo3} alt="Feature 3" className="w-16 h-16 mx-auto mb-4" />
+              <img src={weblogo3} alt="Feature 3" className="gray-image w-16 h-16 mx-auto mb-4" />
               <h3 className="text-sm font-semibold mb-2">Dedicated Support</h3>
               <p className='text-sm'>Receive ongoing support to keep your web app up-to-date and fully functional.</p>
             </div>
@@ -164,7 +165,7 @@ const WebAppDevelopment = () => {
         <footer className="text-center">
           <h2 className="text-lg font-semibold mb-4" data-aos="fade-up">Ready to Take Your Web Presence to the Next Level?</h2>
           <p className="text-sm mb-6">Contact us today to discuss your web app development needs and get a customized plan.</p>
-          <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-teal-600 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button>
+          <Link to="/contact"> <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button></Link>
         </footer>
       </div>
     </div>

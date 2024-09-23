@@ -114,6 +114,8 @@
 //  export default MobileAppDevelopment;
 
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import mobile_application from "../Assets/mobile_application.jpg";
@@ -140,7 +142,7 @@ const MobileAppDevelopment = () => {
       <section className="mb-12">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
-            <img src={ios_app} alt="iOS App" className="w-3/4 h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
+            <img src={ios_app} alt="iOS App" className="gray-image w-3/4 h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
           </div>
           <div className="lg:w-1/2 lg:pl-8" data-aos="fade-down">
             <h2 className="text-lg font-semibold mb-4">iOS App Development</h2>
@@ -158,7 +160,7 @@ const MobileAppDevelopment = () => {
             <p className="text-sm mb-4">We emphasize user-centric design and functionality to ensure your app stands out in the crowded Android market.</p>
           </div>
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-down">
-            <img src={android_app} alt="Android App" className="w-3/4 h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
+            <img src={android_app} alt="Android App" className="gray-image w-3/4 h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
           </div>
         </div>
       </section>
@@ -166,7 +168,7 @@ const MobileAppDevelopment = () => {
       <section className="mb-12">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
-            <img src={hybrid_app} alt="Hybrid App" className="w-3/4 h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
+            <img src={hybrid_app} alt="Hybrid App" className="gray-image w-3/4 h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
           </div>
           <div className="lg:w-1/2 lg:pl-8" data-aos="fade-down">
             <h2 className="text-lg font-semibold mb-4">Hybrid App Development</h2>
@@ -180,17 +182,17 @@ const MobileAppDevelopment = () => {
         <p className="text-sm mb-4 text-center">Our team is dedicated to delivering high-quality mobile applications that meet your business needs and exceed user expectations.</p>
         <div className="flex flex-col lg:flex-row justify-around">
           <div className="lg:w-1/3 mb-8 lg:mb-0 text-center">
-            <img src={icon1} alt="Icon 1" className="w-16 h-16 mx-auto mb-4" />
+            <img src={icon1} alt="Icon 1" className="gray-image w-16 h-16 mx-auto mb-4" />
             <h3 className="text-lg font-semibold">Innovative Solutions</h3>
             <p>We bring creativity and cutting-edge technology to every project.</p>
           </div>
           <div className="lg:w-1/3 mb-8 lg:mb-0 text-center">
-            <img src={icon2} alt="Icon 2" className="w-16 h-16 mx-auto mb-4" />
+            <img src={icon2} alt="Icon 2" className="gray-image w-16 h-16 mx-auto mb-4" />
             <h3 className="text-lg font-semibold">User-Centric Design</h3>
             <p>Our designs are crafted to provide an intuitive and engaging user experience.</p>
           </div>
           <div className="lg:w-1/3 text-center">
-            <img src={icon3} alt="Icon 3" className="w-16 h-16 mx-auto mb-4" />
+            <img src={icon3} alt="Icon 3" className="gray-image w-16 h-16 mx-auto mb-4" />
             <h3 className="text-lg font-semibold">Dedicated Support</h3>
             <p>We offer ongoing support and maintenance to ensure your app runs smoothly.</p>
           </div>
@@ -200,7 +202,7 @@ const MobileAppDevelopment = () => {
       <section className="mb-12">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
-            <img src={mobile_application} alt="Mobile App" className="w-full h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
+            <img src={mobile_application} alt="Mobile App" className="gray-image w-full h-auto max-w-lg rounded-lg shadow-lg" /> {/* Added max-w-xs */}
           </div>
           <div className="lg:w-1/2 lg:pl-8" data-aos="fade-">
             <h2 className="text-lg font-semibold mb-4">Our Expertise</h2>
@@ -218,8 +220,8 @@ const MobileAppDevelopment = () => {
       <footer className="text-center">
         <h2 className="text-lg font-semibold mb-4" data-aos="fade-up">Ready to Start Your Project?</h2>
         <p className="text-sm mb-4">Contact us today to discuss your mobile app development needs and get a customized plan.</p>
-        <button className="text-sm bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition" data-aos="fade-up">Get in Touch</button>
-      </footer>
+        <Link to="/contact"> <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Contact Us</button></Link>
+        </footer>
     </div>
   );
 };

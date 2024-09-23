@@ -17,9 +17,9 @@ const Home = () => {
             <Gettouch/>
             <Testimonials/>
             <ClientLogos/>
-            <Extrarow2 />
+            {/* <Extrarow2 />
             <Extrarow3 />
-
+ */}
         </div>
     )
 }

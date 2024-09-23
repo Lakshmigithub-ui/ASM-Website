@@ -14,7 +14,7 @@ const Extrarow1 = () => {
   // });
 
   return (
-    <div className="bg-white text-gray-700 py-12 px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
+    <div className="bg-white text-gray-600 py-12 px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
       <div
         className="lg:w-1/2 mb-8 lg:mb-0"
         data-aos="fade-up" // Animate the text when it scrolls into view
@@ -35,7 +35,7 @@ We are committed to delivering customized solutions that meet our clients' uniqu
         data-aos="fade-down" // Animate the image when it scrolls into view
       >
         <img
-          className="w-full h-auto rounded-lg shadow-lg transition-transform transform"
+          className=" gray-image w-3/4 h-auto rounded-lg shadow-lg transition-transform transform"
           src={office}
           alt="Design"
         />

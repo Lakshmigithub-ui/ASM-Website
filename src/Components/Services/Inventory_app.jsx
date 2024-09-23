@@ -23,33 +23,29 @@ const Inventory_app = () => {
           <p className="text-sm md:text-sm mb-8" data-aos="fade-up" data-aos-delay="200">
             Efficiently manage your inventory with our comprehensive solution. Track stock levels, manage orders, and generate detailed reports with ease.
           </p>
-          <Link to="/get-started">
-            <button className="bg-blue-500 text-white text-sm py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300" data-aos="fade-up" data-aos-delay="400">
-              Get Started
-            </button>
-          </Link>
-        </div>
+          <Link to="/contact"> <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Start Now</button></Link>
+          </div>
       </section>
 
       <section className="py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-              <img src={inventoryImage1} alt="Inventory Tracking" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+              <img src={inventoryImage1} alt="Inventory Tracking" className="gray-image w-full h-48 object-cover rounded-t-lg mb-4" />
               <h2 className="text-lg font-medium mb-2">Real-Time Inventory Tracking</h2>
               <p className="text-gray-700">
                 Monitor your stock levels in real-time. Manage multiple warehouses and receive alerts for low inventory.
               </p>
             </div>
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
-              <img src={inventoryImage2} alt="Order Management" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+              <img src={inventoryImage2} alt="Order Management" className="gray-image w-full h-48 object-cover rounded-t-lg mb-4" />
               <h2 className="text-lg font-medium mb-2">Order Management</h2>
               <p className="text-gray-700 text-sm">
                 Process purchase orders and sales orders efficiently. Track order status and generate invoices.
               </p>
             </div>
             <div className="bg-slate-50 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="600">
-              <img src={inventoryImage3} alt="Reporting and Analytics" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+              <img src={inventoryImage3} alt="Reporting and Analytics" className="gray-image w-full h-48 object-cover rounded-t-lg mb-4" />
               <h2 className="text-lg font-medium mb-2">Reporting and Analytics</h2>
               <p className="text-gray-700 text-sm">
                 Generate detailed reports on stock levels, sales, and order history. Analyze trends and forecast demand.
