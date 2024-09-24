@@ -96,7 +96,12 @@ import weblogo3 from "../Assets/weblogo3.avif";
 
 const WebAppDevelopment = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // Initialize AOS with smooth animations
+    AOS.init({ 
+      disable: function() {
+        return window.innerWidth < 768; // Disable AOS on screens smaller than 768px
+      },
+
+     }); // Initialize AOS with smooth animations
   }, []);
 
   return (

@@ -23,9 +23,9 @@ export const Work = () => {
     <div className="bg-slate-50 text-gray-900">
       <div className="py-8 px-4 max-w-screen-xl mx-auto">
         <div className="text-center mb-8" data-aos="fade-up">
-          <h2 className="text-3xl font-bold mb-2">SHOWCASE OF OUR BEST</h2>
+          <h2 className="text-lg font-bold mb-2">SHOWCASE OF OUR BEST</h2>
           <span className="block h-1 w-32 bg-customBlue mx-auto mb-4"></span>
-          <p className="text-lg">
+          <p className="text-base">
             We create websites and mobile apps. We believe those people are more engaging and that will be beneficial for your business.
           </p>
         </div>
@@ -55,7 +55,7 @@ export const Work = () => {
                 alt={work.title}
                 className="w-full h-48 object-contain mb-4 rounded-md"
               />
-              <h3 className="text-xl font-semibold mb-2" data-aos="fade-down">{work.title}</h3>
+              <h3 className="text-lg font-semibold mb-2" data-aos="fade-down">{work.title}</h3>
               <p className="text-sm">{work.type}</p>
             </div>
           ))}

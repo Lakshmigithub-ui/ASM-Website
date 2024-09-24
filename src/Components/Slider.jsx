@@ -132,7 +132,6 @@ import slider_image3 from "./Assets/slider_image3.avif";
 import background_video3 from "./Assets/background_video3.mp4"
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import Navbar from "./Navbar";
 // Slide data
 const slides = [
   {
