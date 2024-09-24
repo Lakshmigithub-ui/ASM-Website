@@ -237,7 +237,7 @@ const Hero = () => {
         autoPlay
         loop
         muted
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="gray-image absolute inset-0 w-full h-full object-cover z-0"
       >
         <source src={background_video3} type="video/mp4" />
         Your browser does not support the video tag.

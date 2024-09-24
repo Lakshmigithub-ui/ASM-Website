@@ -1,17 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "./Assets/logo.png";
 import { FaChevronDown } from "react-icons/fa";
-import "./Navbar.css"; // Import the custom CSS file
-import Slider from "./Slider";
-import background_video3 from "./Assets/background_video3.mp4";
+import "./Navbar.css"; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 50) {
+  //       setScrolled(true);
+  //     } else {
+  //       setScrolled(false);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
 
   return (
       <nav className="bg-slate-50  text-gray-600 sticky top-0 z-50">
+      {/* <nav
+        className={`fixed top-0 z-50 w-full transition-colors duration-300 ${
+          scrolled ? "bg-slate-50 text-gray-600 shadow-lg" : "bg-transparent"
+        }`}
+      > */}
         <div className="max-w-6xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -301,3 +322,147 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// import React, { useState } from "react";
+// import { Link } from "react-router-dom";
+// import logo from "./Assets/logo.png";
+// import { FaChevronDown } from "react-icons/fa";
+// import "./Navbar.css"; // Import the custom CSS file
+// import Slider from "./Slider";
+// import background_video3 from "./Assets/background_video3.mp4";
+
+// const NavbarWithSlider = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+//   return (
+//     <div className="relative">
+//       {/* Background Video */}
+//       <video
+//         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+//         src={background_video3}
+//         autoPlay
+//         loop
+//         muted
+//       ></video>
+
+//       {/* Navbar */}
+//       <nav className="bg-slate-50 text-gray-600 sticky top-0 z-50">
+//         <div className="max-w-6xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+//           <div className="flex items-center justify-between h-16">
+//             {/* Logo */}
+//             <div className="flex-shrink-0">
+//               <Link to="/">
+//                 <img
+//                   className="h-12 w-auto bg-white px-4 py-1 rounded-lg"
+//                   src={logo}
+//                   alt="Logo"
+//                 />
+//               </Link>
+//             </div>
+
+//             {/* Desktop Menu */}
+//             <div className="hidden md:flex items-center space-x-4">
+//               <Link
+//                 to="/"
+//                 className="px-3 py-2 rounded-md text-base font-semibold hover:bg-slate-200"
+//               >
+//                 Home
+//               </Link>
+//               <Link
+//                 to="/work"
+//                 className="px-3 py-2 rounded-md text-base font-semibold hover:bg-slate-200"
+//               >
+//                 Work
+//               </Link>
+
+//               {/* Services Dropdown */}
+//               <div className="relative dropdown-container">
+//                 <button className="px-4 py-2 flex items-center rounded-md text-base font-semibold hover:bg-slate-200 dropdown-toggle">
+//                   Services
+//                   <FaChevronDown className="ml-2 transition-transform duration-200" />
+//                 </button>
+
+//                 {/* Dropdown Menu */}
+//                 <div className="dropdown-menu">
+//                   <Link
+//                     to="/web_development"
+//                     className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200"
+//                   >
+//                     Web Development
+//                   </Link>
+//                   <Link
+//                     to="/mobile_app"
+//                     className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200"
+//                   >
+//                     Mobile App
+//                   </Link>
+//                   <Link
+//                     to="/matrimony_app"
+//                     className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-slate-200"
+//                   >
+//                     Matrimony App
+//                   </Link>
+//                   {/* Add more services here */}
+//                 </div>
+//               </div>
+
+//               <Link
+//                 to="/aboutus"
+//                 className="px-3 py-2 rounded-md text-base font-semibold hover:bg-slate-200"
+//               >
+//                 About
+//               </Link>
+//               <Link
+//                 to="/contact"
+//                 className="px-3 py-2 rounded-md text-base font-semibold hover:bg-slate-200"
+//               >
+//                 Contact
+//               </Link>
+//             </div>
+
+//             {/* Mobile Menu Button */}
+//             <div className="md:hidden">
+//               <button
+//                 onClick={() => setIsMenuOpen(!isMenuOpen)}
+//                 className="text-black hover:bg-gray-400 p-2 rounded-md"
+//               >
+//                 ☰
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Mobile Menu */}
+//         <div
+//           className={`md:hidden bg-slate-50 overflow-hidden transition-all duration-500 ease-in-out ${
+//             isMenuOpen ? "max-h-screen" : "max-h-0"
+//           }`}
+//         >
+//           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+//             <Link
+//               to="/"
+//               onClick={() => setIsMenuOpen(false)}
+//               className="block px-3 py-2 border-b border-slate-400 rounded-md text-base font-medium hover:bg-slate-300"
+//             >
+//               Home
+//             </Link>
+//             <Link
+//               to="/work"
+//               onClick={() => setIsMenuOpen(false)}
+//               className="block px-3 py-2 border-b border-slate-400 rounded-md text-base font-medium hover:bg-slate-300"
+//             >
+//               Work
+//             </Link>
+//             {/* More Mobile Links */}
+//           </div>
+//         </div>
+//       </nav>
+
+//       {/* Slider Component */}
+//       <Slider />
+//     </div>
+//   );
+// };
+
+// export default NavbarWithSlider;
