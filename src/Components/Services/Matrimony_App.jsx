@@ -8,7 +8,12 @@ import matlogo3 from "../Assets/matlogo3.avif";
 
 const MatrimonyApp = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // Initialize AOS with smooth animations
+    // AOS.init({ duration: 1200 }); // Initialize AOS with smooth animations
+    AOS.init({
+      disable: function () {
+        return window.innerWidth < 768; // Disable AOS on screens smaller than 768px
+      },
+  });
   }, []);
 
   return (

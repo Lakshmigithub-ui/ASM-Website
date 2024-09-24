@@ -6,7 +6,7 @@ import office from "./Assets/office.avif";
 
 const Extrarow1 = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+    AOS.init({ duration: 500 }); // Initialize AOS with a duration of 1000ms
   }, []);
       
   // AOS.init({
