@@ -253,14 +253,14 @@ const Hero = () => {
               <div className="flex lg:flex-row flex-col">
                 <div className="m-9">
                   <h2
-                    className="text-3xl md:text-3xl font-semibold mb-4"
+                    className="text-3xl md:text-2xl mb-4 md:w-3/4 tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay={index * 300}
                   >
                     {slide.text.h2}
                   </h2>
                   <p
-                    className="text-base mb-4 font-medium"
+                    className="text-base mb-4 font-medium tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay={index * 400}
                   >
@@ -268,7 +268,7 @@ const Hero = () => {
                   </p>
                   <br />
                   <button
-                    className="bg-customBlue text-white py-3 px-6 rounded-lg hover:bg-blue-500 transition duration-300"
+                    className="bg-customBlue tracking-wider text-white py-3 px-6 rounded-lg hover:bg-blue-500 transition duration-300"
                     data-aos="fade-up"
                     data-aos-delay={index * 500}
                     onClick={handleGetQuoteClick} // Open the form modal
