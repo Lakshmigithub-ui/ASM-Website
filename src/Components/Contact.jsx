@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
               <div className="flex items-start">
                 <FaPhone className="text-customBlue text-2xl mr-4" />
-                <p className="text-base">+91 9043957699</p>
+                <p className="text-base">+91 9043957699 <br /> 044 42129400</p>               
               </div>
             </div>
           </div>

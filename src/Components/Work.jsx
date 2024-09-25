@@ -53,7 +53,7 @@ export const Work = () => {
               <img
                 src={work.src}
                 alt={work.title}
-                className="w-full h-48 object-contain mb-4 rounded-md"
+                className="w-full h-48 object-contain mb-4 rounded-md hover:scale-110"
               />
               <h3 className="text-lg font-semibold mb-2" data-aos="fade-down">{work.title}</h3>
               <p className="text-sm">{work.type}</p>
