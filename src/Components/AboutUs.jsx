@@ -31,7 +31,7 @@ export const AboutUs = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-900 p-8">
+    <div className="bg-slate-100 text-gray-900 p-8">
       <div className="max-w-4xl mx-auto">
         <h1
           className="text-lg text-gray-900 font-semibold mb-6 border-b border-customBlue pb-2"
@@ -39,7 +39,7 @@ export const AboutUs = () => {
         >
           ASM Infotech Profile
         </h1>
-        <p className="text-sm mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+        <p className="text-sm text-justify mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
           ASM Infotech is a Chennai-based creative agency specializing in responsive website
           development and online marketing services. Using the latest technologies, coupled with
           creativity and proficiency, the agency offers web-based IT solutions including corporate

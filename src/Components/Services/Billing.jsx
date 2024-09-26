@@ -12,7 +12,7 @@ import {
   faUserCog,
   faIndustry,
 } from "@fortawesome/free-solid-svg-icons";
-import billing from "../Assets/billing.avif";
+import billing from "../Assets/smkbilling.png";
 
 const sections = [
   {
@@ -89,14 +89,14 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-700 min-h-screen p-8">
+    <div className="bg-slate-100 text-gray-700 min-h-screen p-8">
       <h1
         className="text-lg font-semibold mb-6 text-center"
         data-aos="fade-down"
       >
         Enhance Your Business Operations with Advanced Retail Billing Software
       </h1>
-      <p className="text-sm mb-6 text-center" data-aos="fade-up">
+      <p className="text-sm text-justify mb-6 text-center" data-aos="fade-up">
         Let’s discuss your business needs and goals. Whether you're just
         starting or looking to scale, we’re here to help you create a tailored
         strategy that maximizes your online presence. Our team of experts will
@@ -132,14 +132,14 @@ const App = () => {
           <h2 className="text-lg font-semibold">
             Why Choose Our Billing Software?
           </h2>
-          <p className="text-sm">
+          <p className="text-sm text-justify">
             Our advanced billing software is designed to streamline your
             business operations, making transactions quick, accurate, and
             efficient. With features such as POS systems, GST compliance, and
             real-time MIS, we ensure your business remains productive and
             compliant, no matter the industry.
           </p>
-          <p className="text-sm">
+          <p className="text-sm text-justify">
             Whether you operate a supermarket, textile mill, or electronics
             store, our tailored solutions offer reliable financial management,
             customer support, and detailed reporting to enhance every aspect of
@@ -160,7 +160,7 @@ const App = () => {
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="bg-slate-50 text-gray-700 p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-transform hover:scale-105"
+                className="bg-slate-50 text-gray-700 p-4 mb-8 rounded-lg shadow-lg flex items-center space-x-3 transform transition-transform hover:scale-105"
                 data-aos="fade-left"
                 data-aos-delay={index * 100}
               >

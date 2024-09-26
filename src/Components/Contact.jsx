@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,7 +17,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="contact" className="bg-slate-50 text-gray-600 py-12 px-6">
+    <section id="contact" className="bg-slate-100 text-gray-600 py-12 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-2xl font-bold mb-4">Get in Touch with Us</h2>
@@ -31,7 +31,7 @@ const Contact = () => {
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
             <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
               <div className="flex items-start mb-4">
-                <FaMapMarkerAlt className="text-customBlue text-2xl mr-4" />
+                <FaMapMarkerAlt className="text-customBlue text-3xl mr-4" />
                 <p className="text-base">No. 23, First Floor, 8th Cross Street, Kamarajar Colony, Kodambakkam, Chennai, Tamil Nadu 600019.</p>
               </div>
               <div className="flex items-start mb-4">
@@ -39,7 +39,7 @@ const Contact = () => {
                 <p className="text-base"><a href="mailto:asminfoindia@gmail.com" className="text-customBlue hover:underline">asminfoindia@gmail.com</a></p>
               </div>
               <div className="flex items-start">
-                <FaPhone className="text-customBlue text-2xl mr-4" />
+                <FaPhoneAlt className="text-customBlue text-2xl mr-4" />
                 <p className="text-base">+91 9043957699 <br /> 044 42129400</p>               
               </div>
             </div>

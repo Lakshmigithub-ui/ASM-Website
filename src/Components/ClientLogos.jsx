@@ -9,6 +9,7 @@ import client_logo4 from "./Assets/client_logo4.avif";
 import client_logo5 from "./Assets/client_logo5.avif";
 import client_logo6 from "./Assets/client_logo6.avif";
 import client_logo7 from "./Assets/client_logo7.avif";
+import client_logo8 from "./Assets/client_logo8.avif";
 
 const ClientLogos = () => {
   useEffect(() => {
@@ -23,13 +24,13 @@ const ClientLogos = () => {
     { src: client_logo5, alt: 'Client 5', link: 'https://client5.com' },
     { src: client_logo6, alt: 'Client 6', link: 'https://client6.com' },
     { src: client_logo7, alt: 'Client 7', link: 'https://client7.com' },
-    { src: client_logo7, alt: 'Client 8', link: 'https://client8.com' }
+    { src: client_logo8, alt: 'Client 8', link: 'https://client8.com' }
   ];
 
   return (
     <section className="bg-white text-gray-600 py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 data-aos="fade-up" className="text-xl md:text-2xl font-bold mb-4">Our Clients</h2>
+        <h2 data-aos="fade-up" className="text-xl md:text-xl font-bold mb-4">Our Clients</h2>
         <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-12">We have been working with some Fortune 500+ clients</p>
         <div className="flex flex-col items-center">
           <div className="flex flex-wrap justify-center gap-8">
@@ -46,7 +47,7 @@ const ClientLogos = () => {
                 <img
                   src={client.src}
                   alt={client.alt}
-                  className="w-24 h-24 object-contain hover:grayscale-0 transition-transform transform hover:scale-105"
+                  className="gray-image w-24 h-24 object-contain hover:grayscale-0 transition-transform transform hover:scale-105"
                 />
               </a>
             ))}

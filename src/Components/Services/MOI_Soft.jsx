@@ -18,9 +18,9 @@ const MOISoft = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-700">
+    <div className="bg-slate-100 text-gray-700">
       {/* Hero Section */}
-      <section className="py-20 px-4 md:px-8 bg-slate-50">
+      <section className="py-20 px-4 md:px-8 bg-slate-100">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-xl md:text-xl font-bold mb-6" data-aos="fade-up">Welcome to MOI Soft</h1>
           <p className="text-base md:text-base mb-8" data-aos="fade-up" data-aos-delay="200">

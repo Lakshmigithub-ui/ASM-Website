@@ -89,7 +89,7 @@ import React, { useEffect} from 'react';
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import web_development1 from "../Assets/web_development1.avif"
+import web_development from "../Assets/inspire.PNG"
 import weblogo1 from "../Assets/weblogo1.avif";
 import weblogo2 from "../Assets/weblogo2.avif";
 import weblogo3 from "../Assets/weblogo3.avif";
@@ -105,7 +105,7 @@ const WebAppDevelopment = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-700 min-h-screen relative">
+    <div className="bg-slate-100 text-gray-700 min-h-screen relative">
       {/* Background Animation */}
       {/* <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r bg-slate-50 opacity-40" data-aos="fade" data-aos-duration="1500"></div>
@@ -140,7 +140,7 @@ const WebAppDevelopment = () => {
     </ul>
   </div>
   <div className="flex items-center justify-center" data-aos="fade-left">
-    <img src={web_development1} alt="Web Development" className=" gray-image w-3/4 h-auto " />
+    <img src={web_development} alt="Web Development" className=" gray-image w-full h-auto " />
   </div>
 </section>
         {/* Features Section */}

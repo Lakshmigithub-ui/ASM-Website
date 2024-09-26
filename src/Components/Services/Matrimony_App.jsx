@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import matimage from "../Assets/senaimat.jpg";
 import matlogo1 from "../Assets/matlogo1.jpg";
 import matlogo2 from "../Assets/matlogo2.jpg";
 import matlogo3 from "../Assets/matlogo3.avif";
@@ -17,13 +18,13 @@ const MatrimonyApp = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-700 min-h-screen p-8">
+    <div className="bg-slate-100 text-gray-700 min-h-screen p-8">
             {/* Hero Section */}
             <section className="relative bg-slate-50 p-12 rounded-lg shadow-lg mb-12">
         <img src={matlogo1} alt="Hero" className="gray-image absolute inset-0 w-full h-full object-cover opacity-30 z-[-1]" />
         <div className="text-center relative z-10">
           <h1 className="text-lg font-semibold mb-6" data-aos="fade-up">Discover Your Soulmate with Our Matrimony App</h1>
-          <p className="text-sm mb-6 font-medium" data-aos="fade-up" data-aos-delay="200">At ASM Infotech, we specialize in creating feature-rich, user-friendly matrimony apps that help individuals find their perfect match. Our custom-built matrimony apps are designed to offer a seamless user experience, with features like advanced search filters, compatibility algorithms, secure communication, and user verification. Whether you're launching a niche matrimony platform or expanding an existing service, our tailored solutions ensure you meet the unique needs of your audience.</p>
+          <p className="text-sm text-justify mb-6 font-medium" data-aos="fade-up" data-aos-delay="200">At ASM Infotech, we specialize in creating feature-rich, user-friendly matrimony apps that help individuals find their perfect match. Our custom-built matrimony apps are designed to offer a seamless user experience, with features like advanced search filters, compatibility algorithms, secure communication, and user verification. Whether you're launching a niche matrimony platform or expanding an existing service, our tailored solutions ensure you meet the unique needs of your audience.</p>
           <Link to="/contact"> <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Start Now</button></Link>
           </div>
       </section>
@@ -32,13 +33,13 @@ const MatrimonyApp = () => {
       <section className="flex flex-col lg:flex-row items-center justify-between mb-12">
         {/* Left Side: Image */}
         <div className="lg:w-1/2 p-6" data-aos="fade-up">
-          <img src={matlogo2} alt="Left Image" className="gray-image rounded-lg shadow-lg w-3/4 h-auto" />
+          <img src={matimage} alt="Left Image" className="gray-image rounded-lg shadow-lg w-3/4 h-auto" />
         </div>
 
         {/* Right Side: Paragraph */}
         <div className="lg:w-1/2 px-6" data-aos="fade-down">
           <h2 className="text-lg font-semibold mb-4">Why Choose Our Matrimony App?</h2>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm  text-justify leading-relaxed">
             Our Matrimony app is designed to provide a seamless and personalized matchmaking experience. 
             With advanced search features, verified profiles, and private messaging options, we make it 
             easy for you to find your perfect match. Our secure platform ensures privacy and reliability, 

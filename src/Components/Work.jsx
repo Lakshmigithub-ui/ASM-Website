@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+
 import proj1 from "./Assets/proj1.jpg";
 import proj2 from "./Assets/proj2.jpg";
 import proj3 from "./Assets/proj3.jpg";
@@ -13,6 +14,11 @@ import proj9 from "./Assets/proj9.jpg";
 import proj10 from "./Assets/proj10.jpg";
 import proj11 from "./Assets/proj11.jpg";
 import proj12 from "./Assets/proj12.jpg";
+import proj13 from "./Assets/inspire_works.PNG";
+import proj14 from "./Assets/priya.PNG";
+import proj15 from "./Assets/uyirmei.PNG";
+import proj16 from "./Assets/smkbilling.png";
+
 
 export const Work = () => {
   useEffect(() => {
@@ -20,7 +26,7 @@ export const Work = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-900">
+    <div className="bg-slate-100 text-gray-900">
       <div className="py-8 px-4 max-w-screen-xl mx-auto">
         <div className="text-center mb-8" data-aos="fade-up">
           <h2 className="text-lg font-bold mb-2">SHOWCASE OF OUR BEST</h2>
@@ -32,6 +38,11 @@ export const Work = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {[
+
+            {src: proj13, title: 'Inspire Media.in', type: 'Responsive Web Design'},
+            {src: proj14, title: 'PriyaMehan Novels', type: 'Responsive Web Design'},
+            {src: proj15, title: 'Uyirmei Seithigal', type: 'Mobile App'},
+            {src: proj16, title: 'ASM Billing', type: 'Billing App'},
             { src: proj1, title: 'Top Plus Super Market', type: 'E-commerce / Online Shopping' },
             { src: proj2, title: 'Breathe Care Systems', type: 'CMS Website' },
             { src: proj3, title: 'Mitra International Business Club', type: 'CMS Website' },
@@ -43,7 +54,8 @@ export const Work = () => {
             { src: proj9, title: 'Strike a price', type: 'CMS Website' },
             { src: proj10, title: 'Senaithalaivar Sangam', type: 'CMS Website' },
             { src: proj11, title: 'Santhosh', type: 'Responsive Web Design' },
-            { src: proj12, title: 'Mitra Times', type: 'CMS Website' },
+            { src: proj12, title: 'Mitra Times', type: 'CMS Website' }
+
           ].map((work, index) => (
             <div
               key={index}

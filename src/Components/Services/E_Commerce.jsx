@@ -98,7 +98,7 @@ const EcommerceAppPage = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-700 min-h-screen">
+    <div className="bg-slate-100 text-gray-700 min-h-screen">
       {/* Hero Section with Glittery Background */}
       <section className="relative bg-cover bg-center h-screen flex items-center justify-center text-center" style={{ backgroundImage: "url('https://example.com/ecommerce-background.jpg')" }}>
         <div className="absolute inset-0 bg-slate-50 opacity-75"></div>

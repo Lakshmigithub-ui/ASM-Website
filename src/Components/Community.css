@@ -1,0 +1,16 @@
+/* Custom CSS for dots spacing */
+@media (max-width: 1024px) {
+    .slick-dots {
+      margin-top: 10px; /* Adjust this as needed */
+    }
+    
+    .slick-dots li {
+      margin: 0 4px; /* Reduce the space between the dots */
+    }
+    
+    .slick-dots li button {
+      width: 8px; /* Adjust the dot size */
+      height: 8px; /* Adjust the dot size */
+    }
+  }
+  

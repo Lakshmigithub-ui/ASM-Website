@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
-import office from "./Assets/office.avif";
+import office from "./Assets/about.jpg";
 
 const Extrarow1 = () => {
   useEffect(() => {
@@ -20,10 +20,10 @@ const Extrarow1 = () => {
         data-aos="fade-up" // Animate the text when it scrolls into view
       >
         <h2 className="text-2xl font-semibold leading-tight">
-         About Us
+        Meet ASM Infotech: Bridging Business and Technology
         </h2>
         <br></br>
-        <p className="text-base font-thin mb-4">
+        <p className="text-base text-justify font-thin mb-4">
 ASM Infotech, based in Chennai, is a creative agency specializing in responsive web development and online marketing. We offer web-based IT solutions, including website design, CMS, eCommerce, web applications, SEO, SEM, and digital marketing. Our services also include social media marketing, mobile app development, graphic design, and web hosting.
 
 We are committed to delivering customized solutions that meet our clients' unique needs and goals. From simple corporate websites to complex eCommerce platforms, we create tailor-made web solutions. As a local agency, we prioritize clear, interactive communication, ensuring we're always accessible to our clients.</p>

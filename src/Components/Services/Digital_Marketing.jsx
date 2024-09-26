@@ -17,16 +17,16 @@ const Digital_Marketing = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-700">
+    <div className="bg-slate-100 text-gray-700">
       {/* Hero Section */}
-      <section className="relative bg-slate-50 overflow-hidden py-20 px-4 md:px-8">
+      <section className="relative bg-slate-100 overflow-hidden py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-20 justify-between">
           {/* Text Content */}
           <div className="md:w-1/2" data-aos="fade-up">
             <h1 className="text-lg md:text-lg font-bold mb-4">
             Grow Your Business with ASM Infotech's Expert Digital Marketing Solutions
             </h1>
-            <p className="text-base mb-8">
+            <p className="text-base text-justify mb-8">
             At ASM Infotech, we offer a full suite of digital marketing services designed to help your business reach its potential. Whether you want to increase brand awareness, generate more leads, or drive sales, our team is equipped with the tools and expertise to deliver impactful results.            </p>
           </div>
           {/* Main Image */}

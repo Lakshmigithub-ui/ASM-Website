@@ -39,10 +39,9 @@ const Gettouch = () => {
 
   return (
     <div className="bg-white text-gray-600 py-12 px-6 lg:px-16 flex flex-col items-center">
-      <h2 className="text-2xl font-semibold mb-4" data-aos="fade-up">Have a project in mind?</h2>
-      <p className="text-lg font-medium mb-6" data-aos="fade-up" data-aos-delay="200">
-        We&apos;d love to help you. Drop us a note using the form below. We will get back to you within 24 hours.
-      </p>
+      <h2 className="text-xl font-semibold mb-4" data-aos="fade-up">Have a project in mind?</h2>
+      <p className="text-base font-medium mb-6" data-aos="fade-up" data-aos-delay="200">
+      We’d love to help you turn your ideas into reality! At ASM Infotech, we are committed to delivering innovative solutions tailored to your unique needs. Whether you’re looking for IT consulting, software development, or digital marketing services, our team is here to assist you every step of the way.      </p>
       <button 
         className="bg-customBlue text-white py-2 px-6 rounded-lg shadow-lg hover:bg-blue-500 transition transform hover:scale-105"
         onClick={openModal}
@@ -107,7 +106,9 @@ const Gettouch = () => {
             >
               Submit
             </button>
-            <p className="text-base">For further details Contact +91 9043957699</p>
+            <p className="text-sm font-semibold text-slate-600 bg-white border border-blue-200 rounded-md p-4 shadow-lg text-center transition duration-300 hover:shadow-xl hover:scale-105 transform">
+    Need Support? Give Us a Ring at <span className="text-blue-600 font-bold">+91 9043957699</span> 🚀
+</p>
 
           </form>
         ) : (

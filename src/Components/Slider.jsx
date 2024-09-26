@@ -260,7 +260,7 @@ const Hero = () => {
                     {slide.text.h2}
                   </h2>
                   <p
-                    className="text-base mb-4 font-medium tracking-wider"
+                    className="text-base mb-4 font-medium text-justify tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay={index * 400}
                   >

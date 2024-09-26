@@ -99,13 +99,13 @@ const CRMPage = () => {
   }, []);
 
   return (
-    <div className="bg-slate-50 text-gray-700 min-h-screen py-16">
+    <div className="bg-slate-100 text-gray-700 min-h-screen py-16">
       {/* Main Section with Paragraph and Image */}
       <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Left side: Big paragraph */}
         <div className="lg:w-1/2 px-6" data-aos="fade-up">
           <h1 className="text-lg md:text-lg font-bold mb-6 text-gray-700">Empower Your Business with Our CRM Solutions</h1>
-          <p className="text-sm md:text-sm text-gray-700 leading-relaxed mb-6">
+          <p className="text-sm text-justify md:text-sm text-gray-700 leading-relaxed mb-6">
             Our CRM solutions are designed to transform the way you manage your customer relationships. 
             With seamless integration, real-time analytics, and a customizable dashboard, you’ll be able to gain 
             deeper insights into your customer interactions, streamline processes, and boost productivity. 
@@ -117,7 +117,7 @@ const CRMPage = () => {
         </div>
         {/* Right side: Large Image */}
         <div className="lg:w-1/2 p-6" data-aos="fade-down">
-          <img src={crm1} alt="CRM Software" className="gray-image rounded-lg shadow-lg w-full h-auto" />
+          <img src={crm1} alt="CRM Software" className="gray-image rounded-lg shadow-lg w-3/4 h-auto" />
         </div>
       </section>
 
