@@ -40,8 +40,8 @@ export const Work = () => {
           {[
 
             {src: proj13, title: 'Inspire Media.in', type: 'Responsive Web Design'},
-            {src: proj14, title: 'PriyaMehan Novels', type: 'Responsive Web Design'},
-            {src: proj15, title: 'Uyirmei Seithigal', type: 'Mobile App'},
+            {src: proj14, title: 'PriyaMehan Novels', type: 'Web Development'},
+            {src: proj15, title: 'Uyirmei Seithigal', type: 'Web Development'},
             {src: proj16, title: 'ASM Billing', type: 'Billing App'},
             { src: proj1, title: 'Top Plus Super Market', type: 'E-commerce / Online Shopping' },
             { src: proj2, title: 'Breathe Care Systems', type: 'CMS Website' },
@@ -65,7 +65,7 @@ export const Work = () => {
               <img
                 src={work.src}
                 alt={work.title}
-                className="w-full h-48 object-contain mb-4 rounded-md hover:scale-110"
+                className="w-full h-48 object-contain mb-4 rounded-md hover:scale-125"
               />
               <h3 className="text-lg font-semibold mb-2" data-aos="fade-down">{work.title}</h3>
               <p className="text-sm">{work.type}</p>

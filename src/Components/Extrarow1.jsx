@@ -20,7 +20,7 @@ const Extrarow1 = () => {
         data-aos="fade-up" // Animate the text when it scrolls into view
       >
         <h2 className="text-2xl font-semibold leading-tight">
-        Meet ASM Infotech: Bridging Business and Technology
+        Why Choose Us?
         </h2>
         <br></br>
         <p className="text-base text-justify font-thin mb-4">

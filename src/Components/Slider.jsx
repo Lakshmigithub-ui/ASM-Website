@@ -326,7 +326,7 @@ const Hero = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full text-gray-700 px-4 py-2 text-gray-700 border border-gray-300 rounded bg-gray-100 focus:outline-none focus:border-blue-500"
+                  className="w-full text-gray-700 px-4 py-2 border border-gray-300 rounded bg-gray-100 focus:outline-none focus:border-blue-500"
                   placeholder="Enter your email"
                   required
                 />

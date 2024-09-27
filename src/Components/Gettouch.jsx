@@ -39,7 +39,8 @@ const Gettouch = () => {
 
   return (
     <div className="bg-white text-gray-600 py-12 px-6 lg:px-16 flex flex-col items-center">
-      <h2 className="text-xl font-semibold mb-4" data-aos="fade-up">Have a project in mind?</h2>
+      <h2 className="text-xl font-semibold mb-1" data-aos="fade-up">Have a project in mind?</h2>
+      <span className="block h-1 w-10 bg-customBlue mx-auto mb-6"></span>
       <p className="text-base font-medium mb-6" data-aos="fade-up" data-aos-delay="200">
       We’d love to help you turn your ideas into reality! At ASM Infotech, we are committed to delivering innovative solutions tailored to your unique needs. Whether you’re looking for IT consulting, software development, or digital marketing services, our team is here to assist you every step of the way.      </p>
       <button 

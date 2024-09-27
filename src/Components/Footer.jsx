@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import logo from "./Assets/logo.png"
@@ -14,15 +15,15 @@ const AboutUs = () => {
         {/* First Column: About Us */}
         <div data-aos="fade-up" className="space-y-4">
           {/* <h2 className="text-lg font-bold">About Us</h2> */}
-          <img src={logo} alt="logo" className="bg-white p-2 border border-gray-200" />
+          <img src={logo} alt="logo" className="bg-white h-12 w-auto px-4 py-1 border border-gray-200" />
           <br></br>
-          <p className="max-w-prose text-sm">
+          <p className="max-w-prose text-justify text-sm">
             ASM Infotech is an internet consulting company focusing on the
             efficient use of internet and web technologies in business. We have
             helped several budding entrepreneurs in establishing their business
             online since 2015.
           </p>
-          <p className="max-w-prose text-sm">
+          <p className="max-w-prose text-justify text-sm">
             ASM Infotech is dedicated to providing customized solutions for
             businesses, ensuring that their online presence aligns with their
             unique goals and visions.
@@ -30,26 +31,21 @@ const AboutUs = () => {
         </div>
 
         {/* Second Column: Reach Us */}
-        <div data-aos="fade-up" data-aos-delay="200" className="space-y-14">
-          <h2 className="text-lg font-bold">Reach Us</h2>
-          <p className="text-sm">
-            NO. 23, <br />
-            FIRST FLOOR, <br />
-            8th Street, Kamarajar Colony <br />
-            Kodambakkam, Chennai <br />
-            Tamil Nadu 600019.
-          </p>
-          <p className="text-sm">
-            Phone: (+91) 90439 57699 <br />
-            044 42129400 <br />
-            E-Mail:{" "}
-            <a
-              href="mailto:asminfoindia@gmail.com"
-              className="text-customBlue  text-sm hover:underline"
-            >
-              asminfoindia@gmail.com
-            </a>
-          </p>
+        <div data-aos="fade-up" data-aos-delay="200" className="space-y-5">
+          <h2 className="text-lg font-semibold p-5">Reach Us</h2>
+          <div className="flex items-start mb-4">
+                <FaMapMarkerAlt className="text-customBlue text-3xl mr-4" />
+                <p className="text-sm">No. 23, First Floor, 8th Cross Street, Kamarajar Colony, Kodambakkam, Chennai, Tamil Nadu 600019.</p>
+              </div> 
+              <div className="flex items-start">
+                <FaPhoneAlt className="text-customBlue text-2xl mr-4" />
+                <p className="text-sm">+91 9043957699 <br /> 044 42129400</p>               
+              </div>
+              <div className="flex items-start mb-4">
+                <FaEnvelope className="text-customBlue text-2xl mr-4" />
+                <p className="text-sm"><a href="mailto:asminfoindia@gmail.com" className="text-sky-400 hover:underline">admin@asminfotech.in</a></p>
+              </div>
+
         </div>
 
         {/* Third Column: Location Map */}
@@ -68,7 +64,7 @@ const AboutUs = () => {
       </div>
 
       <div className="text-center mt-8 text-sm">
-        ASM Infotech. All Rights Reserved 2015.
+        ASM Infotech. All Rights Reserved 2024.
       </div>
     </footer>
   );

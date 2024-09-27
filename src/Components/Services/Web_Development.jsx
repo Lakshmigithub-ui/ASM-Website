@@ -123,7 +123,7 @@ const WebAppDevelopment = () => {
 
 {/* Key Features Section */}
 <section className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-16 rounded-lg shadow-lg ">
-  <div className="bg-slate-50 p-8 " data-aos="fade-right">
+  <div className="bg-slate-50 p-8 " data-aos="fade-up">
     <h2 className="text-lg font-semibold mb-4">Why Choose Us?</h2>
     <p className="text-sm mb-4">
       We blend creativity and technology to build web applications that are not only functional but also visually stunning.
@@ -139,7 +139,7 @@ const WebAppDevelopment = () => {
       <li>User-Centric Design for Better Engagement</li>
     </ul>
   </div>
-  <div className="flex items-center justify-center" data-aos="fade-left">
+  <div className="flex items-center justify-center" data-aos="fade-down">
     <img src={web_development} alt="Web Development" className=" gray-image w-full h-auto " />
   </div>
 </section>

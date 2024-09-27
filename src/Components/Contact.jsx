@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
               <div className="flex items-start mb-4">
                 <FaEnvelope className="text-customBlue text-2xl mr-4" />
-                <p className="text-base"><a href="mailto:asminfoindia@gmail.com" className="text-customBlue hover:underline">asminfoindia@gmail.com</a></p>
+                <p className="text-base"><a href="mailto:asminfoindia@gmail.com" className="text-customBlue hover:underline">admin@asminfotech.in</a></p>
               </div>
               <div className="flex items-start">
                 <FaPhoneAlt className="text-customBlue text-2xl mr-4" />

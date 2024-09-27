@@ -30,7 +30,8 @@ const ClientLogos = () => {
   return (
     <section className="bg-white text-gray-600 py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 data-aos="fade-up" className="text-xl md:text-xl font-bold mb-4">Our Clients</h2>
+        <h2 data-aos="fade-up" className="text-xl md:text-xl font-bold mb-1">Our Clients</h2>
+        <span className="block h-1 w-10 bg-customBlue mx-auto mb-6"></span>
         <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-12">We have been working with some Fortune 500+ clients</p>
         <div className="flex flex-col items-center">
           <div className="flex flex-wrap justify-center gap-8">

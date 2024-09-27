@@ -214,10 +214,11 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <h1
           data-aos="fade-up"
-          className="text-xl md:text-xl font-bold mb-4 text-center"
+          className="text-xl md:text-xl font-bold mb-1 text-center"
         >
           Our Services
         </h1>
+        <span className="block h-1 w-10 bg-customBlue mx-auto mb-6"></span>
         <p
           data-aos="fade-up"
           data-aos-delay="200"
@@ -242,7 +243,7 @@ const Services = () => {
                   <div className="bg-white rounded-full border-2 border-customBlue p-4 group-hover:border-stone-500 transition-colors duration-300">
                     <service.icon className="text-customBlue text-3xl md:text-5xl group-hover:text-stone-500 transition-colors duration-300" />
                   </div>
-                </div>s
+                </div>
 
                 <div className="p-6 pt-14 text-center">
                   <h2 className="text-lg text-customBlue font-semibold mb-2 group-hover:text-stone-500 transition-colors duration-300">
