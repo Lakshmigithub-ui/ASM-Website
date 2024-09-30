@@ -19,8 +19,10 @@
 
 .slick-prev:before, .slick-next:before{
   font-size: 30px!important;
+  color:rgb(164, 170, 179)!important;
 }
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before{
   color: #1b91cf!important;
+  
 }
 

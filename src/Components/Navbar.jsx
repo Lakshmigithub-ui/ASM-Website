@@ -278,7 +278,7 @@ const Navbar = () => {
 
   return (
       <nav className="bg-slate-50  text-gray-600 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+        <div className="navbar_video max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -295,13 +295,13 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-4">
               <Link
                 to="/"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue"
+                className="px-3 py-2 rounded-md text-base font-semibold  hover:text-customBlue hover:font-extrabold transition duration-300"
               >
                 Home
               </Link>
               <Link
                 to="/work"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-300"
               >
                 Work
               </Link>
@@ -312,7 +312,7 @@ const Navbar = () => {
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
-                <button className="px-4 py-2 flex items-center rounded-md text-base font-semibold hover:text-customBlue">
+                <button className="px-4 py-2 flex items-center rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-700">
                   Services
                   <FaChevronDown className="ml-1 transition-transform duration-200" />
                 </button>
@@ -336,7 +336,7 @@ const Navbar = () => {
                       to="/matrimony_app"
                       className="flex flex-col py-2 text-sm font-medium hover:text-customBlue"
                     >
-                      <div className="flex"><FaRing className="mr-2 text-base customBlue inline-block" /> Matrimony App</div>
+                      <div className="flex"><FaRing className="mr-2 text-base customBlue inline-block " /> Matrimony App</div>
                     </Link>
                     <Link
                       to="/billing"
@@ -380,13 +380,13 @@ const Navbar = () => {
 
               <Link
                 to="/aboutus"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-700"
               >
                 About
               </Link>
               <Link
                 to="/contact"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-700"
               >
                 Contact
               </Link>

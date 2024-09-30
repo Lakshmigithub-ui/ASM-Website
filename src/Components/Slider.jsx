@@ -126,9 +126,9 @@
 
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import slider_image1 from "./Assets/slider_image1.avif";
-import slider_image2 from "./Assets/slider_image2.avif";
-import slider_image3 from "./Assets/slider_image3.avif";
+import slider_image1 from "./Assets/web_slide.png";
+import slider_image2 from "./Assets/mobile_slide.png";
+import slider_image3 from "./Assets/digital_slide.png";
 import background_video3 from "./Assets/background_video3.mp4"
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -137,7 +137,8 @@ const slides = [
   {
     image: slider_image1,
     text: {
-      h2: "Empowering Businesses with Cutting-Edge Web Development",
+      // h2: "Empowering Businesses with Cutting-Edge Web Development",
+      h2: "We build amazing websites and robust software applications",
       p: "Our web development services are designed to help businesses thrive in the digital age. We create fast, secure, and responsive websites that deliver an exceptional user experience. Whether it's a simple website or a complex web application, we bring your vision to life with innovative technologies and solutions tailored to your needs.",
     },
   },
@@ -168,7 +169,7 @@ const settings = {
   autoplaySpeed: 3000,
   customPaging: (i) => <div className="w-3 h-3 bg-gray-400 rounded-full"></div>,
   dotsClass:
-    "slick-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2",
+    "slick-dots absolute bottom-1 left-1/2 transform -translate-x-1/2 flex space-x-2",
 };
 
 const Hero = () => {
@@ -253,22 +254,22 @@ const Hero = () => {
               <div className="flex lg:flex-row flex-col">
                 <div className="m-9">
                   <h2
-                    className="text-3xl md:text-2xl mb-4 md:w-3/4 tracking-wider"
+                    className="text-5xl md:text-5xl font-bold mb-4 tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay={index * 300}
                   >
                     {slide.text.h2}
                   </h2>
-                  <p
+                  {/* <p
                     className="text-base mb-4 font-medium text-justify tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay={index * 400}
                   >
                     {slide.text.p}
-                  </p>
+                  </p> */}
                   <br />
                   <button
-                    className="bg-customBlue tracking-wider text-white py-3 px-6 rounded-lg hover:bg-blue-500 transition duration-300"
+                    className="bg-transparant tracking-wider outline text-white py-3 px-6  hover:bg-blue-500 transition duration-300"
                     data-aos="fade-up"
                     data-aos-delay={index * 500}
                     onClick={handleGetQuoteClick} // Open the form modal
@@ -279,7 +280,7 @@ const Hero = () => {
                 <img
                   src={slide.image}
                   alt="Slide image"
-                  className="gray-image w-full h-auto max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
+                  className="w-full h-auto max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
                   data-aos="fade-left"
                   data-aos-delay={index * 600}
                 />
@@ -303,6 +304,7 @@ const Hero = () => {
             <h2 className="text-xl font-bold text-gray-800 mb-6">
               Get a Quote
             </h2>
+            
             <form className="text-sm" onSubmit={handleSubmit}>
               <div className="mb-4">
                 {/* <label className="block text-gray-700 mb-2">Name</label> */}
