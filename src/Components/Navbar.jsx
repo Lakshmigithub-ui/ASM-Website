@@ -295,7 +295,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-4">
               <Link
                 to="/"
-                className="px-3 py-2 rounded-md text-base font-semibold  hover:text-customBlue hover:font-extrabold transition duration-300"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-300"
               >
                 Home
               </Link>

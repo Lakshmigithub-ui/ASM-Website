@@ -1,5 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+// import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+  FaSkype,
+} from "react-icons/fa";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,25 +35,86 @@ const Contact = () => {
           <h2 className="text-2xl font-bold mb-4">Get in Touch with Us</h2>
           <p className="text-base">
             Have a question or need more information about ASM Infotech? Use the form below or email us at{' '}
-            <a href="mailto:asminfoindia@gmail.com" className="text-customBlue hover:underline">asminfoindia@gmail.com</a>.
+            <a href="mailto:admin@asminfotech.in" className="text-customBlue hover:underline">admin@asminfotech.in</a>.
             We'll get back to you as soon as possible.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
             <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
-              <div className="flex items-start mb-4">
+              <div className="flex items-start mb-6">
                 <FaMapMarkerAlt className="text-customBlue text-3xl mr-4" />
                 <p className="text-base">No. 23, First Floor, 8th Cross Street, Kamarajar Colony, Kodambakkam, Chennai, Tamil Nadu 600019.</p>
               </div>
-              <div className="flex items-start mb-4">
+              <div className="flex items-start mb-6">
                 <FaEnvelope className="text-customBlue text-2xl mr-4" />
-                <p className="text-base"><a href="mailto:asminfoindia@gmail.com" className="text-customBlue hover:underline">admin@asminfotech.in</a></p>
+                <p className="text-base"><a href="mailto:admin@asminfotech.in" className="text-customBlue hover:underline">admin@asminfotech.in</a></p>
               </div>
               <div className="flex items-start">
                 <FaPhoneAlt className="text-customBlue text-2xl mr-4" />
                 <p className="text-base">+91 9043957699 <br /> 044 42129400</p>               
               </div>
+                    {/* Social Media Section */}
+      <div className="mt-8 text-center space-y-4">
+        {/* <h2 className="text-lg font-semibold">Follow Us</h2> */}
+        <div className="flex justify-start space-x-3">
+          <a
+            href="https://facebook.com/asminfotech"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="text-xl text-slate-100 rounded-full hover:text-blue-500"
+            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://twitter.com/asminfotech"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="text-xl text-blue-400 hover:text-blue-300"
+            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://instagram.com/asminfotech"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="text-xl text-pink-500 hover:text-pink-400"
+            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://youtube.com/asminfotech"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="text-xl text-red-600 hover:text-red-500"
+            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
+          >
+            <FaYoutube />
+          </a>
+          <a
+            href="https://linkedin.com/asminfotech"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="text-xl text-blue-700 hover:text-blue-600"
+            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
+          >
+            <FaLinkedinIn />
+          </a>
+          <a
+            href="https://skype.com/asminfotech"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="text-xl text-sky-500 hover:text-sky-400"
+            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
+          >
+            <FaSkype />
+          </a>
+        </div>
+      </div>
+
             </div>
           </div>
           <div className="lg:w-2/3" data-aos="fade-down">

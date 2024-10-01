@@ -139,21 +139,24 @@ const slides = [
     text: {
       // h2: "Empowering Businesses with Cutting-Edge Web Development",
       h2: "We build amazing websites and robust software applications",
-      p: "Our web development services are designed to help businesses thrive in the digital age. We create fast, secure, and responsive websites that deliver an exceptional user experience. Whether it's a simple website or a complex web application, we bring your vision to life with innovative technologies and solutions tailored to your needs.",
+      p:"ASM Infotech – Web Design & Development"
+      // p: "Our web development services are designed to help businesses thrive in the digital age. We create fast, secure, and responsive websites that deliver an exceptional user experience. Whether it's a simple website or a complex web application, we bring your vision to life with innovative technologies and solutions tailored to your needs.",
     },
   },
   {
     image: slider_image2,
     text: {
       h2: "Innovative Mobile Development for a Connected World",
-      p: "Crafting Innovative Digital Solutions.  We specialize in creating high-performance mobile apps that engage users and drive business growth. From iOS to Android, our mobile development solutions are tailored to deliver seamless user experiences on any device. With cutting-edge technologies and a focus on quality, we bring your ideas to life in the mobile-first era.",
+      p:"ASM Infotech – Mobile Design & Development"
+      // p: "Crafting Innovative Digital Solutions.  We specialize in creating high-performance mobile apps that engage users and drive business growth. From iOS to Android, our mobile development solutions are tailored to deliver seamless user experiences on any device. With cutting-edge technologies and a focus on quality, we bring your ideas to life in the mobile-first era.",
     },
   },
   {
     image: slider_image3,
     text: {
       h2: "Boost Your Online Presence with Expert Digital Marketing",
-      p: "Our digital marketing strategies are designed to increase your brand visibility and drive meaningful engagement. From SEO to social media campaigns, we create data-driven solutions tailored to your business goals. Let us help you reach your audience effectively and grow your business in the competitive online landscape.",
+      p:"ASM Infotech – Digital Marketing"
+      // p: "Our digital marketing strategies are designed to increase your brand visibility and drive meaningful engagement. From SEO to social media campaigns, we create data-driven solutions tailored to your business goals. Let us help you reach your audience effectively and grow your business in the competitive online landscape.",
     },
   },
 ];
@@ -253,28 +256,29 @@ const Hero = () => {
             >
               <div className="flex lg:flex-row flex-col">
                 <div className="m-9">
+                <p
+                    className="text-xl  mb-4 font-semibold text-justify tracking-wider"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 400}
+                  >
+                    {slide.text.p}
+                  </p>
+<br></br>
                   <h2
-                    className="text-5xl md:text-5xl font-bold mb-4 tracking-wider"
+                    className="text-5xl md:text-5xl font-extrabold mb-4 tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay={index * 300}
                   >
                     {slide.text.h2}
                   </h2>
-                  {/* <p
-                    className="text-base mb-4 font-medium text-justify tracking-wider"
-                    data-aos="fade-up"
-                    data-aos-delay={index * 400}
-                  >
-                    {slide.text.p}
-                  </p> */}
                   <br />
                   <button
-                    className="bg-transparant tracking-wider outline text-white py-3 px-6  hover:bg-blue-500 transition duration-300"
+                    className="bg-transparant tracking-wider outline text-extrabold text-base text-white py-3 px-6 hover:bg-stone-900 transition duration-300"
                     data-aos="fade-up"
                     data-aos-delay={index * 500}
                     onClick={handleGetQuoteClick} // Open the form modal
                   >
-                    Get Quote
+                    Get Quote 🡺
                   </button>
                 </div>
                 <img

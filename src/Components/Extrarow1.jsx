@@ -35,7 +35,7 @@ We are committed to delivering customized solutions that meet our clients' uniqu
         data-aos="fade-down" // Animate the image when it scrolls into view
       >
         <img
-          className=" gray-image w-3/4 h-auto rounded-lg shadow-lg transition-transform transform"
+          className=" gray-image ml-20 w-3/4 h-auto rounded-lg shadow-lg transition-transform transform"
           src={office}
           alt="Design"
         />

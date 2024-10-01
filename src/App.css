@@ -8,6 +8,7 @@
 .customBlue{
   color: rgb(13, 140, 224);
 }
+
 .slick-slider button.slick-arrow{width:40px; height: 40px;}
 
 @import "~slick-carousel/slick/slick.css";
