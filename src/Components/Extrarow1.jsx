@@ -6,12 +6,15 @@ import office from "./Assets/about.jpg";
 
 const Extrarow1 = () => {
   useEffect(() => {
-    AOS.init({ duration: 500 }); // Initialize AOS with a duration of 1000ms
-  }, []);
+  //   AOS.init({ duration: 500 }); // Initialize AOS with a duration of 1000ms
+  // }, []);
       
-  // AOS.init({
-  //   once: true, // Animation will trigger once and won't reset on scroll up
-  // });
+        AOS.init({
+          once: true,
+          duration: 1000 // Animation will trigger once and won't reset on scroll up
+        });
+    }, []);
+
 
   return (
     <div className="bg-white text-gray-600 py-12 px-6 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
@@ -35,7 +38,7 @@ We are committed to delivering customized solutions that meet our clients' uniqu
         data-aos="fade-down" // Animate the image when it scrolls into view
       >
         <img
-          className=" gray-image ml-20 w-3/4 h-auto rounded-lg shadow-lg transition-transform transform"
+          className=" gray-image  w-3/4 h-auto rounded-lg shadow-lg transition-transform transform"
           src={office}
           alt="Design"
         />

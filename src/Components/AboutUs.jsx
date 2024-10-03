@@ -27,8 +27,13 @@ import 'aos/dist/aos.css';
 
 export const AboutUs = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+    AOS.init({
+      once: true, // Animation will trigger once and won't reset on scroll up
+    });
+}, []);
+
+  //   AOS.init({ duration: 1000 });
+  // }, []);
 
   return (
     <div className="bg-slate-100 text-gray-900 p-8">

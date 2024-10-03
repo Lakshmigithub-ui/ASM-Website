@@ -12,8 +12,13 @@ const Gettouch = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
-  }, []);
+    AOS.init({
+      once: true, // Animation will trigger once and won't reset on scroll up
+    });
+}, []);
+
+  //   AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+  // }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

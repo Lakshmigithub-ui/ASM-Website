@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #2d3748;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .text {
+    color: #a0aec0;
+    max-height: 4.5em;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .collapsed {
+    max-height: 3em; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .expanded {
+    max-height: none;
+    white-space: normal;
+  }
+  
+  .read-more-button {
+    color: #4299e1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 8px;
+  }
+  
+  .read-more-button:hover {
+    color: #63b3ed;
+  }
+  

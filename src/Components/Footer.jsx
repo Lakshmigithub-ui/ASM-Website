@@ -90,8 +90,13 @@ import logo from "./Assets/logo.png";
 
 const AboutUs = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
-  }, []);
+    AOS.init({
+      once: true, // Animation will trigger once and won't reset on scroll up
+    });
+}, []);
+
+  //   AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+  // }, []);
 
   return (
     <footer className="bg-slate-600 text-slate-200 text-base py-14 px-4 md:px-8 lg:px-16">

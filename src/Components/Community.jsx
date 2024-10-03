@@ -179,8 +179,14 @@ const services = [
 
 const Services = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
-  }, []);
+    AOS.init({
+      once: true,
+      duration: 1000 // Animation will trigger once and won't reset on scroll up
+    });
+}, []);
+
+  //   AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+  // }, []);
 
   const settings = {
     dots: true,

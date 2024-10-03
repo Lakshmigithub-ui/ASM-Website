@@ -25,13 +25,11 @@ import  MOI_Soft  from './Components/Services/MOI_Soft';
 import  Customer_Management  from './Components/Services/Customer_Management';
 import  Event_App  from './Components/Services/Event_App';
 import  Digital_Marketing  from './Components/Services/Digital_Marketing';
-import StickyHeader from './Components/StickyHeader';
 
 function App() {
   return (
     <div >
       <BrowserRouter>
-      {/* <StickyHeader /> */}
       <Navbar/>
       <ScrollToTop />
         <Routes>

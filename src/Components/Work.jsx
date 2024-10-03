@@ -22,8 +22,13 @@ import proj16 from "./Assets/smkbilling.png";
 
 export const Work = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // Initialize AOS for animations
-  }, []);
+    AOS.init({
+      once: true, // Animation will trigger once and won't reset on scroll up
+    });
+}, []);
+
+  //   AOS.init({ duration: 1200 }); // Initialize AOS for animations
+  // }, []);
 
   return (
     <div className="bg-slate-100 text-gray-900">
@@ -65,7 +70,9 @@ export const Work = () => {
               <img
                 src={work.src}
                 alt={work.title}
-                className="w-full h-48 object-contain mb-4 rounded-md hover:scale-125"
+                // className="w-full h-48 object-contain mb-4 rounded-md hover:scale-125"
+                className="w-full h-48 object-contain mb-4 rounded-md transition-transform duration-500 ease-in-out hover:scale-125 sm:hover:scale-110 md:hover:scale-115 lg:hover:scale-125"
+
               />
               <h3 className="text-lg font-semibold mb-2" data-aos="fade-down">{work.title}</h3>
               <p className="text-sm">{work.type}</p>

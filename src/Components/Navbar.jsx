@@ -295,13 +295,13 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-4">
               <Link
                 to="/"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-300"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition-transform duration-500 ease-in-out hover:scale-105"
               >
                 Home
               </Link>
               <Link
                 to="/work"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-300"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition-transform duration-500 ease-in-out hover:scale-105"
               >
                 Work
               </Link>
@@ -380,13 +380,13 @@ const Navbar = () => {
 
               <Link
                 to="/aboutus"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-700"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition-transform duration-500 ease-in-out hover:scale-105"
               >
                 About
               </Link>
               <Link
                 to="/contact"
-                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition duration-700"
+                className="px-3 py-2 rounded-md text-base font-semibold hover:text-customBlue hover:font-extrabold transition-transform duration-500 ease-in-out hover:scale-105"
               >
                 Contact
               </Link>

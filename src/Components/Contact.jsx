@@ -25,8 +25,13 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+    AOS.init({
+      once: true, // Animation will trigger once and won't reset on scroll up
+    });
+}, []);
+
+  //   AOS.init({ duration: 1000 });
+  // }, []);
 
   return (
     <section id="contact" className="bg-slate-100 text-gray-600 py-12 px-6">

@@ -188,8 +188,14 @@ const Hero = () => {
   const [formFilled, setFormFilled] = useState(false); // Track if form is filled
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+    AOS.init({
+      once: true,
+      duration: 1000 // Animation will trigger once and won't reset on scroll up
+    });
+}, []);
+
+  //   AOS.init({ duration: 1000 });
+  // }, []);
 
   const validateForm = () => {
     let formErrors = {};
@@ -257,7 +263,7 @@ const Hero = () => {
               <div className="flex lg:flex-row flex-col">
                 <div className="m-9">
                 <p
-                    className="text-xl  mb-4 font-semibold text-justify tracking-wider"
+                    className="text-xl  mb-4 font-semibold  tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay={index * 400}
                   >
@@ -273,7 +279,7 @@ const Hero = () => {
                   </h2>
                   <br />
                   <button
-                    className="bg-transparant tracking-wider outline text-extrabold text-base text-white py-3 px-6 hover:bg-stone-900 transition duration-300"
+                    className="bg-transparant tracking-wider outline text-extrabold text-base text-white py-3 px-6 hover:bg-neutral-600  transition duration-700 ease-in-out "
                     data-aos="fade-up"
                     data-aos-delay={index * 500}
                     onClick={handleGetQuoteClick} // Open the form modal
