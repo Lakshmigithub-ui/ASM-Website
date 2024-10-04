@@ -279,13 +279,36 @@ const Hero = () => {
                   </h2>
                   <br />
                   <button
+  className="bg-transparent tracking-wider outline text-extrabold text-large text-white py-3 px-6 hover:bg-sky-800 transition duration-700 ease-in-out flex items-center space-x-2"
+  data-aos="fade-up"
+  data-aos-delay={index * 500}
+  onClick={handleGetQuoteClick} // Open the form modal
+>
+  Get Quote
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-5 h-5 md:w-6 md:h-6 ml-2 animate-bounce-right"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="4"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M13 7l5 5m0 0l-5 5m5-5H6"
+    />
+  </svg>
+</button>
+
+                  {/* <button
                     className="bg-transparant tracking-wider outline text-extrabold text-base text-white py-3 px-6 hover:bg-neutral-600  transition duration-700 ease-in-out "
                     data-aos="fade-up"
                     data-aos-delay={index * 500}
                     onClick={handleGetQuoteClick} // Open the form modal
                   >
                     Get Quote 🡺
-                  </button>
+                  </button> */}
                 </div>
                 <img
                   src={slide.image}
