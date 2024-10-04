@@ -47,79 +47,90 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
             <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
-              <div className="flex items-start mb-6">
+              <div className="flex items-start mb-3">
                 <FaMapMarkerAlt className="text-customBlue text-3xl mr-4" />
                 <p className="text-base">No. 23, First Floor, 8th Cross Street, Kamarajar Colony, Kodambakkam, Chennai, Tamil Nadu 600019.</p>
               </div>
-              <div className="flex items-start mb-6">
+              <div className="flex items-start mb-3">
                 <FaEnvelope className="text-customBlue text-2xl mr-4" />
                 <p className="text-base"><a href="mailto:admin@asminfotech.in" className="text-customBlue hover:underline">admin@asminfotech.in</a></p>
               </div>
-              <div className="flex items-start">
-                <FaPhoneAlt className="text-customBlue text-2xl mr-4" />
+              <div className="flex items-start mb-3">
+                <FaPhoneAlt className="text-customBlue text-xl mr-4" />
                 <p className="text-base">+91 9043957699 <br /> 044 42129400</p>               
               </div>
-                    {/* Social Media Section */}
-      <div className="mt-8 text-center space-y-4">
-        {/* <h2 className="text-lg font-semibold">Follow Us</h2> */}
-        <div className="flex justify-start space-x-3">
-          <a
-            href="https://facebook.com/asminfotech"
-            target="_blank"
-            rel="noopener noreferrer"
-            // className="text-xl text-slate-100 rounded-full hover:text-blue-500"
-            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="https://twitter.com/asminfotech"
-            target="_blank"
-            rel="noopener noreferrer"
-            // className="text-xl text-blue-400 hover:text-blue-300"
-            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="https://instagram.com/asminfotech"
-            target="_blank"
-            rel="noopener noreferrer"
-            // className="text-xl text-pink-500 hover:text-pink-400"
-            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://youtube.com/asminfotech"
-            target="_blank"
-            rel="noopener noreferrer"
-            // className="text-xl text-red-600 hover:text-red-500"
-            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
-          >
-            <FaYoutube />
-          </a>
-          <a
-            href="https://linkedin.com/asminfotech"
-            target="_blank"
-            rel="noopener noreferrer"
-            // className="text-xl text-blue-700 hover:text-blue-600"
-            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="https://skype.com/asminfotech"
-            target="_blank"
-            rel="noopener noreferrer"
-            // className="text-xl text-sky-500 hover:text-sky-400"
-            className="mr-2 text-base text-slate-100 bg-slate-500 p-2 rounded-full inline-block hover:text-blue-500"
-          >
-            <FaSkype />
-          </a>
-        </div>
-      </div>
-
+{/* Social Media Section */}
+<div className="mt-5 text-left space-y-4">
+  {/* <h2 className="text-lg font-semibold">Follow Us</h2> */}
+  <div className="space-y-2">
+    <div className="inline-flex items-center space-x-4">
+      <FaFacebookF className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
+      <a
+        href="https://facebook.com/asminfotech"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-800 hover:text-blue-500"
+      >
+        https://facebook.com/asminfotech
+      </a>
+    </div>
+    <div className="inline-flex items-center space-x-4">
+      <FaTwitter className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
+      <a
+        href="https://twitter.com/asminfotech"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-800 hover:text-blue-500"
+      >
+        https://twitter.com/asminfotech
+      </a>
+    </div>
+    <div className="inline-flex items-center space-x-4">
+      <FaInstagram className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
+      <a
+        href="https://instagram.com/asminfotech"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-800 hover:text-blue-500"
+      >
+        https://instagram.com/asminfotech
+      </a>
+    </div>
+    <div className="inline-flex items-center space-x-4">
+      <FaYoutube className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
+      <a
+        href="https://youtube.com/asminfotech"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-800 hover:text-blue-500"
+      >
+        https://youtube.com/asminfotech
+      </a>
+    </div>
+    <div className="inline-flex items-center space-x-4">
+      <FaLinkedinIn className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
+      <a
+        href="https://linkedin.com/asminfotech"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-800 hover:text-blue-500"
+      >
+        https://linkedin.com/asminfotech
+      </a>
+    </div>
+    <div className="inline-flex items-center space-x-4">
+      <FaSkype className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
+      <a
+        href="https://skype.com/asminfotech"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-gray-800 hover:text-blue-500"
+      >
+        https://skype.com/asminfotech
+      </a>
+    </div>
+  </div>
+</div>
             </div>
           </div>
           <div className="lg:w-2/3" data-aos="fade-down">
@@ -152,7 +163,7 @@ const Contact = () => {
                   className="w-full p-3 bg-slate-100 text-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
-              <div className="mb-4">
+              <div className="mb-8">
                 <textarea 
                   name="message" 
                   rows="5" 

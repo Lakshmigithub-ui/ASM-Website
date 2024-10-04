@@ -571,13 +571,13 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               to="/"
-              className="px-3 py-2 rounded-md text-base font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
+              className="px-3 py-2 rounded-md text-base tracking-wider font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
               >
               Home
             </Link>
             <Link
               to="/work"
-              className="px-3 py-2 rounded-md text-base font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
+              className="px-3 py-2 rounded-md text-base tracking-wider font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
             >
               Work
             </Link>
@@ -588,7 +588,7 @@ const Navbar = () => {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="px-4 py-2 flex items-center rounded-md text-base font-semibold hover:text-sky-500 hover:font-extrabold transition duration-700">
+              <button className="px-4 py-2 flex items-center tracking-wider rounded-md text-base font-semibold hover:text-sky-500 hover:font-extrabold transition duration-700">
                 Services
                 <FaChevronDown className="ml-1 transition-transform duration-200" />
               </button>
@@ -680,13 +680,13 @@ const Navbar = () => {
 
             <Link
               to="/aboutus"
-              className="px-3 py-2 rounded-md text-base font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
+              className="px-3 py-2 rounded-md tracking-wider text-base font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
             >
               About
             </Link>
             <Link
               to="/contact"
-              className="px-3 py-2 rounded-md text-base font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
+              className="px-3 py-2 rounded-md tracking-wider text-base font-semibold hover:text-sky-500 hover:font-extrabold transform hover:scale-105 transition-all duration-500 ease-in-out"
             >
               Contact
             </Link>

@@ -132,7 +132,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import contactBg from './Assets/support3.png'; // Import your image
+import contactBg from './Assets/support4.png'; // Import your image
 
 // Make sure to bind the modal to your app element
 Modal.setAppElement('#root');
@@ -170,16 +170,16 @@ const Gettouch = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row bg-white text-gray-600 py-12 px-6 lg:px-16">
+    <div className="flex flex-col lg:flex-row bg-white text-gray-600 py-1 px-6 lg:px-16">
       <div 
-        className="lg:w-1/4 bg-cover bg-center h-60" 
+        className="lg:w-1/4 bg-cover bg-center h-80" 
         style={{ backgroundImage: `url(${contactBg})` }} // Use the imported image
       >
       </div>
-      <div className="lg:w-3/4 flex flex-col items-center">
+      <div className="lg:w-3/4 flex flex-col mt-12 items-center">
         <h2 className="text-xl font-semibold mb-1" data-aos="fade-up">Have a project in mind?</h2>
-        <span className="block h-1 w-10 bg-customBlue mx-auto mb-6"></span>
-        <p className="text-base font-medium ml-5 mb-8" data-aos="fade-up" data-aos-delay="200">
+        <span className="block h-1 w-10 bg-customBlue mx-auto mb-9"></span>
+        <p className="text-base font-medium ml-5 mb-9" data-aos="fade-up" data-aos-delay="200">
           We’d love to help you turn your ideas into reality! At ASM Infotech, we are committed to delivering innovative solutions tailored to your unique needs. Whether you’re looking for IT consulting, software development, or digital marketing services, our team is here to assist you every step of the way.
         </p>
         <button 
