@@ -91,12 +91,12 @@ const App = () => {
   return (
     <div className="bg-slate-100 text-gray-700 min-h-screen p-8">
       <h1
-        className="text-lg font-semibold mb-6 text-center"
+        className="text-3xl text-gray-600 font-bold mb-6 text-center"
         data-aos="fade-down"
       >
         Enhance Your Business Operations with Advanced Retail Billing Software
       </h1>
-      <p className="text-sm text-justify mb-6 text-center" data-aos="fade-up">
+      <p className="text-base mb-6 text-center" data-aos="fade-up">
         Let’s discuss your business needs and goals. Whether you're just
         starting or looking to scale, we’re here to help you create a tailored
         strategy that maximizes your online presence. Our team of experts will
@@ -107,7 +107,7 @@ const App = () => {
         <Link to="/contact">
           {" "}
           <button
-            className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105"
+            className=" text-sm bg-customBlue text-white px-4 py-2 mb-12 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -125,21 +125,21 @@ const App = () => {
           <img
             src={billing}
             alt="Billing Software"
-            className="gray-image rounded-lg shadow-lg mb-4 lg:mb-0"
+            className="gray-image w-4/5 rounded-lg shadow-lg mb-4 lg:mb-0"
           />
         </div>
         <div className="lg:w-1/2 text-lg space-y-4">
-          <h2 className="text-lg font-semibold">
+          <h2 className="text-xl font-semibold">
             Why Choose Our Billing Software?
           </h2>
-          <p className="text-sm text-justify">
+          <p className="text-base text-justify">
             Our advanced billing software is designed to streamline your
             business operations, making transactions quick, accurate, and
             efficient. With features such as POS systems, GST compliance, and
             real-time MIS, we ensure your business remains productive and
             compliant, no matter the industry.
           </p>
-          <p className="text-sm text-justify">
+          <p className="text-base text-justify">
             Whether you operate a supermarket, textile mill, or electronics
             store, our tailored solutions offer reliable financial management,
             customer support, and detailed reporting to enhance every aspect of
@@ -168,7 +168,7 @@ const App = () => {
                   icon={faIndustry}
                   className="text-blue-400 text-2xl"
                 />
-                <span className="text-sm font-medium">{industry}</span>
+                <span className="text-base font-medium">{industry}</span>
               </div>
             ))}
           </div>
@@ -188,9 +188,9 @@ const App = () => {
                 icon={section.icon}
                 className="text-blue-400 text-3xl mr-3"
               />
-              <h2 className="text-lg font-medium">{section.title}</h2>
+              <h2 className="text-lg font-semibold">{section.title}</h2>
             </div>
-            <ul className="list-disc list-inside space-y-2 text-sm">
+            <ul className="list-disc list-inside space-y-2 text-base">
               {section.content.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}

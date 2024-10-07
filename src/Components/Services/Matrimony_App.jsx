@@ -20,11 +20,11 @@ const MatrimonyApp = () => {
   return (
     <div className="bg-slate-100 text-gray-700 min-h-screen p-8">
             {/* Hero Section */}
-            <section className="relative bg-slate-50 p-12 rounded-lg shadow-lg mb-12">
+            <section className="relative bg-slate-50 p-6 rounded-lg shadow-lg mb-6">
         <img src={matlogo1} alt="Hero" className="gray-image absolute inset-0 w-full h-full object-cover opacity-30 z-[-1]" />
         <div className="text-center relative z-10">
-          <h1 className="text-lg font-semibold mb-6" data-aos="fade-up">Discover Your Soulmate with Our Matrimony App</h1>
-          <p className="text-sm text-justify mb-6 font-medium" data-aos="fade-up" data-aos-delay="200">At ASM Infotech, we specialize in creating feature-rich, user-friendly matrimony apps that help individuals find their perfect match. Our custom-built matrimony apps are designed to offer a seamless user experience, with features like advanced search filters, compatibility algorithms, secure communication, and user verification. Whether you're launching a niche matrimony platform or expanding an existing service, our tailored solutions ensure you meet the unique needs of your audience.</p>
+          <h1 className="text-3xl text-gray-600 font-semibold mb-6" data-aos="fade-up">Discover Your Soulmate with Our Matrimony App</h1>
+          <p className="text-base text-justify mb-6 font-medium" data-aos="fade-up" data-aos-delay="200">At ASM Infotech, we specialize in creating feature-rich, user-friendly matrimony apps that help individuals find their perfect match. Our custom-built matrimony apps are designed to offer a seamless user experience, with features like advanced search filters, compatibility algorithms, secure communication, and user verification. Whether you're launching a niche matrimony platform or expanding an existing service, our tailored solutions ensure you meet the unique needs of your audience.</p>
           <Link to="/contact"> <button className=" text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">Start Now</button></Link>
           </div>
       </section>
@@ -38,14 +38,14 @@ const MatrimonyApp = () => {
 
         {/* Right Side: Paragraph */}
         <div className="lg:w-1/2 px-6" data-aos="fade-down">
-          <h2 className="text-lg font-semibold mb-4">Why Choose Our Matrimony App?</h2>
-          <p className="text-sm  text-justify leading-relaxed">
+          <h2 className="text-xl font-semibold mb-4">Why Choose Our Matrimony App?</h2>
+          <p className="text-base  text-justify leading-relaxed">
             Our Matrimony app is designed to provide a seamless and personalized matchmaking experience. 
             With advanced search features, verified profiles, and private messaging options, we make it 
             easy for you to find your perfect match. Our secure platform ensures privacy and reliability, 
             allowing you to communicate with potential matches confidently.
           </p>
-          <p className="text-sm leading-relaxed mt-4">
+          <p className="text-base leading-relaxed mt-4">
             Join thousands of users who have successfully found their soulmates through our app. 
             Whether you're looking for someone with similar values, interests, or cultural background, 
             our app offers a range of filters to help you find the right person for you.
@@ -56,7 +56,7 @@ const MatrimonyApp = () => {
 
       {/* Features Section */}
       <section className="mb-12">
-        <h2 className="text-lg font-semibold text-center mb-8" data-aos="fade-up">Our Features</h2>
+        <h2 className="text-xl font-semibold text-center mb-8" data-aos="fade-up">Our Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-slate-50 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105" data-aos="fade-down">
             <img src={matlogo1} alt="Feature 1" className="gray-image w-16 h-16 mx-auto mb-4" />
@@ -77,7 +77,7 @@ const MatrimonyApp = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="relative bg-slate-50 p-12 rounded-lg shadow-lg mb-12">
+      <section className="relative bg-slate-50 p-6 mb-12">
         <div className="absolute inset-0 w-full h-full object-cover opacity-30 z-[-1]" style={{ backgroundImage: "url('/Assets/matrimony_app.avif')" }}></div>
         <div className="relative z-10 text-center">
           <h2 className=" font-semibold text-lg  mb-6" data-aos="fade-up">How It Works</h2>

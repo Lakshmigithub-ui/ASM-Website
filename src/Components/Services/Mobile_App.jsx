@@ -1,26 +1,28 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 import mobile_application from "../Assets/mobile_application.jpg";
-import ios_app from "../Assets/ios_app.avif"; // Add the image for iOS app
-import android_app from "../Assets/android_app.avif"; // Add the image for Android app
-import hybrid_app from "../Assets/hybrid_app.avif"; // Add the image for Hybrid app
+import ios_app from "../Assets/apple.png";
+import ios from "../Assets/ios.png";
+import android_app from "../Assets/android.png";
+import hybrid_app from "../Assets/hybrid.png";
 import icon1 from "../Assets/icon1.avif";
 import icon2 from "../Assets/icon2.avif";
 import icon3 from "../Assets/icon3.avif";
+import contact from "../Assets/contact2.png";
 
 const MobileAppDevelopment = () => {
   useEffect(() => {
     AOS.init({
-      disable: () => window.innerWidth < 768, // Disable AOS on screens smaller than 768px
+      disable: () => window.innerWidth < 768,
     });
   }, []);
 
   return (
-    <div className="bg-slate-100 text-gray-700 min-h-screen p-8">
-      <header className="text-center mb-12">
-        <h1 className="text-xl font-bold mb-4" data-aos="fade-down">
+    <div className="bg-gradient-to-r from-slate-200 via-slate-100 to-slate-200 text-gray-700 min-h-screen p-8">
+      <header className="text-center mb-10">
+        <h1 className="text-3xl text-gray-600 font-bold mb-4" data-aos="fade-down">
           Innovative Mobile App Development Services
         </h1>
         <p className="text-base text-justify" data-aos="fade-up">
@@ -29,33 +31,28 @@ const MobileAppDevelopment = () => {
           business. Whether you're looking to build a high-performance iOS app,
           a versatile Android solution, or a cross-platform hybrid app, our
           expert team is equipped with the latest tools and technologies to
-          deliver exceptional results. We focus on creating intuitive user
-          interfaces, robust functionalities, and seamless performance to ensure
-          your app not only meets industry standards but exceeds user
-          expectations. From ideation to launch, we work closely with you to
-          bring your vision to life, offering continued support and maintenance
-          to keep your app running smoothly as your business grows."
+          deliver exceptional results."
         </p>
       </header>
 
       <section className="mb-12">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
+        <div className="flex flex-col gap-0.5 lg:flex-row items-center justify-between bg-slate-50 shadow-lg rounded-lg p-6">
+          <div className="lg:w-1/3 flex" data-aos="fade-up">
             <img
               src={ios_app}
               alt="iOS App"
-              className="gray-image w-3/4 h-auto max-w-lg rounded-lg shadow-lg"
+              className="gray-image w-1/2 h-auto rounded-lg"
             />
+
           </div>
-          <div className="lg:w-1/2 lg:pl-8" data-aos="fade-down">
-            <h2 className="text-lg font-semibold mb-4">iOS App Development</h2>
-            <p className="text-base mb-4 text-justify">
+          <div className="lg:w-5/6" data-aos="fade-down">
+            <h2 className="text-xl font-semibold mb-4">iOS App Development</h2>
+            <p className="text-base text-justify mb-2">
               Our iOS app development services focus on delivering
-              high-performance apps that are compatible with the latest iOS
-              versions and devices.
+              high-performance apps compatible with the latest iOS versions.
             </p>
-            <p className="text-base mb-4 text-justify">
-              We ensure a seamless user experience with robust features and
+            <p className="text-base text-justify">
+              We ensure seamless user experience with robust features and
               exceptional UI/UX design tailored for the Apple ecosystem.
             </p>
           </div>
@@ -63,57 +60,53 @@ const MobileAppDevelopment = () => {
       </section>
 
       <section className="mb-12">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 lg:pl-8" data-aos="fade-up">
-            <h2 className="text-lg font-semibold mb-4">Android App Development</h2>
-            <p className="text-base mb-4">
-              Our Android app development services are designed to create apps
-              that perform optimally across a wide range of Android devices and
-              versions.
+        <div className="flex flex-col lg:flex-row items-center justify-between bg-white shadow-lg rounded-lg p-6">
+          <div className="lg:w-5/6 lg:pr-8" data-aos="fade-up">
+            <h2 className="text-xl font-semibold mb-4">Android App Development</h2>
+            <p className="text-base mb-2">
+              Our Android app development services create apps optimized across
+              Android devices, focusing on user-centric design.
             </p>
-            <p className="text-base mb-4">
-              We emphasize user-centric design and functionality to ensure your
-              app stands out in the crowded Android market.
+            <p className="text-base">
+              We emphasize intuitive functionality to ensure your app stands out
+              in the crowded Android market.
             </p>
           </div>
-          <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-down">
+          <div className="lg:w-1/3" data-aos="fade-down">
             <img
               src={android_app}
               alt="Android App"
-              className="gray-image w-3/4 h-auto max-w-lg rounded-lg shadow-lg"
+              className=" gray-image w-3/5  rounded-lg"
             />
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
+        <div className="flex flex-col lg:flex-row items-center justify-between bg-white shadow-lg rounded-lg p-6">
+          <div className="lg:w-1/3" data-aos="fade-up">
             <img
               src={hybrid_app}
               alt="Hybrid App"
-              className="gray-image w-3/4 h-auto max-w-lg rounded-lg shadow-lg"
+              className="gray-image w-full h-auto rounded-lg"
             />
+            
           </div>
-          <div className="lg:w-1/2 lg:pl-8" data-aos="fade-down">
-            <h2 className="text-lg font-semibold mb-4">Hybrid App Development</h2>
-            <p className="text-base mb-4 text-justify">
-              Our hybrid app development approach ensures you get a single
-              codebase that runs smoothly on both iOS and Android platforms,
-              saving time and costs.
+          <div className="lg:w-5/6 lg:pl-8" data-aos="fade-down">
+            <h2 className="text-xl font-semibold mb-4">Hybrid App Development</h2>
+            <p className="text-base text-justify mb-2">
+              Our hybrid app development ensures a single codebase for both iOS
+              and Android platforms, saving time and costs.
             </p>
-            <p className="text-base mb-4 text-justify">
-              We leverage cross-platform frameworks to deliver high-quality apps
-              with a native-like experience for users on any device.
+            <p className="text-base text-justify">
+              We use cross-platform frameworks to deliver high-quality apps with
+              a native-like experience.
             </p>
           </div>
         </div>
       </section>
 
-      <section
-        className="bg-slate-50 p-8 rounded-lg shadow-lg mb-12"
-        data-aos="fade-up"
-      >
+      <section className="bg-white p-8 rounded-lg shadow-lg mb-12" data-aos="fade-up">
         <p className="text-base mb-4 text-center">
           Our team is dedicated to delivering high-quality mobile applications
           that meet your business needs and exceed user expectations.
@@ -123,9 +116,9 @@ const MobileAppDevelopment = () => {
             <img
               src={icon1}
               alt="Icon 1"
-              className="gray-image w-16 h-16 mx-auto mb-4"
+              className="w-16 h-16 mx-auto mb-4"
             />
-            <h3 className="text-base font-semibold">Innovative Solutions</h3>
+            <h3 className="text-lg font-semibold">Innovative Solutions</h3>
             <p className="text-sm">
               We bring creativity and cutting-edge technology to every project.
             </p>
@@ -134,9 +127,9 @@ const MobileAppDevelopment = () => {
             <img
               src={icon2}
               alt="Icon 2"
-              className="gray-image w-16 h-16 mx-auto mb-4"
+              className="w-16 h-16 mx-auto mb-4"
             />
-            <h3 className="text-base font-semibold">User-Centric Design</h3>
+            <h3 className="text-lg font-semibold">User-Centric Design</h3>
             <p className="text-sm">
               Our designs are crafted to provide an intuitive and engaging user
               experience.
@@ -146,9 +139,9 @@ const MobileAppDevelopment = () => {
             <img
               src={icon3}
               alt="Icon 3"
-              className="gray-image w-16 h-16 mx-auto mb-4"
+              className="w-16 h-16 mx-auto mb-4"
             />
-            <h3 className="text-base font-semibold">Dedicated Support</h3>
+            <h3 className="text-lg font-semibold">Dedicated Support</h3>
             <p className="text-sm">
               We offer ongoing support and maintenance to ensure your app runs
               smoothly.
@@ -157,48 +150,32 @@ const MobileAppDevelopment = () => {
         </div>
       </section>
 
-      <section className="mb-12">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-up">
-            <img
-              src={mobile_application}
-              alt="Mobile App"
-              className="gray-image w-full h-auto max-w-lg rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="lg:w-1/2 lg:pl-8" data-aos="fade-">
-            <h2 className="text-lg font-semibold mb-4">Our Expertise</h2>
-            <p className="text-base mb-4">
-              We specialize in developing innovative mobile applications that
-              provide exceptional user experiences and drive business growth.
-            </p>
-            <ul className="text-base list-disc list-inside mb-4">
-              <li>Custom Mobile App Development</li>
-              <li>UI/UX Design for Mobile</li>
-              <li>Cross-Platform Solutions</li>
-              <li>App Maintenance and Support</li>
-            </ul>
-          </div>
+      <footer className="flex items-center justify-center p-8 bg-white rounded-lg shadow-lg mb-12">
+        <img
+          src={contact}
+          alt="Call to Action"
+          className=" gray-image w-32 h-32 mr-4"
+          data-aos="fade-right"
+        />
+        <div className="text-center">
+          <h2 className="text-xl font-semibold mb-2" data-aos="fade-up">
+            Ready to Start Your Project?
+          </h2>
+          <p className="text-base mb-4">
+            Contact us today to discuss your mobile app development needs and
+            receive a tailored solution. Our team will deliver a secure,
+            high-performance app that perfectly fits your business goals.
+          </p>
+          <Link to="/contact">
+            <button
+              className="text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Contact Us
+            </button>
+          </Link>
         </div>
-      </section>
-
-      <footer className="text-center">
-        <h2 className="text-lg font-semibold mb-4" data-aos="fade-up">
-          Ready to Start Your Project?
-        </h2>
-        <p className="text-base mb-4">
-          Contact us today to discuss your mobile app development needs and get
-          a customized plan.
-        </p>
-        <Link to="/contact">
-          <button
-            className="text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Contact Us
-          </button>
-        </Link>
       </footer>
     </div>
   );

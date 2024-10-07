@@ -74,7 +74,7 @@ const Contact = () => {
         https://facebook.com/asminfotech
       </a>
     </div>
-    <div className="inline-flex items-center space-x-4">
+    <div className="flex items-center space-x-4">
       <FaTwitter className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
       <a
         href="https://twitter.com/asminfotech"
@@ -85,7 +85,7 @@ const Contact = () => {
         https://twitter.com/asminfotech
       </a>
     </div>
-    <div className="inline-flex items-center space-x-4">
+    <div className="flex items-center space-x-4">
       <FaInstagram className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
       <a
         href="https://instagram.com/asminfotech"
@@ -96,7 +96,7 @@ const Contact = () => {
         https://instagram.com/asminfotech
       </a>
     </div>
-    <div className="inline-flex items-center space-x-4">
+    <div className="flex items-center space-x-4">
       <FaYoutube className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
       <a
         href="https://youtube.com/asminfotech"
@@ -107,7 +107,7 @@ const Contact = () => {
         https://youtube.com/asminfotech
       </a>
     </div>
-    <div className="inline-flex items-center space-x-4">
+    <div className="flex items-center space-x-4">
       <FaLinkedinIn className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
       <a
         href="https://linkedin.com/asminfotech"
@@ -118,7 +118,7 @@ const Contact = () => {
         https://linkedin.com/asminfotech
       </a>
     </div>
-    <div className="inline-flex items-center space-x-4">
+    <div className="flex items-center space-x-4">
       <FaSkype className="text-3xl text-slate-100 bg-slate-500 p-2 rounded-full hover:text-blue-500" />
       <a
         href="https://skype.com/asminfotech"
@@ -166,7 +166,7 @@ const Contact = () => {
               <div className="mb-8">
                 <textarea 
                   name="message" 
-                  rows="5" 
+                  rows="4" 
                   placeholder="Message" 
                   required 
                   className="w-full p-3 bg-slate-100 text-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -174,7 +174,7 @@ const Contact = () => {
               </div>
               <button 
                 type="submit" 
-                className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition duration-300"
+                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition duration-300"
               >
                 Send Message
               </button>

@@ -5,6 +5,11 @@
 .gray-image{
   filter:grayscale(1);
 }
+
+.blue-image{
+  filter: hue-rotate(180deg);
+}
+
 .customBlue{
   color: rgb(13, 140, 224);
 }

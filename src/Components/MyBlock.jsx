@@ -133,6 +133,8 @@ export const MyBlock = () => {
     setReadMore(!readMore);
   };
 
+  const content = `Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper.`;
+
   return (
     <div className="container">
       {/* Card container */}
@@ -144,20 +146,22 @@ export const MyBlock = () => {
           <p
             className={`text ${readMore ? 'expanded' : 'collapsed'}`}
           >
-            Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper.
+            {content}
           </p>
         </div>
 
-        {/* Read More/Less Button */}
-        <button
-          type="button"
-          onClick={toggleReadMore}
-          className="read-more-button"
-          title={readMore ? 'Read Less' : 'Read More'}
-          aria-expanded={readMore}
-        >
-          {readMore ? 'Read Less' : 'Read More'}
-        </button>
+        {/* Conditionally show the button if content length is greater than 130 */}
+        {content.length > 130 && (
+          <button
+            type="button"
+            onClick={toggleReadMore}
+            className="read-more-button"
+            title={readMore ? 'Read Less' : 'Read More'}
+            aria-expanded={readMore}
+          >
+            {readMore ? 'Read Less' : 'Read More'}
+          </button>
+        )}
       </div>
     </div>
   );

@@ -114,10 +114,10 @@ const WebAppDevelopment = () => {
   return (
     <div className="bg-slate-100 text-gray-700 min-h-screen relative">
       {/* Main Content */}
-      <div className="relative z-10 p-4 lg:p-8"> {/* Adjusted padding */}
+      <div className=" relative z-10 p-4 lg:p-8"> {/* Adjusted padding */}
         {/* Hero Section */}
         <section className="text-center mb-8"> {/* Reduced margin */}
-          <h1 className="text-xl font-bold mb-2" data-aos="fade-up">Elevate Your Business with Cutting-Edge Web Development</h1>
+          <h1 className="text-3xl text-gray-700 font-bold mb-4" data-aos="fade-up">Elevate Your Business with Cutting-Edge Web Development</h1>
           <p className="text-base mb-4" data-aos="fade-up" data-aos-delay="200">
             Our web development services specialize in creating dynamic, user-friendly websites tailored to your business needs. From sleek designs to seamless functionality, we ensure your website not only looks great but also delivers an exceptional user experience, helping you connect with your audience and drive business growth.
           </p>
@@ -126,7 +126,7 @@ const WebAppDevelopment = () => {
         {/* Key Features Section */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8 rounded-lg"> {/* Reduced margin and gap */}
           <div className="bg-slate-50 p-4" data-aos="fade-up"> {/* Adjusted padding */}
-            <h2 className="text-lg font-semibold mb-2">Why Choose Us?</h2>
+            <h2 className="text-xl font-semibold mb-2">Why Choose Us?</h2>
             <p className="text-base mb-2">
               We blend creativity and technology to build web applications that are not only functional but also visually stunning.
             </p>
@@ -148,7 +148,7 @@ const WebAppDevelopment = () => {
 
         {/* Features Section */}
         <section className="bg-slate-50 p-4 rounded-lg shadow-lg mb-8" data-aos="fade-up"> {/* Adjusted padding and margin */}
-          <h2 className="text-lg font-semibold mb-4 text-center">Our Core Features</h2>
+          <h2 className="text-xl font-semibold mb-4 text-center">Our Core Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="text-center" data-aos="fade-up">
               <img src={weblogo1} alt="Feature 1" className="gray-image w-16 h-16 mx-auto mb-2" />
@@ -157,12 +157,12 @@ const WebAppDevelopment = () => {
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="200">
               <img src={weblogo2} alt="Feature 2" className="gray-image w-16 h-16 mx-auto mb-2" />
-              <h3 className="text-sm font-semibold mb-1">Advanced Technology</h3>
+              <h3 className="text-lg font-semibold mb-1">Advanced Technology</h3>
               <p className='text-sm'>Utilize the latest technology to ensure high performance and scalability.</p>
             </div>
             <div className="text-center" data-aos="fade-up" data-aos-delay="400">
               <img src={weblogo3} alt="Feature 3" className="gray-image w-16 h-16 mx-auto mb-2" />
-              <h3 className="text-sm font-semibold mb-1">Dedicated Support</h3>
+              <h3 className="text-lg font-semibold mb-1">Dedicated Support</h3>
               <p className='text-sm'>Receive ongoing support to keep your web app up-to-date and fully functional.</p>
             </div>
           </div>
@@ -177,15 +177,14 @@ const WebAppDevelopment = () => {
     data-aos="fade-right" // Add AOS animation for the image
   />
   <div className="text-center">
-    <h2 className="text-lg font-semibold mb-2" data-aos="fade-up">
+    <h2 className="text-xl font-semibold mb-2" data-aos="fade-up">
       Ready to Take Your Web Presence to the Next Level?
     </h2>
-    <p className="text-sm mb-4">
-      Contact us today to discuss your web app development needs and get a customized plan.
-    </p>
+    <p className="text-base mb-4">
+    Contact us today to discuss your web app development needs and receive a tailored solution. Let our expert team create a scalable, secure, and high-performance web app that drives your business forward.     </p>
     <Link to="/contact">
       <button
-        className="text-sm bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105"
+        className="text-sm  bg-customBlue text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-500 transition-transform transform hover:scale-105"
         data-aos="fade-up"
         data-aos-delay="200"
       >
